@@ -1,0 +1,176 @@
+@prefix : <https://w3id.org/lcabim/concreteclass#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/lcabim/concreteclass#> .
+
+<https://w3id.org/lcabim/concreteclass> rdf:type owl:Ontology ;
+                                         <http://purl.org/dc/terms/description> "Project-specific SKOS concepts and linking properties for derived concrete strength and density classes."@en ,
+                                                                                "Projektspezifische SKOS-Konzepte und Verknüpfungseigenschaften für abgeleitete Beton-Druckfestigkeits- und Rohdichteklassen."@de ;
+                                         <http://purl.org/dc/terms/title> "Concrete class enrichment vocabulary"@en ,
+                                                                          "Vokabular zur Anreicherung von Betonklassen"@de ;
+                                         owl:versionInfo "0.1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/lcabim/concreteclass/hasStrengthClassification
+<https://w3id.org/lcabim/concreteclass/hasStrengthClassification> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                  rdfs:comment "Links a dataset to a derived compressive-strength class (e.g., added via SHACL rules)."@en ,
+                                                                               "Verknüpft einen Datensatz mit einer abgeleiteten Druckfestigkeitsklasse (z. B. ergänzt mittels SHACL-Regeln)."@de ;
+                                                                  rdfs:label "has strength classification"@en ,
+                                                                             "hat Druckfestigkeitsklassifikation"@de .
+
+
+###  https://w3id.org/lcabim/concreteclass/hasWeightClassification
+<https://w3id.org/lcabim/concreteclass/hasWeightClassification> rdf:type owl:ObjectProperty ;
+                                                                rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                rdfs:comment "Links a dataset to a derived density class (e.g., added via SHACL rules)."@en ,
+                                                                             "Verknüpft einen Datensatz mit einer abgeleiteten Rohdichteklasse (z. B. ergänzt mittels SHACL-Regeln)."@de ;
+                                                                rdfs:label "has weight classification"@en ,
+                                                                           "hat Rohdichteklassifikation"@de .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+###  https://w3id.org/lcabim/concreteclass/StrengthClass
+<https://w3id.org/lcabim/concreteclass/StrengthClass> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                      rdfs:comment "A SKOS concept representing a derived compressive-strength class."@en ,
+                                                                   "Ein SKOS-Konzept, das eine abgeleitete Druckfestigkeitsklasse repräsentiert."@de ;
+                                                      rdfs:label "Beton-Druckfestigkeitsklasse"@de ,
+                                                                 "Concrete strength class"@en .
+
+
+###  https://w3id.org/lcabim/concreteclass/WeightClass
+<https://w3id.org/lcabim/concreteclass/WeightClass> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                    rdfs:comment "A SKOS concept representing a derived density class."@en ,
+                                                                 "Ein SKOS-Konzept, das eine abgeleitete Rohdichteklasse repräsentiert."@de ;
+                                                    rdfs:label "Beton-Rohdichteklasse"@de ,
+                                                               "Concrete density class"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/lcabim/concreteclass/HeavyWeightConcrete
+<https://w3id.org/lcabim/concreteclass/HeavyWeightConcrete> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.w3.org/2004/02/skos/core#Concept> ,
+                                                                     <https://w3id.org/lcabim/concreteclass/WeightClass> ;
+                                                            <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/concreteclass/WeightClassScheme> ;
+                                                            <http://www.w3.org/2004/02/skos/core#note> "Density >2600 kg/m³"@en ,
+                                                                                                       "Rohdichte >2600 kg/m³"@de ;
+                                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Heavyweight concrete"@en ,
+                                                                                                            "Schwerbeton"@de .
+
+
+###  https://w3id.org/lcabim/concreteclass/HighStrengthConcrete
+<https://w3id.org/lcabim/concreteclass/HighStrengthConcrete> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.w3.org/2004/02/skos/core#Concept> ,
+                                                                      <https://w3id.org/lcabim/concreteclass/StrengthClass> ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/concreteclass/StrengthClassScheme> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "Compressive strength ≥40 MPa (e.g., ≥C35/45)"@en ,
+                                                                                                        "Druckfestigkeit ≥40 MPa (e.g., ≥C35/45)"@de ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "High-strength concrete"@en ,
+                                                                                                             "Hochfester Beton"@de .
+
+
+###  https://w3id.org/lcabim/concreteclass/LightWeightConcrete
+<https://w3id.org/lcabim/concreteclass/LightWeightConcrete> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.w3.org/2004/02/skos/core#Concept> ,
+                                                                     <https://w3id.org/lcabim/concreteclass/WeightClass> ;
+                                                            <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/concreteclass/WeightClassScheme> ;
+                                                            <http://www.w3.org/2004/02/skos/core#note> "Density 800-2000 kg/m³"@en ,
+                                                                                                       "Rohdichte 800-2000 kg/m³"@de ;
+                                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Leichtbeton"@de ,
+                                                                                                            "Lightweight concrete"@en .
+
+
+###  https://w3id.org/lcabim/concreteclass/LowStrengthConcrete
+<https://w3id.org/lcabim/concreteclass/LowStrengthConcrete> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.w3.org/2004/02/skos/core#Concept> ,
+                                                                     <https://w3id.org/lcabim/concreteclass/StrengthClass> ;
+                                                            <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/concreteclass/StrengthClassScheme> ;
+                                                            <http://www.w3.org/2004/02/skos/core#note> "Compressive strength <25 MPa (e.g., ≤C16/20)"@en ,
+                                                                                                       "Druckfestigkeit <25 MPa (e.g., ≤C16/20)"@de ;
+                                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Low-strength concrete"@en ,
+                                                                                                            "Niedrigfester Beton"@de .
+
+
+###  https://w3id.org/lcabim/concreteclass/MediumStrengthConcrete
+<https://w3id.org/lcabim/concreteclass/MediumStrengthConcrete> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.w3.org/2004/02/skos/core#Concept> ,
+                                                                        <https://w3id.org/lcabim/concreteclass/StrengthClass> ;
+                                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/concreteclass/StrengthClassScheme> ;
+                                                               <http://www.w3.org/2004/02/skos/core#note> "Compressive strength 25-40 MPa (e.g., C20/25-C30/37)"@en ,
+                                                                                                          "Druckfestigkeit 25-40 MPa (e.g., C20/25-C30/37)"@de ;
+                                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Medium-strength concrete"@en ,
+                                                                                                               "Mittelfester Beton"@de .
+
+
+###  https://w3id.org/lcabim/concreteclass/NormalWeightConcrete
+<https://w3id.org/lcabim/concreteclass/NormalWeightConcrete> rdf:type owl:NamedIndividual ,
+                                                                      <http://www.w3.org/2004/02/skos/core#Concept> ,
+                                                                      <https://w3id.org/lcabim/concreteclass/WeightClass> ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/concreteclass/WeightClassScheme> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "Density 2000-2600 kg/m³"@en ,
+                                                                                                        "Rohdichte 2000-2600 kg/m³"@de ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Normalbeton"@de ,
+                                                                                                             "Normalweight concrete"@en .
+
+
+###  https://w3id.org/lcabim/concreteclass/StrengthClassScheme
+<https://w3id.org/lcabim/concreteclass/StrengthClassScheme> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Beton-Druckfestigkeitsklassen"@de ,
+                                                                                                            "Concrete strength classes"@en .
+
+
+###  https://w3id.org/lcabim/concreteclass/WeightClassScheme
+<https://w3id.org/lcabim/concreteclass/WeightClassScheme> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Beton-Rohdichteklassen"@de ,
+                                                                                                          "Concrete density classes"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

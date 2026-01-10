@@ -1,0 +1,642 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "de", "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/lcabim/concreteclass", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "de" : "Vokabular zur Anreicherung von Betonklassen",
+      "en" : "Concrete class enrichment vocabulary"
+    },
+    "iri" : "https://w3id.org/lcabim/concreteclass",
+    "version" : "0.1.0",
+    "description" : {
+      "de" : "Projektspezifische SKOS-Konzepte und Verknüpfungseigenschaften für abgeleitete Beton-Druckfestigkeits- und Rohdichteklassen.",
+      "en" : "Project-specific SKOS concepts and linking properties for derived concrete strength and density classes."
+    },
+    "other" : {
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Concrete class enrichment vocabulary",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "de",
+        "value" : "Vokabular zur Anreicherung von Betonklassen",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConceptScheme"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/lcabim/concreteclass/WeightClassScheme",
+      "baseIri" : "https://w3id.org/lcabim/concreteclass",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Beton-Rohdichteklassen",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Concrete density classes",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "WeightClassScheme"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/concreteclass/StrengthClassScheme",
+      "baseIri" : "https://w3id.org/lcabim/concreteclass",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Beton-Druckfestigkeitsklassen",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Concrete strength classes",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "StrengthClassScheme"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/lcabim/concreteclass/StrengthClass",
+    "baseIri" : "https://w3id.org/lcabim/concreteclass",
+    "instances" : 0,
+    "label" : {
+      "de" : "Beton-Druckfestigkeitsklasse",
+      "IRI-based" : "StrengthClass",
+      "en" : "Concrete strength class"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/lcabim/concreteclass/LowStrengthConcrete",
+      "baseIri" : "https://w3id.org/lcabim/concreteclass",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Compressive strength <25 MPa (e.g., ≤C16/20)",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Druckfestigkeit <25 MPa (e.g., ≤C16/20)",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/concreteclass/StrengthClassScheme",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Niedrigfester Beton",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Low-strength concrete",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "LowStrengthConcrete"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/concreteclass/MediumStrengthConcrete",
+      "baseIri" : "https://w3id.org/lcabim/concreteclass",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Druckfestigkeit 25-40 MPa (e.g., C20/25-C30/37)",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Compressive strength 25-40 MPa (e.g., C20/25-C30/37)",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/concreteclass/StrengthClassScheme",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Mittelfester Beton",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Medium-strength concrete",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MediumStrengthConcrete"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/concreteclass/HighStrengthConcrete",
+      "baseIri" : "https://w3id.org/lcabim/concreteclass",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Compressive strength ≥40 MPa (e.g., ≥C35/45)",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Druckfestigkeit ≥40 MPa (e.g., ≥C35/45)",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/concreteclass/StrengthClassScheme",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Hochfester Beton",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "High-strength concrete",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "HighStrengthConcrete"
+      }
+    } ],
+    "comment" : {
+      "de" : "Ein SKOS-Konzept, das eine abgeleitete Druckfestigkeitsklasse repräsentiert.",
+      "en" : "A SKOS concept representing a derived compressive-strength class."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/lcabim/concreteclass/NormalWeightConcrete",
+      "baseIri" : "https://w3id.org/lcabim/concreteclass",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Rohdichte 2000-2600 kg/m³",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Density 2000-2600 kg/m³",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/concreteclass/WeightClassScheme",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Normalbeton",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Normalweight concrete",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NormalWeightConcrete"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/concreteclass/MediumStrengthConcrete",
+      "baseIri" : "https://w3id.org/lcabim/concreteclass",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Druckfestigkeit 25-40 MPa (e.g., C20/25-C30/37)",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Compressive strength 25-40 MPa (e.g., C20/25-C30/37)",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/concreteclass/StrengthClassScheme",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Mittelfester Beton",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Medium-strength concrete",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MediumStrengthConcrete"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/concreteclass/LowStrengthConcrete",
+      "baseIri" : "https://w3id.org/lcabim/concreteclass",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Compressive strength <25 MPa (e.g., ≤C16/20)",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Druckfestigkeit <25 MPa (e.g., ≤C16/20)",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/concreteclass/StrengthClassScheme",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Niedrigfester Beton",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Low-strength concrete",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "LowStrengthConcrete"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/concreteclass/LightWeightConcrete",
+      "baseIri" : "https://w3id.org/lcabim/concreteclass",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Rohdichte 800-2000 kg/m³",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Density 800-2000 kg/m³",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/concreteclass/WeightClassScheme",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Leichtbeton",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Lightweight concrete",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "LightWeightConcrete"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/concreteclass/HighStrengthConcrete",
+      "baseIri" : "https://w3id.org/lcabim/concreteclass",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Compressive strength ≥40 MPa (e.g., ≥C35/45)",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Druckfestigkeit ≥40 MPa (e.g., ≥C35/45)",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/concreteclass/StrengthClassScheme",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Hochfester Beton",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "High-strength concrete",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "HighStrengthConcrete"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/concreteclass/HeavyWeightConcrete",
+      "baseIri" : "https://w3id.org/lcabim/concreteclass",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Density >2600 kg/m³",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Rohdichte >2600 kg/m³",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/concreteclass/WeightClassScheme",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Heavyweight concrete",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Schwerbeton",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "HeavyWeightConcrete"
+      }
+    } ],
+    "subClasses" : [ "2", "5" ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/lcabim/concreteclass/WeightClass",
+    "baseIri" : "https://w3id.org/lcabim/concreteclass",
+    "instances" : 0,
+    "label" : {
+      "de" : "Beton-Rohdichteklasse",
+      "IRI-based" : "WeightClass",
+      "en" : "Concrete density class"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/lcabim/concreteclass/NormalWeightConcrete",
+      "baseIri" : "https://w3id.org/lcabim/concreteclass",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Rohdichte 2000-2600 kg/m³",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Density 2000-2600 kg/m³",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/concreteclass/WeightClassScheme",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Normalbeton",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Normalweight concrete",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NormalWeightConcrete"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/concreteclass/LightWeightConcrete",
+      "baseIri" : "https://w3id.org/lcabim/concreteclass",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Rohdichte 800-2000 kg/m³",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Density 800-2000 kg/m³",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/concreteclass/WeightClassScheme",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Leichtbeton",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Lightweight concrete",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "LightWeightConcrete"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/concreteclass/HeavyWeightConcrete",
+      "baseIri" : "https://w3id.org/lcabim/concreteclass",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Density >2600 kg/m³",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Rohdichte >2600 kg/m³",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/concreteclass/WeightClassScheme",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Heavyweight concrete",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Schwerbeton",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "HeavyWeightConcrete"
+      }
+    } ],
+    "comment" : {
+      "de" : "Ein SKOS-Konzept, das eine abgeleitete Rohdichteklasse repräsentiert.",
+      "en" : "A SKOS concept representing a derived density class."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "3" ]
+  } ],
+  "property" : [ {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "4"
+  }, {
+    "range" : "3",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/lcabim/concreteclass/hasWeightClassification",
+    "baseIri" : "https://w3id.org/lcabim/concreteclass",
+    "range" : "3",
+    "label" : {
+      "de" : "hat Rohdichteklassifikation",
+      "IRI-based" : "hasWeightClassification",
+      "en" : "has weight classification"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Verknüpft einen Datensatz mit einer abgeleiteten Rohdichteklasse (z. B. ergänzt mittels SHACL-Regeln).",
+      "en" : "Links a dataset to a derived density class (e.g., added via SHACL rules)."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/lcabim/concreteclass/hasStrengthClassification",
+    "baseIri" : "https://w3id.org/lcabim/concreteclass",
+    "range" : "3",
+    "label" : {
+      "de" : "hat Druckfestigkeitsklassifikation",
+      "IRI-based" : "hasStrengthClassification",
+      "en" : "has strength classification"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Verknüpft einen Datensatz mit einer abgeleiteten Druckfestigkeitsklasse (z. B. ergänzt mittels SHACL-Regeln).",
+      "en" : "Links a dataset to a derived compressive-strength class (e.g., added via SHACL rules)."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "8"
+  } ]
+}

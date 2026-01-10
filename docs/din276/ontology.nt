@@ -1,0 +1,80 @@
+<https://w3id.org/lcabim/din276> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lcabim/din276> <http://purl.org/dc/terms/description> "SKOS concept scheme and linking property for DIN 276 cost groups used to enrich ILCDx data instances and BKI elements."@en .
+<https://w3id.org/lcabim/din276> <http://purl.org/dc/terms/description> "SKOS-Konzeptschema und Verknüpfungseigenschaft für DIN 276 Kostengruppen zur Anreicherung von ILCDx-Dateninstanzen und BKI-Elementen."@de .
+<https://w3id.org/lcabim/din276> <http://purl.org/dc/terms/title> "DIN 276 Kostengruppen-Mapping-Vokabular"@de .
+<https://w3id.org/lcabim/din276> <http://purl.org/dc/terms/title> "DIN 276 cost group mapping vocabulary"@en .
+<https://w3id.org/lcabim/din276> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/lcabim/din276/hasDIN276CostGroup
+<https://w3id.org/lcabim/din276/hasDIN276CostGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lcabim/din276/hasDIN276CostGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lcabim/din276/hasDIN276CostGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a ILCDx data instance and BKI element to one or more DIN 276 cost group SKOS concepts."@en .
+<https://w3id.org/lcabim/din276/hasDIN276CostGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Verknüpft einen ILCDx-Dateninstanz und BKI-Element mit einem oder mehreren DIN 276 Kostengruppen (SKOS-Konzepte)."@de .
+<https://w3id.org/lcabim/din276/hasDIN276CostGroup> <http://www.w3.org/2000/01/rdf-schema#label> "has DIN 276 cost group"@en .
+<https://w3id.org/lcabim/din276/hasDIN276CostGroup> <http://www.w3.org/2000/01/rdf-schema#label> "hat DIN 276 Kostengruppe"@de .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/lcabim/din276/DIN276CostGroup
+<https://w3id.org/lcabim/din276/DIN276CostGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lcabim/din276/DIN276CostGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lcabim/din276/DIN276CostGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "A SKOS concept representing a DIN 276 cost group (e.g., 331)."@en .
+<https://w3id.org/lcabim/din276/DIN276CostGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Ein SKOS-Konzept, das eine DIN 276 Kostengruppe repräsentiert (z. B. 331)."@de .
+<https://w3id.org/lcabim/din276/DIN276CostGroup> <http://www.w3.org/2000/01/rdf-schema#label> "DIN 276 Kostengruppe"@de .
+<https://w3id.org/lcabim/din276/DIN276CostGroup> <http://www.w3.org/2000/01/rdf-schema#label> "DIN 276 cost group"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/lcabim/din276/DIN276
+<https://w3id.org/lcabim/din276/DIN276> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lcabim/din276/DIN276> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://w3id.org/lcabim/din276/DIN276> <http://www.w3.org/2004/02/skos/core#prefLabel> "DIN 276"@de .
+<https://w3id.org/lcabim/din276/DIN276> <http://www.w3.org/2004/02/skos/core#prefLabel> "DIN 276"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

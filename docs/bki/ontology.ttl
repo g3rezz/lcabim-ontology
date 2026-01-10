@@ -1,0 +1,114 @@
+@prefix : <https://w3id.org/lcabim/bki#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/lcabim/bki#> .
+
+<https://w3id.org/lcabim/bki> rdf:type owl:Ontology ;
+                               <http://purl.org/dc/terms/description> "Minimal vocabulary for modeling BKI elements and their material layers."@en ,
+                                                                      "Minimales Vokabular zur Modellierung von BKI-Elementen und deren Materialschichten."@de ;
+                               <http://purl.org/dc/terms/title> "BKI element template vocabulary"@en ,
+                                                                "Vokabular für BKI-Elementvorlagen"@de ;
+                               owl:versionInfo "0.1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/lcabim/bki/hasLayer
+<https://w3id.org/lcabim/bki/hasLayer> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://w3id.org/lcabim/bki/BKIElement> ;
+                                       rdfs:range <https://w3id.org/lcabim/bki/Layer> ;
+                                       rdfs:comment "Links a BKI element to one of its layers."@en ,
+                                                    "Verknüpft ein BKI-Element mit einer seiner Schichten."@de ;
+                                       rdfs:label "has layer"@en ,
+                                                  "hat Schicht"@de .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/lcabim/bki/description
+<https://w3id.org/lcabim/bki/description> rdf:type owl:DatatypeProperty ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:comment "Human-readable description of a resource."@en ,
+                                                       "Menschenlesbare Beschreibung einer Ressource."@de ;
+                                          rdfs:label "Beschreibung"@de ,
+                                                     "description"@en .
+
+
+###  https://w3id.org/lcabim/bki/layerSize
+<https://w3id.org/lcabim/bki/layerSize> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <https://w3id.org/lcabim/bki/Layer> ;
+                                        rdfs:range xsd:float ;
+                                        rdfs:comment "Layer thickness, typically in meters."@en ,
+                                                     "Schichtdicke, typischerweise in Metern."@de ;
+                                        rdfs:label "Schichtdicke"@de ,
+                                                   "layer thickness"@en .
+
+
+###  https://w3id.org/lcabim/bki/lifeTime
+<https://w3id.org/lcabim/bki/lifeTime> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://w3id.org/lcabim/bki/Layer> ;
+                                       rdfs:range xsd:integer ;
+                                       rdfs:comment "Reference service life of a layer in years."@en ,
+                                                    "Referenz-Nutzungsdauer einer Schicht in Jahren."@de ;
+                                       rdfs:label "Nutzungsdauer"@de ,
+                                                  "service life"@en .
+
+
+###  https://w3id.org/lcabim/bki/name
+<https://w3id.org/lcabim/bki/name> rdf:type owl:DatatypeProperty ;
+                                   rdfs:range xsd:string ;
+                                   rdfs:comment "Human-readable name of a resource."@en ,
+                                                "Menschenlesbarer Name einer Ressource."@de ;
+                                   rdfs:label "Name"@de ,
+                                              "name"@en .
+
+
+###  https://w3id.org/lcabim/bki/processConfigName
+<https://w3id.org/lcabim/bki/processConfigName> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <https://w3id.org/lcabim/bki/Layer> ;
+                                                rdfs:range xsd:string ;
+                                                rdfs:comment "Human-readable material/process identifier used to map a layer to ILCDx data instances."@en ,
+                                                             "Menschenlesbarer Material-/Prozess-Identifier zur Zuordnung einer Schicht zu ILCDx-Dateninstanzen."@de ;
+                                                rdfs:label "Prozess-Konfigurationsname"@de ,
+                                                           "process config name"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/lcabim/bki/BKIElement
+<https://w3id.org/lcabim/bki/BKIElement> rdf:type owl:Class ;
+                                         rdfs:comment "A building component template."@en ,
+                                                      "Eine Bauteilvorlage."@de ;
+                                         rdfs:label "BKI element"@en ,
+                                                    "BKI-Element"@de .
+
+
+###  https://w3id.org/lcabim/bki/Layer
+<https://w3id.org/lcabim/bki/Layer> rdf:type owl:Class ;
+                                    rdfs:comment "A material layer within a BKI element definition (thickness, lifetime, and a configured process name)."@en ,
+                                                 "Eine Materialschicht innerhalb einer BKI-Elementdefinition (Dicke, Lebensdauer und ein konfigurierter Prozessname)."@de ;
+                                    rdfs:label "Layer"@en ,
+                                               "Schicht"@de .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,251 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "de", "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/lcabim/bki", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "de" : "Vokabular für BKI-Elementvorlagen",
+      "en" : "BKI element template vocabulary"
+    },
+    "iri" : "https://w3id.org/lcabim/bki",
+    "version" : "0.1.0",
+    "description" : {
+      "de" : "Minimales Vokabular zur Modellierung von BKI-Elementen und deren Materialschichten.",
+      "en" : "Minimal vocabulary for modeling BKI elements and their material layers."
+    },
+    "other" : {
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "de",
+        "value" : "Vokabular für BKI-Elementvorlagen",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "BKI element template vocabulary",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "4",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/lcabim/bki/BKIElement",
+    "baseIri" : "https://w3id.org/lcabim/bki",
+    "instances" : 0,
+    "label" : {
+      "de" : "BKI-Element",
+      "IRI-based" : "BKIElement",
+      "en" : "BKI element"
+    },
+    "comment" : {
+      "de" : "Eine Bauteilvorlage.",
+      "en" : "A building component template."
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/lcabim/bki/Layer",
+    "baseIri" : "https://w3id.org/lcabim/bki",
+    "instances" : 0,
+    "label" : {
+      "de" : "Schicht",
+      "IRI-based" : "Layer",
+      "en" : "Layer"
+    },
+    "comment" : {
+      "de" : "Eine Materialschicht innerhalb einer BKI-Elementdefinition (Dicke, Lebensdauer und ein konfigurierter Prozessname).",
+      "en" : "A material layer within a BKI element definition (thickness, lifetime, and a configured process name)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/lcabim/bki/layerSize",
+    "baseIri" : "https://w3id.org/lcabim/bki",
+    "range" : "2",
+    "label" : {
+      "de" : "Schichtdicke",
+      "IRI-based" : "layerSize",
+      "en" : "layer thickness"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Schichtdicke, typischerweise in Metern.",
+      "en" : "Layer thickness, typically in meters."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/lcabim/bki/description",
+    "baseIri" : "https://w3id.org/lcabim/bki",
+    "range" : "5",
+    "label" : {
+      "de" : "Beschreibung",
+      "IRI-based" : "description",
+      "en" : "description"
+    },
+    "domain" : "4",
+    "comment" : {
+      "de" : "Menschenlesbare Beschreibung einer Ressource.",
+      "en" : "Human-readable description of a resource."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/lcabim/bki/processConfigName",
+    "baseIri" : "https://w3id.org/lcabim/bki",
+    "range" : "8",
+    "label" : {
+      "de" : "Prozess-Konfigurationsname",
+      "IRI-based" : "processConfigName",
+      "en" : "process config name"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Menschenlesbarer Material-/Prozess-Identifier zur Zuordnung einer Schicht zu ILCDx-Dateninstanzen.",
+      "en" : "Human-readable material/process identifier used to map a layer to ILCDx data instances."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/lcabim/bki/hasLayer",
+    "baseIri" : "https://w3id.org/lcabim/bki",
+    "range" : "1",
+    "label" : {
+      "de" : "hat Schicht",
+      "IRI-based" : "hasLayer",
+      "en" : "has layer"
+    },
+    "domain" : "10",
+    "comment" : {
+      "de" : "Verknüpft ein BKI-Element mit einer seiner Schichten.",
+      "en" : "Links a BKI element to one of its layers."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/lcabim/bki/lifeTime",
+    "baseIri" : "https://w3id.org/lcabim/bki",
+    "range" : "6",
+    "label" : {
+      "de" : "Nutzungsdauer",
+      "IRI-based" : "lifeTime",
+      "en" : "service life"
+    },
+    "domain" : "1",
+    "comment" : {
+      "de" : "Referenz-Nutzungsdauer einer Schicht in Jahren.",
+      "en" : "Reference service life of a layer in years."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/lcabim/bki/name",
+    "baseIri" : "https://w3id.org/lcabim/bki",
+    "range" : "7",
+    "label" : {
+      "de" : "Name",
+      "IRI-based" : "name",
+      "en" : "name"
+    },
+    "domain" : "4",
+    "comment" : {
+      "de" : "Menschenlesbarer Name einer Ressource.",
+      "en" : "Human-readable name of a resource."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "13"
+  } ]
+}

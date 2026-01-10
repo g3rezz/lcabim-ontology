@@ -1,0 +1,142 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "de", "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/lcabim/din276", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "de" : "DIN 276 Kostengruppen-Mapping-Vokabular",
+      "en" : "DIN 276 cost group mapping vocabulary"
+    },
+    "iri" : "https://w3id.org/lcabim/din276",
+    "version" : "0.1.0",
+    "description" : {
+      "de" : "SKOS-Konzeptschema und Verknüpfungseigenschaft für DIN 276 Kostengruppen zur Anreicherung von ILCDx-Dateninstanzen und BKI-Elementen.",
+      "en" : "SKOS concept scheme and linking property for DIN 276 cost groups used to enrich ILCDx data instances and BKI elements."
+    },
+    "other" : {
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "de",
+        "value" : "DIN 276 Kostengruppen-Mapping-Vokabular",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "DIN 276 cost group mapping vocabulary",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConceptScheme"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/lcabim/din276/DIN276",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "DIN 276",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "DIN 276",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "DIN276"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "2",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/lcabim/din276/DIN276CostGroup",
+    "baseIri" : "https://w3id.org/lcabim/din276",
+    "instances" : 0,
+    "label" : {
+      "de" : "DIN 276 Kostengruppe",
+      "IRI-based" : "DIN276CostGroup",
+      "en" : "DIN 276 cost group"
+    },
+    "comment" : {
+      "de" : "Ein SKOS-Konzept, das eine DIN 276 Kostengruppe repräsentiert (z. B. 331).",
+      "en" : "A SKOS concept representing a DIN 276 cost group (e.g., 331)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "subClasses" : [ "5" ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/lcabim/din276/hasDIN276CostGroup",
+    "baseIri" : "https://w3id.org/lcabim/din276",
+    "range" : "3",
+    "label" : {
+      "de" : "hat DIN 276 Kostengruppe",
+      "IRI-based" : "hasDIN276CostGroup",
+      "en" : "has DIN 276 cost group"
+    },
+    "domain" : "2",
+    "comment" : {
+      "de" : "Verknüpft einen ILCDx-Dateninstanz und BKI-Element mit einem oder mehreren DIN 276 Kostengruppen (SKOS-Konzepte).",
+      "en" : "Links a ILCDx data instance and BKI element to one or more DIN 276 cost group SKOS concepts."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "1"
+  }, {
+    "range" : "3",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "4"
+  } ]
+}

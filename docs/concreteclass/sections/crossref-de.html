@@ -1,0 +1,350 @@
+<h2 id="crossreference" class="list">Querverweis f&uuml;r... Vokabular zur Anreicherung von Betonklassen Klassen, Object Properties und Data Properties<span class="backlink"> zur&uuml;ck zum <a href="#toc">Inhaltsverzeichnis</a></span></h2>
+Dieser Abschnitt enth&auml;lt Details f&uuml;r jede Klasse und jedes definierte Property, die definiert wurden durch Vokabular zur Anreicherung von Betonklassen.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Klassen</h3>
+ <ul class="hlist">
+  <li><a href="#/StrengthClass" title="https://w3id.org/lcabim/concreteclass/StrengthClass">Beton-Druckfestigkeitsklasse</a></li>
+  <li><a href="#/WeightClass" title="https://w3id.org/lcabim/concreteclass/WeightClass">Beton-Rohdichteklasse</a></li>
+ </ul>
+ <div class="entity" id="/StrengthClass">
+  <h3>Beton-Druckfestigkeitsklasse<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/lcabim/concreteclass/StrengthClass</p>
+  <div class="comment">
+   <span class="markdown">Ein SKOS-Konzept, das eine abgeleitete Druckfestigkeitsklasse repräsentiert.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Super-Klassen
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    hat Member
+   </dt>
+   <dd>
+    <a href="#/HighStrengthConcrete" title="https://w3id.org/lcabim/concreteclass/HighStrengthConcrete">Hochfester Beton</a> <sup class="type-ni" title="benanntes Individuum">ni</sup>, <a href="#/MediumStrengthConcrete" title="https://w3id.org/lcabim/concreteclass/MediumStrengthConcrete">Mittelfester Beton</a> <sup class="type-ni" title="benanntes Individuum">ni</sup>, <a href="#/LowStrengthConcrete" title="https://w3id.org/lcabim/concreteclass/LowStrengthConcrete">Niedrigfester Beton</a> <sup class="type-ni" title="benanntes Individuum">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/WeightClass">
+  <h3>Beton-Rohdichteklasse<sup class="type-c" title="Klasse">c</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#classes">Klassenübersicht</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/lcabim/concreteclass/WeightClass</p>
+  <div class="comment">
+   <span class="markdown">Ein SKOS-Konzept, das eine abgeleitete Rohdichteklasse repräsentiert.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    hat Super-Klassen
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    hat Member
+   </dt>
+   <dd>
+    <a href="#/LightWeightConcrete" title="https://w3id.org/lcabim/concreteclass/LightWeightConcrete">Leichtbeton</a> <sup class="type-ni" title="benanntes Individuum">ni</sup>, <a href="#/NormalWeightConcrete" title="https://w3id.org/lcabim/concreteclass/NormalWeightConcrete">Normalbeton</a> <sup class="type-ni" title="benanntes Individuum">ni</sup>, <a href="#/HeavyWeightConcrete" title="https://w3id.org/lcabim/concreteclass/HeavyWeightConcrete">Schwerbeton</a> <sup class="type-ni" title="benanntes Individuum">ni</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h2>Objekt Eigenschaften</h2>
+ <ul class="hlist">
+  <li><a href="#/hasStrengthClassification" title="https://w3id.org/lcabim/concreteclass/hasStrengthClassification">hat Druckfestigkeitsklassifikation</a></li>
+  <li><a href="#/hasWeightClassification" title="https://w3id.org/lcabim/concreteclass/hasWeightClassification">hat Rohdichteklassifikation</a></li>
+ </ul>
+ <div class="entity" id="/hasStrengthClassification">
+  <h3>hat Druckfestigkeitsklassifikation<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/lcabim/concreteclass/hasStrengthClassification</p>
+  <div class="comment">
+   <span class="markdown">Verknüpft einen Datensatz mit einer abgeleiteten Druckfestigkeitsklasse (z. B. ergänzt mittels SHACL-Regeln).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasWeightClassification">
+  <h3>hat Rohdichteklassifikation<sup class="type-op" title="Objekt Eigenschaft">op</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#objectproperties">Übersicht der Objekteigenschaften</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/lcabim/concreteclass/hasWeightClassification</p>
+  <div class="comment">
+   <span class="markdown">Verknüpft einen Datensatz mit einer abgeleiteten Rohdichteklasse (z. B. ergänzt mittels SHACL-Regeln).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     hat Range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="Klasse">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h2>benannte Individuen</h2>
+ <ul class="hlist">
+  <li><a href="#/StrengthClassScheme" title="https://w3id.org/lcabim/concreteclass/StrengthClassScheme">Beton-Druckfestigkeitsklassen</a></li>
+  <li><a href="#/WeightClassScheme" title="https://w3id.org/lcabim/concreteclass/WeightClassScheme">Beton-Rohdichteklassen</a></li>
+  <li><a href="#/HighStrengthConcrete" title="https://w3id.org/lcabim/concreteclass/HighStrengthConcrete">Hochfester Beton</a></li>
+  <li><a href="#/LightWeightConcrete" title="https://w3id.org/lcabim/concreteclass/LightWeightConcrete">Leichtbeton</a></li>
+  <li><a href="#/MediumStrengthConcrete" title="https://w3id.org/lcabim/concreteclass/MediumStrengthConcrete">Mittelfester Beton</a></li>
+  <li><a href="#/LowStrengthConcrete" title="https://w3id.org/lcabim/concreteclass/LowStrengthConcrete">Niedrigfester Beton</a></li>
+  <li><a href="#/NormalWeightConcrete" title="https://w3id.org/lcabim/concreteclass/NormalWeightConcrete">Normalbeton</a></li>
+  <li><a href="#/HeavyWeightConcrete" title="https://w3id.org/lcabim/concreteclass/HeavyWeightConcrete">Schwerbeton</a></li>
+ </ul>
+ <div class="entity" id="/StrengthClassScheme">
+  <h3>Beton-Druckfestigkeitsklassen<sup class="type-ni" title="benanntes Individuum">ni</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#namedindividuals">Übersicht der benannten Individuen</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/lcabim/concreteclass/StrengthClassScheme</p>
+  <dl class="description">
+   <dt>
+    gehört zu
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    hat Fakten
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Beton-Druckfestigkeitsklassen"@de</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Concrete strength classes"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/WeightClassScheme">
+  <h3>Beton-Rohdichteklassen<sup class="type-ni" title="benanntes Individuum">ni</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#namedindividuals">Übersicht der benannten Individuen</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/lcabim/concreteclass/WeightClassScheme</p>
+  <dl class="description">
+   <dt>
+    gehört zu
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    hat Fakten
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Beton-Rohdichteklassen"@de</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Concrete density classes"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/HighStrengthConcrete">
+  <h3>Hochfester Beton<sup class="type-ni" title="benanntes Individuum">ni</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#namedindividuals">Übersicht der benannten Individuen</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/lcabim/concreteclass/HighStrengthConcrete</p>
+  <dl class="description">
+   <dt>
+    gehört zu
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dd>
+    <a href="#/StrengthClass" title="https://w3id.org/lcabim/concreteclass/StrengthClass">Beton-Druckfestigkeitsklasse</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    hat Fakten
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <a href="#/StrengthClassScheme" title="https://w3id.org/lcabim/concreteclass/StrengthClassScheme">Beton-Druckfestigkeitsklassen</a> <sup class="type-ni" title="benanntes Individuum">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Compressive strength ≥40 MPa (e.g., ≥C35/45)"@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Druckfestigkeit ≥40 MPa (e.g., ≥C35/45)"@de</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"High-strength concrete"@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Hochfester Beton"@de</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/LightWeightConcrete">
+  <h3>Leichtbeton<sup class="type-ni" title="benanntes Individuum">ni</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#namedindividuals">Übersicht der benannten Individuen</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/lcabim/concreteclass/LightWeightConcrete</p>
+  <dl class="description">
+   <dt>
+    gehört zu
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dd>
+    <a href="#/WeightClass" title="https://w3id.org/lcabim/concreteclass/WeightClass">Beton-Rohdichteklasse</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    hat Fakten
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <a href="#/WeightClassScheme" title="https://w3id.org/lcabim/concreteclass/WeightClassScheme">Beton-Rohdichteklassen</a> <sup class="type-ni" title="benanntes Individuum">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Density 800-2000 kg/m³"@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Rohdichte 800-2000 kg/m³"@de</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Leichtbeton"@de</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Lightweight concrete"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/MediumStrengthConcrete">
+  <h3>Mittelfester Beton<sup class="type-ni" title="benanntes Individuum">ni</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#namedindividuals">Übersicht der benannten Individuen</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/lcabim/concreteclass/MediumStrengthConcrete</p>
+  <dl class="description">
+   <dt>
+    gehört zu
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dd>
+    <a href="#/StrengthClass" title="https://w3id.org/lcabim/concreteclass/StrengthClass">Beton-Druckfestigkeitsklasse</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    hat Fakten
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <a href="#/StrengthClassScheme" title="https://w3id.org/lcabim/concreteclass/StrengthClassScheme">Beton-Druckfestigkeitsklassen</a> <sup class="type-ni" title="benanntes Individuum">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Compressive strength 25-40 MPa (e.g., C20/25-C30/37)"@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Druckfestigkeit 25-40 MPa (e.g., C20/25-C30/37)"@de</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Medium-strength concrete"@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Mittelfester Beton"@de</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/LowStrengthConcrete">
+  <h3>Niedrigfester Beton<sup class="type-ni" title="benanntes Individuum">ni</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#namedindividuals">Übersicht der benannten Individuen</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/lcabim/concreteclass/LowStrengthConcrete</p>
+  <dl class="description">
+   <dt>
+    gehört zu
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dd>
+    <a href="#/StrengthClass" title="https://w3id.org/lcabim/concreteclass/StrengthClass">Beton-Druckfestigkeitsklasse</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    hat Fakten
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <a href="#/StrengthClassScheme" title="https://w3id.org/lcabim/concreteclass/StrengthClassScheme">Beton-Druckfestigkeitsklassen</a> <sup class="type-ni" title="benanntes Individuum">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Compressive strength &lt;25 MPa (e.g., ≤C16/20)"@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Druckfestigkeit &lt;25 MPa (e.g., ≤C16/20)"@de</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Low-strength concrete"@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Niedrigfester Beton"@de</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/NormalWeightConcrete">
+  <h3>Normalbeton<sup class="type-ni" title="benanntes Individuum">ni</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#namedindividuals">Übersicht der benannten Individuen</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/lcabim/concreteclass/NormalWeightConcrete</p>
+  <dl class="description">
+   <dt>
+    gehört zu
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dd>
+    <a href="#/WeightClass" title="https://w3id.org/lcabim/concreteclass/WeightClass">Beton-Rohdichteklasse</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    hat Fakten
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <a href="#/WeightClassScheme" title="https://w3id.org/lcabim/concreteclass/WeightClassScheme">Beton-Rohdichteklassen</a> <sup class="type-ni" title="benanntes Individuum">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Density 2000-2600 kg/m³"@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Rohdichte 2000-2600 kg/m³"@de</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Normalbeton"@de</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Normalweight concrete"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/HeavyWeightConcrete">
+  <h3>Schwerbeton<sup class="type-ni" title="benanntes Individuum">ni</sup> <span class="backlink"> zurück zur <a href="#toc">Übersicht</a> oder <a href="#namedindividuals">Übersicht der benannten Individuen</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/lcabim/concreteclass/HeavyWeightConcrete</p>
+  <dl class="description">
+   <dt>
+    gehört zu
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dd>
+    <a href="#/WeightClass" title="https://w3id.org/lcabim/concreteclass/WeightClass">Beton-Rohdichteklasse</a> <sup class="type-c" title="Klasse">c</sup>
+   </dd>
+   <dt>
+    hat Fakten
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <a href="#/WeightClassScheme" title="https://w3id.org/lcabim/concreteclass/WeightClassScheme">Beton-Rohdichteklassen</a> <sup class="type-ni" title="benanntes Individuum">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Density &gt;2600 kg/m³"@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Rohdichte &gt;2600 kg/m³"@de</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Heavyweight concrete"@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="Anmerkungseigenschaft">ap</sup> <span class="literal">"Schwerbeton"@de</span>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legende <span class="backlink"> zur&uuml;ck zu <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Klassen">c</sup>: Klassen <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>

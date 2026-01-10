@@ -1,0 +1,80 @@
+<https://w3id.org/lcabim/obd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lcabim/obd> <http://purl.org/dc/terms/description> "SKOS concept scheme and linking property for canonical OEKOBAU.DAT categories used to normalize source classification literals."@en .
+<https://w3id.org/lcabim/obd> <http://purl.org/dc/terms/description> "SKOS-Konzeptschema und Verknüpfungseigenschaft für kanonische ÖKOBAUDAT-Kategorien zur Normalisierung von Quell-Klassifikationswerten."@de .
+<https://w3id.org/lcabim/obd> <http://purl.org/dc/terms/title> "OEKOBAU.DAT canonical category vocabulary"@en .
+<https://w3id.org/lcabim/obd> <http://purl.org/dc/terms/title> "ÖKOBAUDAT Vokabular kanonischer Kategorien"@de .
+<https://w3id.org/lcabim/obd> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/lcabim/obd/hasCanonicalCategory
+<https://w3id.org/lcabim/obd/hasCanonicalCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lcabim/obd/hasCanonicalCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lcabim/obd/hasCanonicalCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a source classification entry (often a literal) to a canonical SKOS category (e.g., OEKOBAU.DAT English concept)."@en .
+<https://w3id.org/lcabim/obd/hasCanonicalCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Verknüpft einen Quell-Klassifikationseintrag (oft ein Literal) mit einer kanonischen SKOS-Kategorie (z. B. ÖKOBAUDAT-Konzept in Englisch)."@de .
+<https://w3id.org/lcabim/obd/hasCanonicalCategory> <http://www.w3.org/2000/01/rdf-schema#label> "has canonical category"@en .
+<https://w3id.org/lcabim/obd/hasCanonicalCategory> <http://www.w3.org/2000/01/rdf-schema#label> "hat kanonische Kategorie"@de .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/lcabim/obd/OEKOBAUDATCategory
+<https://w3id.org/lcabim/obd/OEKOBAUDATCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lcabim/obd/OEKOBAUDATCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lcabim/obd/OEKOBAUDATCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "A SKOS concept representing a canonical OEKOBAU.DAT category."@en .
+<https://w3id.org/lcabim/obd/OEKOBAUDATCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Ein SKOS-Konzept, das eine kanonische ÖKOBAUDAT-Kategorie repräsentiert."@de .
+<https://w3id.org/lcabim/obd/OEKOBAUDATCategory> <http://www.w3.org/2000/01/rdf-schema#label> "OEKOBAU.DAT category"@en .
+<https://w3id.org/lcabim/obd/OEKOBAUDATCategory> <http://www.w3.org/2000/01/rdf-schema#label> "ÖKOBAUDAT Kategorie"@de .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/lcabim/obd/OEKOBAU_DAT
+<https://w3id.org/lcabim/obd/OEKOBAU_DAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lcabim/obd/OEKOBAU_DAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://w3id.org/lcabim/obd/OEKOBAU_DAT> <http://www.w3.org/2004/02/skos/core#prefLabel> "OEKOBAU.DAT"@en .
+<https://w3id.org/lcabim/obd/OEKOBAU_DAT> <http://www.w3.org/2004/02/skos/core#prefLabel> "ÖKOBAUDAT"@de .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

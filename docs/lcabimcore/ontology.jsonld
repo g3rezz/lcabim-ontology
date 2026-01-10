@@ -1,0 +1,38 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/lcabim/lcabimcore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Umbrella ontology that imports the ILCD core schema generated from LinkML and project vocabularies for DIN 276, ÖKOBAUDAT categories, concrete classes, and BKI element/layer modeling."
+  }, {
+    "@language" : "de",
+    "@value" : "Umbrella-Ontologie, die das aus LinkML generierte ILCD-Kernschema sowie Projektsvokabulare für DIN 276, ÖKOBAUDAT-Kategorien, Betonklassen und die BKI-Element-/Schichtmodellierung importiert."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "LCA-BIM Core Ontology (Umbrella)"
+  }, {
+    "@language" : "de",
+    "@value" : "LCA-BIM Kernontologie (Umbrella)"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/lcabim/bki/"
+  }, {
+    "@id" : "https://w3id.org/lcabim/concreteclass/"
+  }, {
+    "@id" : "https://w3id.org/lcabim/din276/"
+  }, {
+    "@id" : "https://w3id.org/lcabim/ilcd/"
+  }, {
+    "@id" : "https://w3id.org/lcabim/obd/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1.0"
+  } ]
+} ]

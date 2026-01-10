@@ -1,0 +1,193 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/lcabim/bki",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Minimal vocabulary for modeling BKI elements and their material layers."
+  }, {
+    "@language" : "de",
+    "@value" : "Minimales Vokabular zur Modellierung von BKI-Elementen und deren Materialschichten."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "BKI element template vocabulary"
+  }, {
+    "@language" : "de",
+    "@value" : "Vokabular für BKI-Elementvorlagen"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1.0"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/bki/BKIElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A building component template."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Bauteilvorlage."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BKI element"
+  }, {
+    "@language" : "de",
+    "@value" : "BKI-Element"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/bki/Layer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A material layer within a BKI element definition (thickness, lifetime, and a configured process name)."
+  }, {
+    "@language" : "de",
+    "@value" : "Eine Materialschicht innerhalb einer BKI-Elementdefinition (Dicke, Lebensdauer und ein konfigurierter Prozessname)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Layer"
+  }, {
+    "@language" : "de",
+    "@value" : "Schicht"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/bki/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Human-readable description of a resource."
+  }, {
+    "@language" : "de",
+    "@value" : "Menschenlesbare Beschreibung einer Ressource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Beschreibung"
+  }, {
+    "@language" : "en",
+    "@value" : "description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/bki/hasLayer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a BKI element to one of its layers."
+  }, {
+    "@language" : "de",
+    "@value" : "Verknüpft ein BKI-Element mit einer seiner Schichten."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/lcabim/bki/BKIElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has layer"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Schicht"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/lcabim/bki/Layer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/bki/layerSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Layer thickness, typically in meters."
+  }, {
+    "@language" : "de",
+    "@value" : "Schichtdicke, typischerweise in Metern."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/lcabim/bki/Layer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Schichtdicke"
+  }, {
+    "@language" : "en",
+    "@value" : "layer thickness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/bki/lifeTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reference service life of a layer in years."
+  }, {
+    "@language" : "de",
+    "@value" : "Referenz-Nutzungsdauer einer Schicht in Jahren."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/lcabim/bki/Layer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Nutzungsdauer"
+  }, {
+    "@language" : "en",
+    "@value" : "service life"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/bki/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Human-readable name of a resource."
+  }, {
+    "@language" : "de",
+    "@value" : "Menschenlesbarer Name einer Ressource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Name"
+  }, {
+    "@language" : "en",
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/bki/processConfigName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Human-readable material/process identifier used to map a layer to ILCDx data instances."
+  }, {
+    "@language" : "de",
+    "@value" : "Menschenlesbarer Material-/Prozess-Identifier zur Zuordnung einer Schicht zu ILCDx-Dateninstanzen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/lcabim/bki/Layer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Prozess-Konfigurationsname"
+  }, {
+    "@language" : "en",
+    "@value" : "process config name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+} ]

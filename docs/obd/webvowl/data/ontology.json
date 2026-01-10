@@ -1,0 +1,142 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "de", "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/lcabim/obd", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "de" : "ÖKOBAUDAT Vokabular kanonischer Kategorien",
+      "en" : "OEKOBAU.DAT canonical category vocabulary"
+    },
+    "iri" : "https://w3id.org/lcabim/obd",
+    "version" : "0.1.0",
+    "description" : {
+      "de" : "SKOS-Konzeptschema und Verknüpfungseigenschaft für kanonische ÖKOBAUDAT-Kategorien zur Normalisierung von Quell-Klassifikationswerten.",
+      "en" : "SKOS concept scheme and linking property for canonical OEKOBAU.DAT categories used to normalize source classification literals."
+    },
+    "other" : {
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "OEKOBAU.DAT canonical category vocabulary",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "de",
+        "value" : "ÖKOBAUDAT Vokabular kanonischer Kategorien",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/lcabim/obd/OEKOBAUDATCategory",
+    "baseIri" : "https://w3id.org/lcabim/obd",
+    "instances" : 0,
+    "label" : {
+      "de" : "ÖKOBAUDAT Kategorie",
+      "IRI-based" : "OEKOBAUDATCategory",
+      "en" : "OEKOBAU.DAT category"
+    },
+    "comment" : {
+      "de" : "Ein SKOS-Konzept, das eine kanonische ÖKOBAUDAT-Kategorie repräsentiert.",
+      "en" : "A SKOS concept representing a canonical OEKOBAU.DAT category."
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConceptScheme"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/lcabim/obd/OEKOBAU_DAT",
+      "baseIri" : "https://w3id.org/lcabim/obd",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "OEKOBAU.DAT",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "ÖKOBAUDAT",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "OEKOBAU_DAT"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "3",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "subClasses" : [ "0" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  } ],
+  "property" : [ {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/lcabim/obd/hasCanonicalCategory",
+    "baseIri" : "https://w3id.org/lcabim/obd",
+    "range" : "1",
+    "label" : {
+      "de" : "hat kanonische Kategorie",
+      "IRI-based" : "hasCanonicalCategory",
+      "en" : "has canonical category"
+    },
+    "domain" : "3",
+    "comment" : {
+      "de" : "Verknüpft einen Quell-Klassifikationseintrag (oft ein Literal) mit einer kanonischen SKOS-Kategorie (z. B. ÖKOBAUDAT-Konzept in Englisch).",
+      "en" : "Links a source classification entry (often a literal) to a canonical SKOS category (e.g., OEKOBAU.DAT English concept)."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "5"
+  } ]
+}
