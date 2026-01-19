@@ -1,0 +1,1967 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "de", "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/lcabim/ilcd", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/lcabim/ilcdind", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "de" : "LCABIM ILCD-LCA-Indikatoren",
+      "en" : "LCABIM ILCD LCA indicators"
+    },
+    "iri" : "https://w3id.org/lcabim/ilcdind",
+    "version" : "0.1.0",
+    "description" : {
+      "de" : "Projektvokabular von ILCD/EN-15804-Indikator-Konzepten (Codes, Labels und kanonische Einheiten) zur Normalisierung und Verknüpfung von LCIA-/Indikator-Ergebnissen.",
+      "en" : "Project vocabulary of ILCD/EN 15804 indicator concepts (codes, labels, and canonical units) used to normalize and link LCIA/indicator results."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "de",
+        "value" : "LCABIM ILCD-LCA-Indikatoren",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "LCABIM ILCD LCA indicators",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/lcabim/ilcd/LCIAResultEntry",
+    "baseIri" : "https://w3id.org/lcabim/ilcd",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LCIAResultEntry"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConceptScheme"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/lcabim/ILCD_Indicators",
+      "baseIri" : "https://w3id.org/lcabim",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "ILCD / EN 15804 Indikatoren",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "ILCD / EN 15804 indicators",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Gruppierungsschema für ILCD/EN-15804-Indikator-Konzepte, die in LCIA-/Indikator-Ergebniseinträgen verwendet werden.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Grouping scheme for ILCD/EN 15804 indicator concepts used in LCIA/indicator result entries.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ILCD_Indicators"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator",
+    "baseIri" : "https://w3id.org/lcabim/ilcdind",
+    "instances" : 0,
+    "label" : {
+      "de" : "ILCD-Indikator",
+      "IRI-based" : "ILCDIndicator",
+      "en" : "ILCD indicator"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/lcabim/ilcdind/MER",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/M_ER",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "MER",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Materials for energy recovery (MER)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Materialien zur energetischen Verwertung (MER)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Materials for energy recovery.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Materialien zur energetischen Verwertung.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MER"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/GWP_luluc",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_luluc",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "GWP-luluc",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Treibhauspotenzial - Landnutzung und Landnutzungsänderung (GWP-luluc)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Global warming potential - land use and land use change (GWP-luluc)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Anteil des Treibhauspotenzials aus Landnutzung und Landnutzungsänderung.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Land use and land use change component of global warming potential.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "GWP_luluc"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/GWP_fossil",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_fossil",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "GWP-fossil",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Treibhauspotenzial - fossile Brennstoffe (GWP-fossil)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Global warming potential - fossil fuels (GWP-fossil)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Fossil component of global warming potential.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Fossiler Anteil des Treibhauspotenzials.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "GWP_fossil"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/ADPF",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ADP_fossil",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "ADPF",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Abiotic depletion potential - fossil resources (ADPF)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Abiotisches Ressourcenverknappungspotenzial - fossile Ressourcen (ADPF)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Abiotisches Ressourcenverknappungspotenzial für fossile Ressourcen.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Abiotic depletion potential for fossil resources.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ADPF"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/EET",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EET",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "EET",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Exported thermal energy (EET)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Exportierte thermische Energie (EET)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Exportierte thermische Energie.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Exported thermal energy.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EET"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/ADPE",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ADP_MM",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "ADPE",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Abiotisches Ressourcenverknappungspotenzial - nicht fossile Ressourcen (ADPE)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Abiotic depletion potential - non-fossil resources (ADPE)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Abiotisches Ressourcenverknappungspotenzial für Mineralien und Metalle.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Abiotic depletion potential for minerals and metals.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ADPE"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/SQP",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/SQI",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "SQP",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Potenzialer Bodenqualitätsindex (SQP)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Potential soil quality index (SQP)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Indikator für bodenqualitätsbezogene Wirkungen.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Soil quality related impacts indicator.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SQP"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/GWP_total",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_total",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "GWP-total",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Treibhauspotenzial - gesamt (GWP-total)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Global warming potential - total (GWP-total)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Gesamtes Treibhauspotenzial.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Total global warming potential.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "GWP_total"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/HTP_nc",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/CTUh_NC",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "HTP-nc",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Potenzielle vergleichende Toxizitätseinheit für Menschen - Nicht-Krebswirkungen (HTP-nc)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Potential comparative toxic unit for humans - non-cancer effects (HTP-nc)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Humantoxizitätspotenzial für Nicht-Krebswirkungen.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Human toxicity potential for non-cancer effects.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "HTP_nc"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/PERE",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_RE",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "PERE",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Use of renewable primary energy (PERE)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Einsatz erneuerbarer Primärenergie (PERE)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Use of renewable primary energy.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Einsatz erneuerbarer Primärenergie.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PERE"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/AP",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/AE",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "AP",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Acidification potential, accumulated Exceedance (AP)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Versauerungspotenzial, akkumulierte Überschreitung (AP)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Maß für die Versauerung von Land- und Wasserökosystemen.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "A measure of the acidification caused to land and water.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "AP"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/CRU",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RU_C_KG",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "CRU",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Components for re-use (CRU)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Komponenten zur Wiederverwendung (CRU)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Komponenten zur Wiederverwendung.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Components for re-use.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "CRU"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/IRP",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/U235",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "IRP",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Potenzielle Expositionseffizienz relativ zu U235 (IRP)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Potential human exposure efficiency relative to U235 (IRP)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ionizing radiation potential for human health (relative to U235).",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Potenzial ionisierender Strahlung für die menschliche Gesundheit (relativ zu U235).",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IRP"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/PENRE",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_NRE",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "PENRE",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Use of non renewable primary energy (PENRE)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Einsatz nicht erneuerbarer Primärenergie (PENRE)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Use of non-renewable primary energy.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Einsatz nicht erneuerbarer Primärenergie.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PENRE"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/HTP_c",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/CTUh_C",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "HTP-c",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Potential comparative toxic unit for humans - cancer effects (HTP-c)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Potenzielle vergleichende Toxizitätseinheit für Menschen - Krebswirkungen (HTP-c)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Humantoxizitätspotenzial für Krebswirkungen.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Human toxicity potential for cancer effects.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "HTP_c"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/PENRT",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/non-renewableprimaryresourceswithenergycontent-tot",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "PENRT",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Total use of non renewable primary energy resource (PENRT)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Gesamter Einsatz nicht erneuerbarer Primärenergieressourcen (PENRT)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Gesamter Einsatz nicht erneuerbarer Primärenergieressourcen.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Total use of non-renewable primary energy resources.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PENRT"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/NRSF",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/NRSF",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "NRSF",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Use of non renewable secondary fuels (NRSF)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Einsatz nicht erneuerbarer Sekundärbrennstoffe (NRSF)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Einsatz nicht erneuerbarer Sekundärbrennstoffe.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Use of non-renewable secondary fuels.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NRSF"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/PM",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PM",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "PM",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Potenzielle Krankheitsinzidenz durch PM-Emissionen (PM)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Potential incidence of disease due to PM emissions (PM)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Impact category for particulate matter emissions.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Wirkungskategorie für Feinstaubemissionen (Particulate Matter).",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PM"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/PENRM",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_NRM",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "PENRM",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Einsatz nicht erneuerbarer Primärenergieressourcen als Rohstoffe (PENRM)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Use of non renewable primary energy resources used as raw materials (PENRM)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Nicht erneuerbare Primärenergieressourcen, die als Rohstoffe eingesetzt werden.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Non-renewable primary energy resources used as raw materials.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PENRM"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/EP_terrestrial",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_terrestrial",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "EP-terrestrial",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Eutrophication potential - terrestrial (EP-terrestrial)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Eutrophierungspotenzial - terrestrisch (EP-terrestrial)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Eutrophication potential for terrestrial environments.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Eutrophierungspotenzial für terrestrische Umweltkompartimente.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EP_terrestrial"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/ODP",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ODP",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "ODP",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Depletion potential of the stratospheric ozone layer (ODP)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Ozonabbaupotenzial der Stratosphäre (ODP)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ozone depletion potential.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Ozonabbaupotenzial.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ODP"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/MFR",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RC_M_KG",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "MFR",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Materials for recycling (MFR)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Materialien zum Recycling (MFR)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Materialien zum Recycling.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Materials for recycling.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MFR"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/EP_freshwater",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_freshwater",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "EP-freshwater",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Eutrophierungspotenzial - Süßwasser (EP-freshwater)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Eutrophication potential - freshwater (EP-freshwater)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Eutrophication potential for freshwater environments.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Eutrophierungspotenzial für Süßwasser-Umweltkompartimente.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EP_freshwater"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/SM",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/SM",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "SM",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Einsatz von Sekundärmaterial (SM)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Use of secondary material (SM)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Einsatz von Sekundärmaterial.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Use of secondary material.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SM"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/HWD",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDH",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "HWD",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Entsorgter gefährlicher Abfall (HWD)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Hazardous waste disposed (HWD)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Hazardous waste disposed.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Entsorgter gefährlicher Abfall.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "HWD"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/FW",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/FW",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "FW",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Nettoeinsatz von Süßwasser (FW)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Use of net fresh water (FW)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Net use of fresh water.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Nettoeinsatz von Süßwasser.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "FW"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/NHWD",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDNH",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "NHWD",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Entsorgter nicht gefährlicher Abfall (NHWD)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Non hazardous waste disposed (NHWD)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Entsorgter nicht gefährlicher Abfall.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Non-hazardous waste disposed.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NHWD"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/ETP_fw",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/eco-toxicityfreshwater",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "ETP-fw",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Potenzielle vergleichende Toxizitätseinheit für Ökosysteme (ETP-fw)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Potential comparative toxic unit for ecosystems (ETP-fw)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Vergleichende Toxizitätseinheit für Süßwasser-Ökosysteme.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Comparative toxic unit for freshwater ecosystems.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ETP_fw"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/POCP",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/POCP",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "POCP",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Photochemisches Ozonbildungspotenzial (POCP)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Photochemical ozone creation potential (POCP)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Photochemisches Ozonbildungspotenzial.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Photochemical ozone creation potential.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "POCP"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/EP_marine",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_marine",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "EP-marine",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Eutrophierungspotenzial - marin (EP-marine)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Eutrophication potential - marine (EP-marine)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Eutrophication potential for marine environments.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Eutrophierungspotenzial für marine Umweltkompartimente.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EP_marine"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/PERM",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_RM",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "PERM",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Einsatz erneuerbarer Primärenergieressourcen als Rohstoffe (PERM)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Use of renewable primary energy resources used as raw materials (PERM)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Renewable primary energy resources used as raw materials.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Erneuerbare Primärenergieressourcen, die als Rohstoffe eingesetzt werden.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PERM"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/EEE",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EEE",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "EEE",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Exported electrical energy (EEE)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Exportierte elektrische Energie (EEE)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Exported electrical energy.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Exportierte elektrische Energie.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EEE"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/RSF",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RSF",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "RSF",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Einsatz erneuerbarer Sekundärbrennstoffe (RSF)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Use of renewable secondary fuels (RSF)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Use of renewable secondary fuels.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Einsatz erneuerbarer Sekundärbrennstoffe.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RSF"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/WDP",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDP",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "WDP",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Wasserentzugspotenzial (WDP)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Water (user) deprivation potential (WDP)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Wasserentzugspotenzial.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Water deprivation potential.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "WDP"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/PERT",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/renewableprimaryresourceswithenergycontent-total",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "PERT",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Gesamter Einsatz erneuerbarer Primärenergieressourcen (PERT)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Total use of renewable primary energy resources (PERT)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Total use of renewable primary energy resources.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Gesamter Einsatz erneuerbarer Primärenergieressourcen.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PERT"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/GWP_biogenic",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_biogenic",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "GWP-biogenic",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Global warming potential - biogenic (GWP-biogenic)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Treibhauspotenzial - biogen (GWP-biogenic)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Biogenic component of global warming potential.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Biogener Anteil des Treibhauspotenzials.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "GWP_biogenic"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/ilcdind/RWD",
+      "baseIri" : "https://w3id.org/lcabim/ilcdind",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WR",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/ILCD_Indicators",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "RWD",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Radioactive waste disposed (RWD)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Entsorgter radioaktiver Abfall (RWD)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Radioactive waste disposed.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Entsorgter radioaktiver Abfall.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RWD"
+      }
+    } ],
+    "comment" : {
+      "de" : "Ein SKOS-Konzept, das einen standardisierten ILCD/EN-15804-Indikator (Code + kanonische Einheit) repräsentiert.",
+      "en" : "A SKOS concept representing a standardized ILCD/EN 15804 indicator (code + canonical unit)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "6" ]
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/lcabim/ilcdind/hasIndicator",
+    "baseIri" : "https://w3id.org/lcabim/ilcdind",
+    "range" : "3",
+    "label" : {
+      "de" : "hat Indikator",
+      "IRI-based" : "hasIndicator",
+      "en" : "has indicator"
+    },
+    "domain" : "0",
+    "comment" : {
+      "de" : "Verknüpft einen ILCD-LCIAResultEntry mit einem standardisierten ILCD/EN-15804-Indikator-Konzept.",
+      "en" : "Links an ILCD LCIAResultEntry to a standardized ILCD/EN 15804 indicator concept."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "2"
+  }, {
+    "range" : "6",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/lcabim/ilcdind/unit",
+    "baseIri" : "https://w3id.org/lcabim/ilcdind",
+    "range" : "4",
+    "label" : {
+      "de" : "Einheit",
+      "IRI-based" : "unit",
+      "en" : "unit"
+    },
+    "domain" : "3",
+    "comment" : {
+      "de" : "Kanonische Einheiten-Zeichenkette für den Indikator (z. B. MJ, kg CO2 eqv.).",
+      "en" : "Canonical unit string for the indicator (e.g., MJ, kg CO2 eqv.)."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "7"
+  } ]
+}

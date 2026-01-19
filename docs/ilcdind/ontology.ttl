@@ -1,0 +1,600 @@
+@prefix : <https://w3id.org/lcabim/ilcdind#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/lcabim/ilcdind#> .
+
+<https://w3id.org/lcabim/ilcdind> rdf:type owl:Ontology ;
+                                   <http://purl.org/dc/terms/description> "Project vocabulary of ILCD/EN 15804 indicator concepts (codes, labels, and canonical units) used to normalize and link LCIA/indicator results."@en ,
+                                                                          "Projektvokabular von ILCD/EN-15804-Indikator-Konzepten (Codes, Labels und kanonische Einheiten) zur Normalisierung und Verknüpfung von LCIA-/Indikator-Ergebnissen."@de ;
+                                   <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                   <http://purl.org/dc/terms/title> "LCABIM ILCD LCA indicators"@en ,
+                                                                    "LCABIM ILCD-LCA-Indikatoren"@de ;
+                                   owl:versionInfo "0.1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+<http://www.w3.org/2004/02/skos/core#exactMatch> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/lcabim/ilcdind/hasIndicator
+<https://w3id.org/lcabim/ilcdind/hasIndicator> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <https://w3id.org/lcabim/ilcd/LCIAResultEntry> ;
+                                               rdfs:range <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                               rdfs:comment "Links an ILCD LCIAResultEntry to a standardized ILCD/EN 15804 indicator concept."@en ,
+                                                            "Verknüpft einen ILCD-LCIAResultEntry mit einem standardisierten ILCD/EN-15804-Indikator-Konzept."@de ;
+                                               rdfs:label "has indicator"@en ,
+                                                          "hat Indikator"@de .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/lcabim/ilcdind/unit
+<https://w3id.org/lcabim/ilcdind/unit> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "Canonical unit string for the indicator (e.g., MJ, kg CO2 eqv.)."@en ,
+                                                    "Kanonische Einheiten-Zeichenkette für den Indikator (z. B. MJ, kg CO2 eqv.)."@de ;
+                                       rdfs:label "Einheit"@de ,
+                                                  "unit"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+###  https://w3id.org/lcabim/ilcd/LCIAResultEntry
+<https://w3id.org/lcabim/ilcd/LCIAResultEntry> rdf:type owl:Class .
+
+
+###  https://w3id.org/lcabim/ilcdind/ILCDIndicator
+<https://w3id.org/lcabim/ilcdind/ILCDIndicator> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                rdfs:comment "A SKOS concept representing a standardized ILCD/EN 15804 indicator (code + canonical unit)."@en ,
+                                                             "Ein SKOS-Konzept, das einen standardisierten ILCD/EN-15804-Indikator (Code + kanonische Einheit) repräsentiert."@de ;
+                                                rdfs:label "ILCD indicator"@en ,
+                                                           "ILCD-Indikator"@de .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/lcabim/ILCD_Indicators
+<https://w3id.org/lcabim/ILCD_Indicators> rdf:type owl:NamedIndividual ,
+                                                   <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "Grouping scheme for ILCD/EN 15804 indicator concepts used in LCIA/indicator result entries."@en ,
+                                                                                           "Gruppierungsschema für ILCD/EN-15804-Indikator-Konzepte, die in LCIA-/Indikator-Ergebniseinträgen verwendet werden."@de ;
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "ILCD / EN 15804 Indikatoren"@de ,
+                                                                                          "ILCD / EN 15804 indicators"@en .
+
+
+###  https://w3id.org/lcabim/ilcdind/ADPE
+<https://w3id.org/lcabim/ilcdind/ADPE> rdf:type owl:NamedIndividual ,
+                                                <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                       <https://w3id.org/lcabim/ilcdind/unit> "kg Sb-eqv." ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Abiotic depletion potential for minerals and metals."@en ,
+                                                                                        "Abiotisches Ressourcenverknappungspotenzial für Mineralien und Metalle."@de ;
+                                       <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ADP_MM> ;
+                                       <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                       <http://www.w3.org/2004/02/skos/core#notation> "ADPE" ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Abiotic depletion potential - non-fossil resources (ADPE)"@en ,
+                                                                                       "Abiotisches Ressourcenverknappungspotenzial - nicht fossile Ressourcen (ADPE)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/ADPF
+<https://w3id.org/lcabim/ilcdind/ADPF> rdf:type owl:NamedIndividual ,
+                                                <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                       <https://w3id.org/lcabim/ilcdind/unit> "MJ" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Abiotic depletion potential for fossil resources."@en ,
+                                                                                        "Abiotisches Ressourcenverknappungspotenzial für fossile Ressourcen."@de ;
+                                       <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ADP_fossil> ;
+                                       <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                       <http://www.w3.org/2004/02/skos/core#notation> "ADPF" ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Abiotic depletion potential - fossil resources (ADPF)"@en ,
+                                                                                       "Abiotisches Ressourcenverknappungspotenzial - fossile Ressourcen (ADPF)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/AP
+<https://w3id.org/lcabim/ilcdind/AP> rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                     <https://w3id.org/lcabim/ilcdind/unit> "mol H+ eqv." ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "A measure of the acidification caused to land and water."@en ,
+                                                                                      "Maß für die Versauerung von Land- und Wasserökosystemen."@de ;
+                                     <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/AE> ;
+                                     <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                     <http://www.w3.org/2004/02/skos/core#notation> "AP" ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Acidification potential, accumulated Exceedance (AP)"@en ,
+                                                                                     "Versauerungspotenzial, akkumulierte Überschreitung (AP)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/CRU
+<https://w3id.org/lcabim/ilcdind/CRU> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                      <https://w3id.org/lcabim/ilcdind/unit> "kg" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Components for re-use."@en ,
+                                                                                       "Komponenten zur Wiederverwendung."@de ;
+                                      <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RU_C_KG> ;
+                                      <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                      <http://www.w3.org/2004/02/skos/core#notation> "CRU" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Components for re-use (CRU)"@en ,
+                                                                                      "Komponenten zur Wiederverwendung (CRU)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/EEE
+<https://w3id.org/lcabim/ilcdind/EEE> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                      <https://w3id.org/lcabim/ilcdind/unit> "MJ" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Exported electrical energy."@en ,
+                                                                                       "Exportierte elektrische Energie."@de ;
+                                      <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EEE> ;
+                                      <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                      <http://www.w3.org/2004/02/skos/core#notation> "EEE" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Exported electrical energy (EEE)"@en ,
+                                                                                      "Exportierte elektrische Energie (EEE)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/EET
+<https://w3id.org/lcabim/ilcdind/EET> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                      <https://w3id.org/lcabim/ilcdind/unit> "MJ" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Exported thermal energy."@en ,
+                                                                                       "Exportierte thermische Energie."@de ;
+                                      <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EET> ;
+                                      <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                      <http://www.w3.org/2004/02/skos/core#notation> "EET" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Exported thermal energy (EET)"@en ,
+                                                                                      "Exportierte thermische Energie (EET)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/EP_freshwater
+<https://w3id.org/lcabim/ilcdind/EP_freshwater> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                                <https://w3id.org/lcabim/ilcdind/unit> "kg P eqv." ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> "Eutrophication potential for freshwater environments."@en ,
+                                                                                                 "Eutrophierungspotenzial für Süßwasser-Umweltkompartimente."@de ;
+                                                <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_freshwater> ;
+                                                <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                                <http://www.w3.org/2004/02/skos/core#notation> "EP-freshwater" ;
+                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Eutrophication potential - freshwater (EP-freshwater)"@en ,
+                                                                                                "Eutrophierungspotenzial - Süßwasser (EP-freshwater)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/EP_marine
+<https://w3id.org/lcabim/ilcdind/EP_marine> rdf:type owl:NamedIndividual ,
+                                                     <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                            <https://w3id.org/lcabim/ilcdind/unit> "kg N eqv." ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "Eutrophication potential for marine environments."@en ,
+                                                                                             "Eutrophierungspotenzial für marine Umweltkompartimente."@de ;
+                                            <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_marine> ;
+                                            <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                            <http://www.w3.org/2004/02/skos/core#notation> "EP-marine" ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Eutrophication potential - marine (EP-marine)"@en ,
+                                                                                            "Eutrophierungspotenzial - marin (EP-marine)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/EP_terrestrial
+<https://w3id.org/lcabim/ilcdind/EP_terrestrial> rdf:type owl:NamedIndividual ,
+                                                          <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                                 <https://w3id.org/lcabim/ilcdind/unit> "mol N eqv." ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> "Eutrophication potential for terrestrial environments."@en ,
+                                                                                                  "Eutrophierungspotenzial für terrestrische Umweltkompartimente."@de ;
+                                                 <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_terrestrial> ;
+                                                 <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                                 <http://www.w3.org/2004/02/skos/core#notation> "EP-terrestrial" ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Eutrophication potential - terrestrial (EP-terrestrial)"@en ,
+                                                                                                 "Eutrophierungspotenzial - terrestrisch (EP-terrestrial)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/ETP_fw
+<https://w3id.org/lcabim/ilcdind/ETP_fw> rdf:type owl:NamedIndividual ,
+                                                  <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                         <https://w3id.org/lcabim/ilcdind/unit> "CTUe" ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "Comparative toxic unit for freshwater ecosystems."@en ,
+                                                                                          "Vergleichende Toxizitätseinheit für Süßwasser-Ökosysteme."@de ;
+                                         <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/eco-toxicityfreshwater> ;
+                                         <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                         <http://www.w3.org/2004/02/skos/core#notation> "ETP-fw" ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Potential comparative toxic unit for ecosystems (ETP-fw)"@en ,
+                                                                                         "Potenzielle vergleichende Toxizitätseinheit für Ökosysteme (ETP-fw)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/FW
+<https://w3id.org/lcabim/ilcdind/FW> rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                     <https://w3id.org/lcabim/ilcdind/unit> "m3" ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "Net use of fresh water."@en ,
+                                                                                      "Nettoeinsatz von Süßwasser."@de ;
+                                     <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/FW> ;
+                                     <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                     <http://www.w3.org/2004/02/skos/core#notation> "FW" ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Nettoeinsatz von Süßwasser (FW)"@de ,
+                                                                                     "Use of net fresh water (FW)"@en .
+
+
+###  https://w3id.org/lcabim/ilcdind/GWP_biogenic
+<https://w3id.org/lcabim/ilcdind/GWP_biogenic> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                               <https://w3id.org/lcabim/ilcdind/unit> "kg CO2 eqv." ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Biogener Anteil des Treibhauspotenzials."@de ,
+                                                                                                "Biogenic component of global warming potential."@en ;
+                                               <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_biogenic> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "GWP-biogenic" ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Global warming potential - biogenic (GWP-biogenic)"@en ,
+                                                                                               "Treibhauspotenzial - biogen (GWP-biogenic)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/GWP_fossil
+<https://w3id.org/lcabim/ilcdind/GWP_fossil> rdf:type owl:NamedIndividual ,
+                                                      <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                             <https://w3id.org/lcabim/ilcdind/unit> "kg CO2 eqv." ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "Fossil component of global warming potential."@en ,
+                                                                                              "Fossiler Anteil des Treibhauspotenzials."@de ;
+                                             <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_fossil> ;
+                                             <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                             <http://www.w3.org/2004/02/skos/core#notation> "GWP-fossil" ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Global warming potential - fossil fuels (GWP-fossil)"@en ,
+                                                                                             "Treibhauspotenzial - fossile Brennstoffe (GWP-fossil)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/GWP_luluc
+<https://w3id.org/lcabim/ilcdind/GWP_luluc> rdf:type owl:NamedIndividual ,
+                                                     <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                            <https://w3id.org/lcabim/ilcdind/unit> "kg CO2 eqv." ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "Anteil des Treibhauspotenzials aus Landnutzung und Landnutzungsänderung."@de ,
+                                                                                             "Land use and land use change component of global warming potential."@en ;
+                                            <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_luluc> ;
+                                            <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                            <http://www.w3.org/2004/02/skos/core#notation> "GWP-luluc" ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Global warming potential - land use and land use change (GWP-luluc)"@en ,
+                                                                                            "Treibhauspotenzial - Landnutzung und Landnutzungsänderung (GWP-luluc)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/GWP_total
+<https://w3id.org/lcabim/ilcdind/GWP_total> rdf:type owl:NamedIndividual ,
+                                                     <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                            <https://w3id.org/lcabim/ilcdind/unit> "kg CO2 eqv." ;
+                                            <http://www.w3.org/2004/02/skos/core#definition> "Gesamtes Treibhauspotenzial."@de ,
+                                                                                             "Total global warming potential."@en ;
+                                            <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_total> ;
+                                            <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                            <http://www.w3.org/2004/02/skos/core#notation> "GWP-total" ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Global warming potential - total (GWP-total)"@en ,
+                                                                                            "Treibhauspotenzial - gesamt (GWP-total)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/HTP_c
+<https://w3id.org/lcabim/ilcdind/HTP_c> rdf:type owl:NamedIndividual ,
+                                                 <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                        <https://w3id.org/lcabim/ilcdind/unit> "CTUh" ;
+                                        <http://www.w3.org/2004/02/skos/core#definition> "Human toxicity potential for cancer effects."@en ,
+                                                                                         "Humantoxizitätspotenzial für Krebswirkungen."@de ;
+                                        <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/CTUh_C> ;
+                                        <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                        <http://www.w3.org/2004/02/skos/core#notation> "HTP-c" ;
+                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Potential comparative toxic unit for humans - cancer effects (HTP-c)"@en ,
+                                                                                        "Potenzielle vergleichende Toxizitätseinheit für Menschen - Krebswirkungen (HTP-c)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/HTP_nc
+<https://w3id.org/lcabim/ilcdind/HTP_nc> rdf:type owl:NamedIndividual ,
+                                                  <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                         <https://w3id.org/lcabim/ilcdind/unit> "CTUh" ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "Human toxicity potential for non-cancer effects."@en ,
+                                                                                          "Humantoxizitätspotenzial für Nicht-Krebswirkungen."@de ;
+                                         <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/CTUh_NC> ;
+                                         <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                         <http://www.w3.org/2004/02/skos/core#notation> "HTP-nc" ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Potential comparative toxic unit for humans - non-cancer effects (HTP-nc)"@en ,
+                                                                                         "Potenzielle vergleichende Toxizitätseinheit für Menschen - Nicht-Krebswirkungen (HTP-nc)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/HWD
+<https://w3id.org/lcabim/ilcdind/HWD> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                      <https://w3id.org/lcabim/ilcdind/unit> "kg" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Entsorgter gefährlicher Abfall."@de ,
+                                                                                       "Hazardous waste disposed."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDH> ;
+                                      <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                      <http://www.w3.org/2004/02/skos/core#notation> "HWD" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Entsorgter gefährlicher Abfall (HWD)"@de ,
+                                                                                      "Hazardous waste disposed (HWD)"@en .
+
+
+###  https://w3id.org/lcabim/ilcdind/IRP
+<https://w3id.org/lcabim/ilcdind/IRP> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                      <https://w3id.org/lcabim/ilcdind/unit> "kBq U235 eqv." ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Ionizing radiation potential for human health (relative to U235)."@en ,
+                                                                                       "Potenzial ionisierender Strahlung für die menschliche Gesundheit (relativ zu U235)."@de ;
+                                      <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/U235> ;
+                                      <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                      <http://www.w3.org/2004/02/skos/core#notation> "IRP" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Potential human exposure efficiency relative to U235 (IRP)"@en ,
+                                                                                      "Potenzielle Expositionseffizienz relativ zu U235 (IRP)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/MER
+<https://w3id.org/lcabim/ilcdind/MER> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                      <https://w3id.org/lcabim/ilcdind/unit> "kg" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Materialien zur energetischen Verwertung."@de ,
+                                                                                       "Materials for energy recovery."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/M_ER> ;
+                                      <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                      <http://www.w3.org/2004/02/skos/core#notation> "MER" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Materialien zur energetischen Verwertung (MER)"@de ,
+                                                                                      "Materials for energy recovery (MER)"@en .
+
+
+###  https://w3id.org/lcabim/ilcdind/MFR
+<https://w3id.org/lcabim/ilcdind/MFR> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                      <https://w3id.org/lcabim/ilcdind/unit> "kg" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Materialien zum Recycling."@de ,
+                                                                                       "Materials for recycling."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RC_M_KG> ;
+                                      <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                      <http://www.w3.org/2004/02/skos/core#notation> "MFR" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Materialien zum Recycling (MFR)"@de ,
+                                                                                      "Materials for recycling (MFR)"@en .
+
+
+###  https://w3id.org/lcabim/ilcdind/NHWD
+<https://w3id.org/lcabim/ilcdind/NHWD> rdf:type owl:NamedIndividual ,
+                                                <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                       <https://w3id.org/lcabim/ilcdind/unit> "kg" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Entsorgter nicht gefährlicher Abfall."@de ,
+                                                                                        "Non-hazardous waste disposed."@en ;
+                                       <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDNH> ;
+                                       <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                       <http://www.w3.org/2004/02/skos/core#notation> "NHWD" ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Entsorgter nicht gefährlicher Abfall (NHWD)"@de ,
+                                                                                       "Non hazardous waste disposed (NHWD)"@en .
+
+
+###  https://w3id.org/lcabim/ilcdind/NRSF
+<https://w3id.org/lcabim/ilcdind/NRSF> rdf:type owl:NamedIndividual ,
+                                                <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                       <https://w3id.org/lcabim/ilcdind/unit> "MJ" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Einsatz nicht erneuerbarer Sekundärbrennstoffe."@de ,
+                                                                                        "Use of non-renewable secondary fuels."@en ;
+                                       <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/NRSF> ;
+                                       <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                       <http://www.w3.org/2004/02/skos/core#notation> "NRSF" ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Einsatz nicht erneuerbarer Sekundärbrennstoffe (NRSF)"@de ,
+                                                                                       "Use of non renewable secondary fuels (NRSF)"@en .
+
+
+###  https://w3id.org/lcabim/ilcdind/ODP
+<https://w3id.org/lcabim/ilcdind/ODP> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                      <https://w3id.org/lcabim/ilcdind/unit> "kg CFC 11 eqv." ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Ozonabbaupotenzial."@de ,
+                                                                                       "Ozone depletion potential."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ODP> ;
+                                      <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                      <http://www.w3.org/2004/02/skos/core#notation> "ODP" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Depletion potential of the stratospheric ozone layer (ODP)"@en ,
+                                                                                      "Ozonabbaupotenzial der Stratosphäre (ODP)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/PENRE
+<https://w3id.org/lcabim/ilcdind/PENRE> rdf:type owl:NamedIndividual ,
+                                                 <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                        <https://w3id.org/lcabim/ilcdind/unit> "MJ" ;
+                                        <http://www.w3.org/2004/02/skos/core#definition> "Einsatz nicht erneuerbarer Primärenergie."@de ,
+                                                                                         "Use of non-renewable primary energy."@en ;
+                                        <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_NRE> ;
+                                        <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                        <http://www.w3.org/2004/02/skos/core#notation> "PENRE" ;
+                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Einsatz nicht erneuerbarer Primärenergie (PENRE)"@de ,
+                                                                                        "Use of non renewable primary energy (PENRE)"@en .
+
+
+###  https://w3id.org/lcabim/ilcdind/PENRM
+<https://w3id.org/lcabim/ilcdind/PENRM> rdf:type owl:NamedIndividual ,
+                                                 <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                        <https://w3id.org/lcabim/ilcdind/unit> "MJ" ;
+                                        <http://www.w3.org/2004/02/skos/core#definition> "Nicht erneuerbare Primärenergieressourcen, die als Rohstoffe eingesetzt werden."@de ,
+                                                                                         "Non-renewable primary energy resources used as raw materials."@en ;
+                                        <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_NRM> ;
+                                        <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                        <http://www.w3.org/2004/02/skos/core#notation> "PENRM" ;
+                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Einsatz nicht erneuerbarer Primärenergieressourcen als Rohstoffe (PENRM)"@de ,
+                                                                                        "Use of non renewable primary energy resources used as raw materials (PENRM)"@en .
+
+
+###  https://w3id.org/lcabim/ilcdind/PENRT
+<https://w3id.org/lcabim/ilcdind/PENRT> rdf:type owl:NamedIndividual ,
+                                                 <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                        <https://w3id.org/lcabim/ilcdind/unit> "MJ" ;
+                                        <http://www.w3.org/2004/02/skos/core#definition> "Gesamter Einsatz nicht erneuerbarer Primärenergieressourcen."@de ,
+                                                                                         "Total use of non-renewable primary energy resources."@en ;
+                                        <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/non-renewableprimaryresourceswithenergycontent-tot> ;
+                                        <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                        <http://www.w3.org/2004/02/skos/core#notation> "PENRT" ;
+                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Gesamter Einsatz nicht erneuerbarer Primärenergieressourcen (PENRT)"@de ,
+                                                                                        "Total use of non renewable primary energy resource (PENRT)"@en .
+
+
+###  https://w3id.org/lcabim/ilcdind/PERE
+<https://w3id.org/lcabim/ilcdind/PERE> rdf:type owl:NamedIndividual ,
+                                                <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                       <https://w3id.org/lcabim/ilcdind/unit> "MJ" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Einsatz erneuerbarer Primärenergie."@de ,
+                                                                                        "Use of renewable primary energy."@en ;
+                                       <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_RE> ;
+                                       <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                       <http://www.w3.org/2004/02/skos/core#notation> "PERE" ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Einsatz erneuerbarer Primärenergie (PERE)"@de ,
+                                                                                       "Use of renewable primary energy (PERE)"@en .
+
+
+###  https://w3id.org/lcabim/ilcdind/PERM
+<https://w3id.org/lcabim/ilcdind/PERM> rdf:type owl:NamedIndividual ,
+                                                <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                       <https://w3id.org/lcabim/ilcdind/unit> "MJ" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Erneuerbare Primärenergieressourcen, die als Rohstoffe eingesetzt werden."@de ,
+                                                                                        "Renewable primary energy resources used as raw materials."@en ;
+                                       <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_RM> ;
+                                       <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                       <http://www.w3.org/2004/02/skos/core#notation> "PERM" ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Einsatz erneuerbarer Primärenergieressourcen als Rohstoffe (PERM)"@de ,
+                                                                                       "Use of renewable primary energy resources used as raw materials (PERM)"@en .
+
+
+###  https://w3id.org/lcabim/ilcdind/PERT
+<https://w3id.org/lcabim/ilcdind/PERT> rdf:type owl:NamedIndividual ,
+                                                <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                       <https://w3id.org/lcabim/ilcdind/unit> "MJ" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Gesamter Einsatz erneuerbarer Primärenergieressourcen."@de ,
+                                                                                        "Total use of renewable primary energy resources."@en ;
+                                       <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/renewableprimaryresourceswithenergycontent-total> ;
+                                       <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                       <http://www.w3.org/2004/02/skos/core#notation> "PERT" ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Gesamter Einsatz erneuerbarer Primärenergieressourcen (PERT)"@de ,
+                                                                                       "Total use of renewable primary energy resources (PERT)"@en .
+
+
+###  https://w3id.org/lcabim/ilcdind/PM
+<https://w3id.org/lcabim/ilcdind/PM> rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                     <https://w3id.org/lcabim/ilcdind/unit> "disease incidence" ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "Impact category for particulate matter emissions."@en ,
+                                                                                      "Wirkungskategorie für Feinstaubemissionen (Particulate Matter)."@de ;
+                                     <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PM> ;
+                                     <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                     <http://www.w3.org/2004/02/skos/core#notation> "PM" ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Potential incidence of disease due to PM emissions (PM)"@en ,
+                                                                                     "Potenzielle Krankheitsinzidenz durch PM-Emissionen (PM)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/POCP
+<https://w3id.org/lcabim/ilcdind/POCP> rdf:type owl:NamedIndividual ,
+                                                <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                       <https://w3id.org/lcabim/ilcdind/unit> "kg NMVOC eqv." ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Photochemical ozone creation potential."@en ,
+                                                                                        "Photochemisches Ozonbildungspotenzial."@de ;
+                                       <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/POCP> ;
+                                       <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                       <http://www.w3.org/2004/02/skos/core#notation> "POCP" ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Photochemical ozone creation potential (POCP)"@en ,
+                                                                                       "Photochemisches Ozonbildungspotenzial (POCP)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/RSF
+<https://w3id.org/lcabim/ilcdind/RSF> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                      <https://w3id.org/lcabim/ilcdind/unit> "MJ" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Einsatz erneuerbarer Sekundärbrennstoffe."@de ,
+                                                                                       "Use of renewable secondary fuels."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RSF> ;
+                                      <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                      <http://www.w3.org/2004/02/skos/core#notation> "RSF" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Einsatz erneuerbarer Sekundärbrennstoffe (RSF)"@de ,
+                                                                                      "Use of renewable secondary fuels (RSF)"@en .
+
+
+###  https://w3id.org/lcabim/ilcdind/RWD
+<https://w3id.org/lcabim/ilcdind/RWD> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                      <https://w3id.org/lcabim/ilcdind/unit> "kg" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Entsorgter radioaktiver Abfall."@de ,
+                                                                                       "Radioactive waste disposed."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WR> ;
+                                      <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                      <http://www.w3.org/2004/02/skos/core#notation> "RWD" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Entsorgter radioaktiver Abfall (RWD)"@de ,
+                                                                                      "Radioactive waste disposed (RWD)"@en .
+
+
+###  https://w3id.org/lcabim/ilcdind/SM
+<https://w3id.org/lcabim/ilcdind/SM> rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                     <https://w3id.org/lcabim/ilcdind/unit> "kg" ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "Einsatz von Sekundärmaterial."@de ,
+                                                                                      "Use of secondary material."@en ;
+                                     <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/SM> ;
+                                     <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                     <http://www.w3.org/2004/02/skos/core#notation> "SM" ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Einsatz von Sekundärmaterial (SM)"@de ,
+                                                                                     "Use of secondary material (SM)"@en .
+
+
+###  https://w3id.org/lcabim/ilcdind/SQP
+<https://w3id.org/lcabim/ilcdind/SQP> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                      <https://w3id.org/lcabim/ilcdind/unit> "unitless" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Indikator für bodenqualitätsbezogene Wirkungen."@de ,
+                                                                                       "Soil quality related impacts indicator."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/SQI> ;
+                                      <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                      <http://www.w3.org/2004/02/skos/core#notation> "SQP" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Potential soil quality index (SQP)"@en ,
+                                                                                      "Potenzialer Bodenqualitätsindex (SQP)"@de .
+
+
+###  https://w3id.org/lcabim/ilcdind/WDP
+<https://w3id.org/lcabim/ilcdind/WDP> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/lcabim/ilcdind/ILCDIndicator> ;
+                                      <https://w3id.org/lcabim/ilcdind/unit> "m3 world eqv." ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Wasserentzugspotenzial."@de ,
+                                                                                       "Water deprivation potential."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#exactMatch> <https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDP> ;
+                                      <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/ILCD_Indicators> ;
+                                      <http://www.w3.org/2004/02/skos/core#notation> "WDP" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Wasserentzugspotenzial (WDP)"@de ,
+                                                                                      "Water (user) deprivation potential (WDP)"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

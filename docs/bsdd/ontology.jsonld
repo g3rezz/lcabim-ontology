@@ -1,0 +1,1033 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#notation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ADP_MM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Beschreibt die abnehmende Verfügbarkeit nicht erneuerbarer Ressourcen infolge ihrer Förderung."
+  }, {
+    "@language" : "en",
+    "@value" : "Defines the decreasing availability of non-renewable resources as a result of their extraction."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "ADP_MM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Abiotic depletion potential for non-fossil resources – minerals and metals"
+  }, {
+    "@language" : "de",
+    "@value" : "Abiotisches Ressourcenverknappungspotenzial für nicht-fossile Ressourcen – Mineralien und Metalle"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ADP_fossil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Beschreibt die abnehmende Verfügbarkeit nicht erneuerbarer Ressourcen infolge ihrer Förderung."
+  }, {
+    "@language" : "en",
+    "@value" : "Defines the decreasing availability of non-renewable resources as a result of their extraction."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "ADP_fossil"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Abiotic depletion potential for fossil resources"
+  }, {
+    "@language" : "de",
+    "@value" : "Abiotisches Ressourcenverknappungspotenzial für fossile Ressourcen"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/AE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A measure of the acidification caused to land and water from emissions to air of acidifying substances."
+  }, {
+    "@language" : "de",
+    "@value" : "Maß für die Versauerung von Boden und Gewässern durch Emissionen versauernder Stoffe in die Luft."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "AE"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Acidification potential, accumulated exceedance"
+  }, {
+    "@language" : "de",
+    "@value" : "Versauerungspotenzial, akkumulierte Überschreitung"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/CTUh_C",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Einheit der Wirkungskategorie Humantoxizität – Krebseffekte."
+  }, {
+    "@language" : "en",
+    "@value" : "Unit of impact for the impact category human toxicity – cancer effects."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "CTUh_C"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Potential comparative toxic unit for humans – cancer effects"
+  }, {
+    "@language" : "de",
+    "@value" : "Potenzielle vergleichende toxische Einheit für Menschen – Krebseffekte"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/CTUh_NC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Einheit der Wirkungskategorie Humantoxizität – Nicht-Krebseffekte."
+  }, {
+    "@language" : "en",
+    "@value" : "Unit of impact for the impact category human toxicity – non-cancer effects."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "CTUh_NC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Potential comparative toxic unit for humans – non-cancer effects"
+  }, {
+    "@language" : "de",
+    "@value" : "Potenzielle vergleichende toxische Einheit für Menschen – Nicht-Krebseffekte"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EEE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Amount of electrical energy available on the market after incineration, in MJ."
+  }, {
+    "@language" : "de",
+    "@value" : "Menge an elektrischer Energie, die nach der Verbrennung am Markt verfügbar ist, in MJ."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "EEE"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Exported electrical energy"
+  }, {
+    "@language" : "de",
+    "@value" : "Exportierte elektrische Energie"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EET",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Amount of thermal energy available on the market after incineration, in MJ."
+  }, {
+    "@language" : "de",
+    "@value" : "Menge an thermischer Energie, die nach der Verbrennung am Markt verfügbar ist, in MJ."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "EET"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Exported thermal energy"
+  }, {
+    "@language" : "de",
+    "@value" : "Exportierte thermische Energie"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_freshwater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A measure of the eutrophication caused by emissions reaching freshwater."
+  }, {
+    "@language" : "de",
+    "@value" : "Maß für die Eutrophierung durch Emissionen, die Süßwasser erreichen."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "EP_freshwater"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Eutrophication potential, fraction of nutrients reaching freshwater end compartment"
+  }, {
+    "@language" : "de",
+    "@value" : "Eutrophierungspotenzial, Anteil der Nährstoffe im Süßwasser-Endkompartiment"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_marine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A measure of the eutrophication caused by emissions reaching marine water."
+  }, {
+    "@language" : "de",
+    "@value" : "Maß für die Eutrophierung durch Emissionen, die Meeresgewässer erreichen."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "EP_marine"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Eutrophication potential, fraction of nutrients reaching marine end compartment"
+  }, {
+    "@language" : "de",
+    "@value" : "Eutrophierungspotenzial, Anteil der Nährstoffe im marinen Endkompartiment"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_terrestrial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A measure of the eutrophication caused by emissions."
+  }, {
+    "@language" : "de",
+    "@value" : "Maß für die Eutrophierung durch Emissionen."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "EP_terrestrial"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Eutrophication potential, accumulated exceedance"
+  }, {
+    "@language" : "de",
+    "@value" : "Eutrophierungspotenzial, akkumulierte Überschreitung"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/FW",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Freshwater entering the product system that is not returned to the same drainage basin."
+  }, {
+    "@language" : "de",
+    "@value" : "Süßwasser, das in das Produktsystem eintritt und nicht in dasselbe Einzugsgebiet zurückgeführt wird."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "FW"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Net use of freshwater"
+  }, {
+    "@language" : "de",
+    "@value" : "Netto-Nutzung von Süßwasser"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_biogenic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Covers carbon emissions to air (CO2, CO, CH4) from oxidation and/or reduction of biogenic carbon."
+  }, {
+    "@language" : "de",
+    "@value" : "Umfasst Kohlenstoffemissionen in die Luft (CO2, CO, CH4) aus Oxidation/Reduktion biogenen Kohlenstoffs."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "GWP_biogenic"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Global warming potential – biogenic"
+  }, {
+    "@language" : "de",
+    "@value" : "Globales Erwärmungspotenzial – biogen"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_fossil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Covers greenhouse gas emissions originating from oxidation and/or reduction of fossil carbon."
+  }, {
+    "@language" : "de",
+    "@value" : "Umfasst Treibhausgasemissionen aus Oxidation/Reduktion fossilen Kohlenstoffs."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "GWP_fossil"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Global warming potential – fossil fuels"
+  }, {
+    "@language" : "de",
+    "@value" : "Globales Erwärmungspotenzial – fossile Brennstoffe"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_luluc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Beschreibt die potenzielle Strahlungsantriebswirkung von Kohlenstoffaufnahme und -emissionen durch Landnutzung und Landnutzungsänderung."
+  }, {
+    "@language" : "en",
+    "@value" : "Describes the potential radiative forcing impact of carbon uptake and emissions due to land use and land use change."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "GWP_luluc"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Global warming potential – land use and land use change"
+  }, {
+    "@language" : "de",
+    "@value" : "Globales Erwärmungspotenzial – Landnutzung und Landnutzungsänderung"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_total",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Gesamtes globales Erwärmungspotenzial aus fossilen, biogenen sowie Landnutzungs-/Landnutzungsänderungsanteilen."
+  }, {
+    "@language" : "en",
+    "@value" : "Total global warming potential arising from fossil, biogenic and land use/land use change contributions."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "GWP_total"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Global warming potential – total"
+  }, {
+    "@language" : "de",
+    "@value" : "Globales Erwärmungspotenzial – gesamt"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/M_ER",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Secondary fuels for use in the next product system."
+  }, {
+    "@language" : "de",
+    "@value" : "Sekundärbrennstoffe zur Nutzung im nächsten Produktsystem."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "M_ER"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Materialien zur energetischen Verwertung"
+  }, {
+    "@language" : "en",
+    "@value" : "Materials for energy recovery"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/NRSF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Nicht erneuerbare Materialien mit Energieinhalt, die die Systemgrenze zwischen Produktsystemen überschritten haben."
+  }, {
+    "@language" : "en",
+    "@value" : "Non-renewable materials with energy content that have crossed the system boundary between product systems."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "NRSF"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Nicht erneuerbare Sekundärbrennstoffe"
+  }, {
+    "@language" : "en",
+    "@value" : "Non-renewable secondary fuels"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ODP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Relative amount of degradation to the ozone layer a product can cause."
+  }, {
+    "@language" : "de",
+    "@value" : "Relativer Beitrag zum Abbau der Ozonschicht, den ein Produkt verursachen kann."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "ODP"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Depletion potential of the stratospheric ozone layer"
+  }, {
+    "@language" : "de",
+    "@value" : "Ozonabbaupotenzial der Stratosphäre"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_NRE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Materials such as peat, oil, gas, coal, uranium used (first use) as an energy source."
+  }, {
+    "@language" : "de",
+    "@value" : "Stoffe wie Torf, Öl, Gas, Kohle, Uran, die (erstmalig) als Energiequelle genutzt werden."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "PE_NRE"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Nicht erneuerbare Primärressourcen als Energieträger (Brennstoff)"
+  }, {
+    "@language" : "en",
+    "@value" : "Non-renewable primary resources used as an energy carrier (fuel)"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_NRM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Primary resources such as oil, gas and coal used (first use) for products (e.g., plastics)."
+  }, {
+    "@language" : "de",
+    "@value" : "Primärressourcen wie Öl, Gas und Kohle, die (erstmalig) für Produkte genutzt werden (z. B. Kunststoffe)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "PE_NRM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Nicht erneuerbare Primärressourcen mit Energieinhalt, genutzt als Material"
+  }, {
+    "@language" : "en",
+    "@value" : "Non-renewable primary resources with energy content used as material"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_RE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Bio-based materials used (first use) as an energy source and hydropower, solar and wind power used in energy production."
+  }, {
+    "@language" : "de",
+    "@value" : "Biobasierte Materialien (Erstnutzung) als Energiequelle sowie Wasser-, Solar- und Windenergie in der Energieerzeugung."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "PE_RE"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Erneuerbare Primärressourcen als Energieträger (Brennstoff)"
+  }, {
+    "@language" : "en",
+    "@value" : "Renewable primary resources used as an energy carrier (fuel)"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_RM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Bio-based materials used (first use) as materials (e.g., wood, hemp)."
+  }, {
+    "@language" : "de",
+    "@value" : "Biobasierte Materialien (Erstnutzung) als Werkstoffe (z. B. Holz, Hanf)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "PE_RM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Erneuerbare Primärressourcen mit Energieinhalt, genutzt als Material"
+  }, {
+    "@language" : "en",
+    "@value" : "Renewable primary resources with energy content used as material"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Einheit der Wirkungskategorie Feinstaub (Particulate Matter)."
+  }, {
+    "@language" : "en",
+    "@value" : "Unit of impact for the impact category particulate matter."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "PM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Potential incidence of disease due to PM emissions"
+  }, {
+    "@language" : "de",
+    "@value" : "Potenzielle Krankheitsinzidenz durch PM-Emissionen"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/POCP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Maß für die Ozonmenge in der Troposphäre, die Sommersmog verursacht."
+  }, {
+    "@language" : "en",
+    "@value" : "Measure of the amount of ozone in the troposphere where it causes summer smog."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "POCP"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Tropospheric ozone concentration increase"
+  }, {
+    "@language" : "de",
+    "@value" : "Zunahme der troposphärischen Ozonkonzentration"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RC_M_KG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Secondary material for use in the next product system."
+  }, {
+    "@language" : "de",
+    "@value" : "Sekundärmaterial zur Nutzung im nächsten Produktsystem."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "RC_M_KG"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Materialien zum Recycling"
+  }, {
+    "@language" : "en",
+    "@value" : "Materials for recycling"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RSF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Erneuerbare Materialien mit Energieinhalt, die die Systemgrenze zwischen Produktsystemen überschritten haben."
+  }, {
+    "@language" : "en",
+    "@value" : "Renewable materials with energy content that have crossed the system boundary between product systems."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "RSF"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Erneuerbare Sekundärbrennstoffe"
+  }, {
+    "@language" : "en",
+    "@value" : "Renewable secondary fuels"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RU_C_KG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Amount of components that are reused at end-of-life."
+  }, {
+    "@language" : "de",
+    "@value" : "Menge an Bauteilen, die am Lebensende wiederverwendet werden."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "RU_C_KG"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Bauteile zur Wiederverwendung"
+  }, {
+    "@language" : "en",
+    "@value" : "Components for re-use"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/SM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Material recovered from previous use or from waste that substitutes primary materials."
+  }, {
+    "@language" : "de",
+    "@value" : "Material, das aus vorheriger Nutzung oder Abfall zurückgewonnen wurde und Primärmaterial ersetzt."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "SM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Secondary materials"
+  }, {
+    "@language" : "de",
+    "@value" : "Sekundärmaterialien"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/SQI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Einheit der Wirkungskategorie landnutzungsbezogene Auswirkungen/Bodenqualität."
+  }, {
+    "@language" : "en",
+    "@value" : "Unit of impact for the impact category land use related impacts/soil quality."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "SQI"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Potential soil quality index"
+  }, {
+    "@language" : "de",
+    "@value" : "Potentieller Bodenqualitätsindex"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/U235",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Einheit der Wirkungskategorie ionisierende Strahlung, menschliche Gesundheit."
+  }, {
+    "@language" : "en",
+    "@value" : "Unit of impact for the impact category ionizing radiation, human health."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "U235"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Potential human exposure efficiency relative to U235"
+  }, {
+    "@language" : "de",
+    "@value" : "Potenzielle Effizienz der menschlichen Exposition relativ zu U235"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDH",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Gefährlicher Abfall zur Endablagerung."
+  }, {
+    "@language" : "en",
+    "@value" : "Hazardous waste to final repository."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "WDH"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Entsorgter gefährlicher Abfall"
+  }, {
+    "@language" : "en",
+    "@value" : "Hazardous waste disposed"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDNH",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Nicht gefährlicher Abfall ist nicht toxisch und ähnelt Hausmüll; umfasst inert(en) und gewöhnlichen Abfall."
+  }, {
+    "@language" : "en",
+    "@value" : "Non-hazardous waste is non-toxic and similar to household waste; includes inert and ordinary waste."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "WDNH"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Entsorgter nicht gefährlicher Abfall"
+  }, {
+    "@language" : "en",
+    "@value" : "Non-hazardous waste disposed"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Einheit der Wirkungskategorie Wassernutzung."
+  }, {
+    "@language" : "en",
+    "@value" : "Unit for the impact category water use."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "WDP"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Wasserentzugspotenzial (Nutzung), entzug-gewichteter Wasserverbrauch"
+  }, {
+    "@language" : "en",
+    "@value" : "Water (user) deprivation potential, deprivation-weighted water consumption"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "High-level radioactive waste, conditioned, to final repository given in mass."
+  }, {
+    "@language" : "de",
+    "@value" : "Konditionierter hochradioaktiver Abfall zur Endablagerung, angegeben als Masse."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "WR"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Entsorgter hochradioaktiver Abfall gemäß ISO 21930:2017 (Masse)"
+  }, {
+    "@language" : "en",
+    "@value" : "High-level radioactive waste disposed according to ISO 21930:2017 (mass)"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/eco-toxicityfreshwater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Impact category that addresses toxic impacts on ecosystems affecting individuals, species and ecosystem functions."
+  }, {
+    "@language" : "de",
+    "@value" : "Wirkungskategorie zu toxischen Auswirkungen auf Ökosysteme (Individuen, Arten und Ökosystemfunktionen)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "eco-toxicityfreshwater"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Eco-toxicity (freshwater)"
+  }, {
+    "@language" : "de",
+    "@value" : "Ökotoxizität (Süßwasser)"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/non-renewableprimaryresourceswithenergycontent-tot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Sum of non-renewable primary resources used as an energy carrier and as material."
+  }, {
+    "@language" : "de",
+    "@value" : "Summe nicht erneuerbarer Primärressourcen, genutzt als Energieträger und als Material."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "non-renewableprimaryresourceswithenergycontent-tot"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Nicht erneuerbare Primärressourcen mit Energieinhalt – gesamt"
+  }, {
+    "@language" : "en",
+    "@value" : "Non-renewable primary resources with energy content – total"
+  } ]
+}, {
+  "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/renewableprimaryresourceswithenergycontent-total",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Erneuerbare Primärenergie – gesamt."
+  }, {
+    "@language" : "en",
+    "@value" : "Primary energy renewable – total."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "renewableprimaryresourceswithenergycontent-total"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Erneuerbare Primärressourcen mit Energieinhalt – gesamt"
+  }, {
+    "@language" : "en",
+    "@value" : "Renewable primary resources with energy content – total"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Grouping scheme for the bSDD LCA property IRIs."
+  }, {
+    "@language" : "de",
+    "@value" : "Gruppierungsschema für die bSDD LCA-Property-IRIs."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "bSDD LCA properties"
+  }, {
+    "@language" : "de",
+    "@value" : "bSDD LCA-Properties"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/bsdd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "de",
+    "@value" : "Diese Ontologie dokumentiert bSDD-(buildingSMART Data Dictionary)-LCA-Property-IRIs. Sie ersetzt bSDD nicht und veröffentlicht es nicht neu, sondern ergänzt nur leichtgewichtige Annotationen (Labels/Kommentare) für die verwendeten IRIs."
+  }, {
+    "@language" : "en",
+    "@value" : "This ontology documents bSDD (buildingSMART Data Dictionary) LCA property IRIs. It does not re-publish or replace bSDD; it only provides lightweight annotations (labels/comments) for the referenced IRIs."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "LCABIM bSDD LCA indicators"
+  }, {
+    "@language" : "de",
+    "@value" : "LCABIM bSDD-LCA-Indikatoren"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1.0"
+  } ]
+} ]

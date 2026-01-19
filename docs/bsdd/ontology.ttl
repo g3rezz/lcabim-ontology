@@ -1,0 +1,481 @@
+@prefix : <https://w3id.org/lcabim/bsdd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/lcabim/bsdd#> .
+
+<https://w3id.org/lcabim/bsdd> rdf:type owl:Ontology ;
+                                <http://purl.org/dc/terms/description> "Diese Ontologie dokumentiert bSDD-(buildingSMART Data Dictionary)-LCA-Property-IRIs. Sie ersetzt bSDD nicht und veröffentlicht es nicht neu, sondern ergänzt nur leichtgewichtige Annotationen (Labels/Kommentare) für die verwendeten IRIs."@de ,
+                                                                       "This ontology documents bSDD (buildingSMART Data Dictionary) LCA property IRIs. It does not re-publish or replace bSDD; it only provides lightweight annotations (labels/comments) for the referenced IRIs."@en ;
+                                <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                <http://purl.org/dc/terms/title> "LCABIM bSDD LCA indicators"@en ,
+                                                                 "LCABIM bSDD-LCA-Indikatoren"@de ;
+                                owl:versionInfo "0.1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ADP_MM
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ADP_MM> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt die abnehmende Verfügbarkeit nicht erneuerbarer Ressourcen infolge ihrer Förderung."@de ,
+                                                                                                                    "Defines the decreasing availability of non-renewable resources as a result of their extraction."@en ;
+                                                                   <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                   <http://www.w3.org/2004/02/skos/core#notation> "ADP_MM" ;
+                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Abiotic depletion potential for non-fossil resources – minerals and metals"@en ,
+                                                                                                                   "Abiotisches Ressourcenverknappungspotenzial für nicht-fossile Ressourcen – Mineralien und Metalle"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ADP_fossil
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ADP_fossil> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                       <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt die abnehmende Verfügbarkeit nicht erneuerbarer Ressourcen infolge ihrer Förderung."@de ,
+                                                                                                                        "Defines the decreasing availability of non-renewable resources as a result of their extraction."@en ;
+                                                                       <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                       <http://www.w3.org/2004/02/skos/core#notation> "ADP_fossil" ;
+                                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Abiotic depletion potential for fossil resources"@en ,
+                                                                                                                       "Abiotisches Ressourcenverknappungspotenzial für fossile Ressourcen"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/AE
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/AE> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                               <http://www.w3.org/2004/02/skos/core#definition> "A measure of the acidification caused to land and water from emissions to air of acidifying substances."@en ,
+                                                                                                                "Maß für die Versauerung von Boden und Gewässern durch Emissionen versauernder Stoffe in die Luft."@de ;
+                                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                               <http://www.w3.org/2004/02/skos/core#notation> "AE" ;
+                                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Acidification potential, accumulated exceedance"@en ,
+                                                                                                               "Versauerungspotenzial, akkumulierte Überschreitung"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/CTUh_C
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/CTUh_C> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "Einheit der Wirkungskategorie Humantoxizität – Krebseffekte."@de ,
+                                                                                                                    "Unit of impact for the impact category human toxicity – cancer effects."@en ;
+                                                                   <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                   <http://www.w3.org/2004/02/skos/core#notation> "CTUh_C" ;
+                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Potential comparative toxic unit for humans – cancer effects"@en ,
+                                                                                                                   "Potenzielle vergleichende toxische Einheit für Menschen – Krebseffekte"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/CTUh_NC
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/CTUh_NC> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                    <http://www.w3.org/2004/02/skos/core#definition> "Einheit der Wirkungskategorie Humantoxizität – Nicht-Krebseffekte."@de ,
+                                                                                                                     "Unit of impact for the impact category human toxicity – non-cancer effects."@en ;
+                                                                    <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                    <http://www.w3.org/2004/02/skos/core#notation> "CTUh_NC" ;
+                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Potential comparative toxic unit for humans – non-cancer effects"@en ,
+                                                                                                                    "Potenzielle vergleichende toxische Einheit für Menschen – Nicht-Krebseffekte"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EEE
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EEE> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "Amount of electrical energy available on the market after incineration, in MJ."@en ,
+                                                                                                                 "Menge an elektrischer Energie, die nach der Verbrennung am Markt verfügbar ist, in MJ."@de ;
+                                                                <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                <http://www.w3.org/2004/02/skos/core#notation> "EEE" ;
+                                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Exported electrical energy"@en ,
+                                                                                                                "Exportierte elektrische Energie"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EET
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EET> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "Amount of thermal energy available on the market after incineration, in MJ."@en ,
+                                                                                                                 "Menge an thermischer Energie, die nach der Verbrennung am Markt verfügbar ist, in MJ."@de ;
+                                                                <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                <http://www.w3.org/2004/02/skos/core#notation> "EET" ;
+                                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Exported thermal energy"@en ,
+                                                                                                                "Exportierte thermische Energie"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_freshwater
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_freshwater> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                          <http://www.w3.org/2004/02/skos/core#definition> "A measure of the eutrophication caused by emissions reaching freshwater."@en ,
+                                                                                                                           "Maß für die Eutrophierung durch Emissionen, die Süßwasser erreichen."@de ;
+                                                                          <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                          <http://www.w3.org/2004/02/skos/core#notation> "EP_freshwater" ;
+                                                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Eutrophication potential, fraction of nutrients reaching freshwater end compartment"@en ,
+                                                                                                                          "Eutrophierungspotenzial, Anteil der Nährstoffe im Süßwasser-Endkompartiment"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_marine
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_marine> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                      <http://www.w3.org/2004/02/skos/core#definition> "A measure of the eutrophication caused by emissions reaching marine water."@en ,
+                                                                                                                       "Maß für die Eutrophierung durch Emissionen, die Meeresgewässer erreichen."@de ;
+                                                                      <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                      <http://www.w3.org/2004/02/skos/core#notation> "EP_marine" ;
+                                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Eutrophication potential, fraction of nutrients reaching marine end compartment"@en ,
+                                                                                                                      "Eutrophierungspotenzial, Anteil der Nährstoffe im marinen Endkompartiment"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_terrestrial
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_terrestrial> rdf:type owl:NamedIndividual ,
+                                                                                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                           <http://www.w3.org/2004/02/skos/core#definition> "A measure of the eutrophication caused by emissions."@en ,
+                                                                                                                            "Maß für die Eutrophierung durch Emissionen."@de ;
+                                                                           <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                           <http://www.w3.org/2004/02/skos/core#notation> "EP_terrestrial" ;
+                                                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Eutrophication potential, accumulated exceedance"@en ,
+                                                                                                                           "Eutrophierungspotenzial, akkumulierte Überschreitung"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/FW
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/FW> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                               <http://www.w3.org/2004/02/skos/core#definition> "Freshwater entering the product system that is not returned to the same drainage basin."@en ,
+                                                                                                                "Süßwasser, das in das Produktsystem eintritt und nicht in dasselbe Einzugsgebiet zurückgeführt wird."@de ;
+                                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                               <http://www.w3.org/2004/02/skos/core#notation> "FW" ;
+                                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Net use of freshwater"@en ,
+                                                                                                               "Netto-Nutzung von Süßwasser"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_biogenic
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_biogenic> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                         <http://www.w3.org/2004/02/skos/core#definition> "Covers carbon emissions to air (CO2, CO, CH4) from oxidation and/or reduction of biogenic carbon."@en ,
+                                                                                                                          "Umfasst Kohlenstoffemissionen in die Luft (CO2, CO, CH4) aus Oxidation/Reduktion biogenen Kohlenstoffs."@de ;
+                                                                         <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                         <http://www.w3.org/2004/02/skos/core#notation> "GWP_biogenic" ;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Global warming potential – biogenic"@en ,
+                                                                                                                         "Globales Erwärmungspotenzial – biogen"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_fossil
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_fossil> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                       <http://www.w3.org/2004/02/skos/core#definition> "Covers greenhouse gas emissions originating from oxidation and/or reduction of fossil carbon."@en ,
+                                                                                                                        "Umfasst Treibhausgasemissionen aus Oxidation/Reduktion fossilen Kohlenstoffs."@de ;
+                                                                       <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                       <http://www.w3.org/2004/02/skos/core#notation> "GWP_fossil" ;
+                                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Global warming potential – fossil fuels"@en ,
+                                                                                                                       "Globales Erwärmungspotenzial – fossile Brennstoffe"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_luluc
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_luluc> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                      <http://www.w3.org/2004/02/skos/core#definition> "Beschreibt die potenzielle Strahlungsantriebswirkung von Kohlenstoffaufnahme und -emissionen durch Landnutzung und Landnutzungsänderung."@de ,
+                                                                                                                       "Describes the potential radiative forcing impact of carbon uptake and emissions due to land use and land use change."@en ;
+                                                                      <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                      <http://www.w3.org/2004/02/skos/core#notation> "GWP_luluc" ;
+                                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Global warming potential – land use and land use change"@en ,
+                                                                                                                      "Globales Erwärmungspotenzial – Landnutzung und Landnutzungsänderung"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_total
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_total> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                      <http://www.w3.org/2004/02/skos/core#definition> "Gesamtes globales Erwärmungspotenzial aus fossilen, biogenen sowie Landnutzungs-/Landnutzungsänderungsanteilen."@de ,
+                                                                                                                       "Total global warming potential arising from fossil, biogenic and land use/land use change contributions."@en ;
+                                                                      <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                      <http://www.w3.org/2004/02/skos/core#notation> "GWP_total" ;
+                                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Global warming potential – total"@en ,
+                                                                                                                      "Globales Erwärmungspotenzial – gesamt"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/M_ER
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/M_ER> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                 <http://www.w3.org/2004/02/skos/core#definition> "Secondary fuels for use in the next product system."@en ,
+                                                                                                                  "Sekundärbrennstoffe zur Nutzung im nächsten Produktsystem."@de ;
+                                                                 <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                 <http://www.w3.org/2004/02/skos/core#notation> "M_ER" ;
+                                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Materialien zur energetischen Verwertung"@de ,
+                                                                                                                 "Materials for energy recovery"@en .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/NRSF
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/NRSF> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                 <http://www.w3.org/2004/02/skos/core#definition> "Nicht erneuerbare Materialien mit Energieinhalt, die die Systemgrenze zwischen Produktsystemen überschritten haben."@de ,
+                                                                                                                  "Non-renewable materials with energy content that have crossed the system boundary between product systems."@en ;
+                                                                 <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                 <http://www.w3.org/2004/02/skos/core#notation> "NRSF" ;
+                                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Nicht erneuerbare Sekundärbrennstoffe"@de ,
+                                                                                                                 "Non-renewable secondary fuels"@en .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ODP
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ODP> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "Relative amount of degradation to the ozone layer a product can cause."@en ,
+                                                                                                                 "Relativer Beitrag zum Abbau der Ozonschicht, den ein Produkt verursachen kann."@de ;
+                                                                <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                <http://www.w3.org/2004/02/skos/core#notation> "ODP" ;
+                                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Depletion potential of the stratospheric ozone layer"@en ,
+                                                                                                                "Ozonabbaupotenzial der Stratosphäre"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_NRE
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_NRE> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "Materials such as peat, oil, gas, coal, uranium used (first use) as an energy source."@en ,
+                                                                                                                    "Stoffe wie Torf, Öl, Gas, Kohle, Uran, die (erstmalig) als Energiequelle genutzt werden."@de ;
+                                                                   <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                   <http://www.w3.org/2004/02/skos/core#notation> "PE_NRE" ;
+                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Nicht erneuerbare Primärressourcen als Energieträger (Brennstoff)"@de ,
+                                                                                                                   "Non-renewable primary resources used as an energy carrier (fuel)"@en .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_NRM
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_NRM> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "Primary resources such as oil, gas and coal used (first use) for products (e.g., plastics)."@en ,
+                                                                                                                    "Primärressourcen wie Öl, Gas und Kohle, die (erstmalig) für Produkte genutzt werden (z. B. Kunststoffe)."@de ;
+                                                                   <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                   <http://www.w3.org/2004/02/skos/core#notation> "PE_NRM" ;
+                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Nicht erneuerbare Primärressourcen mit Energieinhalt, genutzt als Material"@de ,
+                                                                                                                   "Non-renewable primary resources with energy content used as material"@en .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_RE
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_RE> rdf:type owl:NamedIndividual ,
+                                                                           <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Bio-based materials used (first use) as an energy source and hydropower, solar and wind power used in energy production."@en ,
+                                                                                                                   "Biobasierte Materialien (Erstnutzung) als Energiequelle sowie Wasser-, Solar- und Windenergie in der Energieerzeugung."@de ;
+                                                                  <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#notation> "PE_RE" ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Erneuerbare Primärressourcen als Energieträger (Brennstoff)"@de ,
+                                                                                                                  "Renewable primary resources used as an energy carrier (fuel)"@en .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_RM
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_RM> rdf:type owl:NamedIndividual ,
+                                                                           <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#definition> "Bio-based materials used (first use) as materials (e.g., wood, hemp)."@en ,
+                                                                                                                   "Biobasierte Materialien (Erstnutzung) als Werkstoffe (z. B. Holz, Hanf)."@de ;
+                                                                  <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#notation> "PE_RM" ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Erneuerbare Primärressourcen mit Energieinhalt, genutzt als Material"@de ,
+                                                                                                                  "Renewable primary resources with energy content used as material"@en .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PM
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PM> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                               <http://www.w3.org/2004/02/skos/core#definition> "Einheit der Wirkungskategorie Feinstaub (Particulate Matter)."@de ,
+                                                                                                                "Unit of impact for the impact category particulate matter."@en ;
+                                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                               <http://www.w3.org/2004/02/skos/core#notation> "PM" ;
+                                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Potential incidence of disease due to PM emissions"@en ,
+                                                                                                               "Potenzielle Krankheitsinzidenz durch PM-Emissionen"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/POCP
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/POCP> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                 <http://www.w3.org/2004/02/skos/core#definition> "Maß für die Ozonmenge in der Troposphäre, die Sommersmog verursacht."@de ,
+                                                                                                                  "Measure of the amount of ozone in the troposphere where it causes summer smog."@en ;
+                                                                 <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                 <http://www.w3.org/2004/02/skos/core#notation> "POCP" ;
+                                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Tropospheric ozone concentration increase"@en ,
+                                                                                                                 "Zunahme der troposphärischen Ozonkonzentration"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RC_M_KG
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RC_M_KG> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                    <http://www.w3.org/2004/02/skos/core#definition> "Secondary material for use in the next product system."@en ,
+                                                                                                                     "Sekundärmaterial zur Nutzung im nächsten Produktsystem."@de ;
+                                                                    <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                    <http://www.w3.org/2004/02/skos/core#notation> "RC_M_KG" ;
+                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Materialien zum Recycling"@de ,
+                                                                                                                    "Materials for recycling"@en .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RSF
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RSF> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "Erneuerbare Materialien mit Energieinhalt, die die Systemgrenze zwischen Produktsystemen überschritten haben."@de ,
+                                                                                                                 "Renewable materials with energy content that have crossed the system boundary between product systems."@en ;
+                                                                <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                <http://www.w3.org/2004/02/skos/core#notation> "RSF" ;
+                                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Erneuerbare Sekundärbrennstoffe"@de ,
+                                                                                                                "Renewable secondary fuels"@en .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RU_C_KG
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RU_C_KG> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                    <http://www.w3.org/2004/02/skos/core#definition> "Amount of components that are reused at end-of-life."@en ,
+                                                                                                                     "Menge an Bauteilen, die am Lebensende wiederverwendet werden."@de ;
+                                                                    <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                    <http://www.w3.org/2004/02/skos/core#notation> "RU_C_KG" ;
+                                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Bauteile zur Wiederverwendung"@de ,
+                                                                                                                    "Components for re-use"@en .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/SM
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/SM> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                               <http://www.w3.org/2004/02/skos/core#definition> "Material recovered from previous use or from waste that substitutes primary materials."@en ,
+                                                                                                                "Material, das aus vorheriger Nutzung oder Abfall zurückgewonnen wurde und Primärmaterial ersetzt."@de ;
+                                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                               <http://www.w3.org/2004/02/skos/core#notation> "SM" ;
+                                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Secondary materials"@en ,
+                                                                                                               "Sekundärmaterialien"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/SQI
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/SQI> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "Einheit der Wirkungskategorie landnutzungsbezogene Auswirkungen/Bodenqualität."@de ,
+                                                                                                                 "Unit of impact for the impact category land use related impacts/soil quality."@en ;
+                                                                <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                <http://www.w3.org/2004/02/skos/core#notation> "SQI" ;
+                                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Potential soil quality index"@en ,
+                                                                                                                "Potentieller Bodenqualitätsindex"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/U235
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/U235> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                 <http://www.w3.org/2004/02/skos/core#definition> "Einheit der Wirkungskategorie ionisierende Strahlung, menschliche Gesundheit."@de ,
+                                                                                                                  "Unit of impact for the impact category ionizing radiation, human health."@en ;
+                                                                 <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                 <http://www.w3.org/2004/02/skos/core#notation> "U235" ;
+                                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Potential human exposure efficiency relative to U235"@en ,
+                                                                                                                 "Potenzielle Effizienz der menschlichen Exposition relativ zu U235"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDH
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDH> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "Gefährlicher Abfall zur Endablagerung."@de ,
+                                                                                                                 "Hazardous waste to final repository."@en ;
+                                                                <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                <http://www.w3.org/2004/02/skos/core#notation> "WDH" ;
+                                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Entsorgter gefährlicher Abfall"@de ,
+                                                                                                                "Hazardous waste disposed"@en .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDNH
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDNH> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                 <http://www.w3.org/2004/02/skos/core#definition> "Nicht gefährlicher Abfall ist nicht toxisch und ähnelt Hausmüll; umfasst inert(en) und gewöhnlichen Abfall."@de ,
+                                                                                                                  "Non-hazardous waste is non-toxic and similar to household waste; includes inert and ordinary waste."@en ;
+                                                                 <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                 <http://www.w3.org/2004/02/skos/core#notation> "WDNH" ;
+                                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Entsorgter nicht gefährlicher Abfall"@de ,
+                                                                                                                 "Non-hazardous waste disposed"@en .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDP
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDP> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "Einheit der Wirkungskategorie Wassernutzung."@de ,
+                                                                                                                 "Unit for the impact category water use."@en ;
+                                                                <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                <http://www.w3.org/2004/02/skos/core#notation> "WDP" ;
+                                                                <http://www.w3.org/2004/02/skos/core#prefLabel> "Wasserentzugspotenzial (Nutzung), entzug-gewichteter Wasserverbrauch"@de ,
+                                                                                                                "Water (user) deprivation potential, deprivation-weighted water consumption"@en .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WR
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WR> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                               <http://www.w3.org/2004/02/skos/core#definition> "High-level radioactive waste, conditioned, to final repository given in mass."@en ,
+                                                                                                                "Konditionierter hochradioaktiver Abfall zur Endablagerung, angegeben als Masse."@de ;
+                                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                               <http://www.w3.org/2004/02/skos/core#notation> "WR" ;
+                                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Entsorgter hochradioaktiver Abfall gemäß ISO 21930:2017 (Masse)"@de ,
+                                                                                                               "High-level radioactive waste disposed according to ISO 21930:2017 (mass)"@en .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/eco-toxicityfreshwater
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/eco-toxicityfreshwater> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                                   <http://www.w3.org/2004/02/skos/core#definition> "Impact category that addresses toxic impacts on ecosystems affecting individuals, species and ecosystem functions."@en ,
+                                                                                                                                    "Wirkungskategorie zu toxischen Auswirkungen auf Ökosysteme (Individuen, Arten und Ökosystemfunktionen)."@de ;
+                                                                                   <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                                   <http://www.w3.org/2004/02/skos/core#notation> "eco-toxicityfreshwater" ;
+                                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Eco-toxicity (freshwater)"@en ,
+                                                                                                                                   "Ökotoxizität (Süßwasser)"@de .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/non-renewableprimaryresourceswithenergycontent-tot
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/non-renewableprimaryresourceswithenergycontent-tot> rdf:type owl:NamedIndividual ,
+                                                                                                                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                                                               <http://www.w3.org/2004/02/skos/core#definition> "Sum of non-renewable primary resources used as an energy carrier and as material."@en ,
+                                                                                                                                                                "Summe nicht erneuerbarer Primärressourcen, genutzt als Energieträger und als Material."@de ;
+                                                                                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                                                               <http://www.w3.org/2004/02/skos/core#notation> "non-renewableprimaryresourceswithenergycontent-tot" ;
+                                                                                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Nicht erneuerbare Primärressourcen mit Energieinhalt – gesamt"@de ,
+                                                                                                                                                               "Non-renewable primary resources with energy content – total"@en .
+
+
+###  https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/renewableprimaryresourceswithenergycontent-total
+<https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/renewableprimaryresourceswithenergycontent-total> rdf:type owl:NamedIndividual ,
+                                                                                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                                                             <http://www.w3.org/2004/02/skos/core#definition> "Erneuerbare Primärenergie – gesamt."@de ,
+                                                                                                                                                              "Primary energy renewable – total."@en ;
+                                                                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> ;
+                                                                                                             <http://www.w3.org/2004/02/skos/core#notation> "renewableprimaryresourceswithenergycontent-total" ;
+                                                                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Erneuerbare Primärressourcen mit Energieinhalt – gesamt"@de ,
+                                                                                                                                                             "Renewable primary resources with energy content – total"@en .
+
+
+###  https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset
+<https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset> rdf:type owl:NamedIndividual ,
+                                                                <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                       <http://www.w3.org/2004/02/skos/core#definition> "Grouping scheme for the bSDD LCA property IRIs."@en ,
+                                                                                                        "Gruppierungsschema für die bSDD LCA-Property-IRIs."@de ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "bSDD LCA properties"@en ,
+                                                                                                       "bSDD LCA-Properties"@de .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

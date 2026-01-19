@@ -1,0 +1,1327 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#notation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ILCD_Indicators",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Grouping scheme for ILCD/EN 15804 indicator concepts used in LCIA/indicator result entries."
+  }, {
+    "@language" : "de",
+    "@value" : "Gruppierungsschema für ILCD/EN-15804-Indikator-Konzepte, die in LCIA-/Indikator-Ergebniseinträgen verwendet werden."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "ILCD / EN 15804 Indikatoren"
+  }, {
+    "@language" : "en",
+    "@value" : "ILCD / EN 15804 indicators"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcd/LCIAResultEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Project vocabulary of ILCD/EN 15804 indicator concepts (codes, labels, and canonical units) used to normalize and link LCIA/indicator results."
+  }, {
+    "@language" : "de",
+    "@value" : "Projektvokabular von ILCD/EN-15804-Indikator-Konzepten (Codes, Labels und kanonische Einheiten) zur Normalisierung und Verknüpfung von LCIA-/Indikator-Ergebnissen."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "LCABIM ILCD LCA indicators"
+  }, {
+    "@language" : "de",
+    "@value" : "LCABIM ILCD-LCA-Indikatoren"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1.0"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/ADPE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Abiotic depletion potential for minerals and metals."
+  }, {
+    "@language" : "de",
+    "@value" : "Abiotisches Ressourcenverknappungspotenzial für Mineralien und Metalle."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ADP_MM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "ADPE"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Abiotic depletion potential - non-fossil resources (ADPE)"
+  }, {
+    "@language" : "de",
+    "@value" : "Abiotisches Ressourcenverknappungspotenzial - nicht fossile Ressourcen (ADPE)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kg Sb-eqv."
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/ADPF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Abiotic depletion potential for fossil resources."
+  }, {
+    "@language" : "de",
+    "@value" : "Abiotisches Ressourcenverknappungspotenzial für fossile Ressourcen."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ADP_fossil"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "ADPF"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Abiotic depletion potential - fossil resources (ADPF)"
+  }, {
+    "@language" : "de",
+    "@value" : "Abiotisches Ressourcenverknappungspotenzial - fossile Ressourcen (ADPF)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "MJ"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/AP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A measure of the acidification caused to land and water."
+  }, {
+    "@language" : "de",
+    "@value" : "Maß für die Versauerung von Land- und Wasserökosystemen."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/AE"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "AP"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Acidification potential, accumulated Exceedance (AP)"
+  }, {
+    "@language" : "de",
+    "@value" : "Versauerungspotenzial, akkumulierte Überschreitung (AP)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "mol H+ eqv."
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/CRU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Components for re-use."
+  }, {
+    "@language" : "de",
+    "@value" : "Komponenten zur Wiederverwendung."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RU_C_KG"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "CRU"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Components for re-use (CRU)"
+  }, {
+    "@language" : "de",
+    "@value" : "Komponenten zur Wiederverwendung (CRU)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kg"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/EEE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Exported electrical energy."
+  }, {
+    "@language" : "de",
+    "@value" : "Exportierte elektrische Energie."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EEE"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "EEE"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Exported electrical energy (EEE)"
+  }, {
+    "@language" : "de",
+    "@value" : "Exportierte elektrische Energie (EEE)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "MJ"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/EET",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Exported thermal energy."
+  }, {
+    "@language" : "de",
+    "@value" : "Exportierte thermische Energie."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EET"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "EET"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Exported thermal energy (EET)"
+  }, {
+    "@language" : "de",
+    "@value" : "Exportierte thermische Energie (EET)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "MJ"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/EP_freshwater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Eutrophication potential for freshwater environments."
+  }, {
+    "@language" : "de",
+    "@value" : "Eutrophierungspotenzial für Süßwasser-Umweltkompartimente."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_freshwater"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "EP-freshwater"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Eutrophication potential - freshwater (EP-freshwater)"
+  }, {
+    "@language" : "de",
+    "@value" : "Eutrophierungspotenzial - Süßwasser (EP-freshwater)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kg P eqv."
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/EP_marine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Eutrophication potential for marine environments."
+  }, {
+    "@language" : "de",
+    "@value" : "Eutrophierungspotenzial für marine Umweltkompartimente."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_marine"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "EP-marine"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Eutrophication potential - marine (EP-marine)"
+  }, {
+    "@language" : "de",
+    "@value" : "Eutrophierungspotenzial - marin (EP-marine)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kg N eqv."
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/EP_terrestrial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Eutrophication potential for terrestrial environments."
+  }, {
+    "@language" : "de",
+    "@value" : "Eutrophierungspotenzial für terrestrische Umweltkompartimente."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_terrestrial"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "EP-terrestrial"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Eutrophication potential - terrestrial (EP-terrestrial)"
+  }, {
+    "@language" : "de",
+    "@value" : "Eutrophierungspotenzial - terrestrisch (EP-terrestrial)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "mol N eqv."
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/ETP_fw",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Comparative toxic unit for freshwater ecosystems."
+  }, {
+    "@language" : "de",
+    "@value" : "Vergleichende Toxizitätseinheit für Süßwasser-Ökosysteme."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/eco-toxicityfreshwater"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "ETP-fw"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Potential comparative toxic unit for ecosystems (ETP-fw)"
+  }, {
+    "@language" : "de",
+    "@value" : "Potenzielle vergleichende Toxizitätseinheit für Ökosysteme (ETP-fw)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "CTUe"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/FW",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Net use of fresh water."
+  }, {
+    "@language" : "de",
+    "@value" : "Nettoeinsatz von Süßwasser."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/FW"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "FW"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Nettoeinsatz von Süßwasser (FW)"
+  }, {
+    "@language" : "en",
+    "@value" : "Use of net fresh water (FW)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "m3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/GWP_biogenic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Biogener Anteil des Treibhauspotenzials."
+  }, {
+    "@language" : "en",
+    "@value" : "Biogenic component of global warming potential."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_biogenic"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "GWP-biogenic"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Global warming potential - biogenic (GWP-biogenic)"
+  }, {
+    "@language" : "de",
+    "@value" : "Treibhauspotenzial - biogen (GWP-biogenic)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kg CO2 eqv."
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/GWP_fossil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Fossil component of global warming potential."
+  }, {
+    "@language" : "de",
+    "@value" : "Fossiler Anteil des Treibhauspotenzials."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_fossil"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "GWP-fossil"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Global warming potential - fossil fuels (GWP-fossil)"
+  }, {
+    "@language" : "de",
+    "@value" : "Treibhauspotenzial - fossile Brennstoffe (GWP-fossil)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kg CO2 eqv."
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/GWP_luluc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Anteil des Treibhauspotenzials aus Landnutzung und Landnutzungsänderung."
+  }, {
+    "@language" : "en",
+    "@value" : "Land use and land use change component of global warming potential."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_luluc"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "GWP-luluc"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Global warming potential - land use and land use change (GWP-luluc)"
+  }, {
+    "@language" : "de",
+    "@value" : "Treibhauspotenzial - Landnutzung und Landnutzungsänderung (GWP-luluc)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kg CO2 eqv."
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/GWP_total",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Gesamtes Treibhauspotenzial."
+  }, {
+    "@language" : "en",
+    "@value" : "Total global warming potential."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_total"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "GWP-total"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Global warming potential - total (GWP-total)"
+  }, {
+    "@language" : "de",
+    "@value" : "Treibhauspotenzial - gesamt (GWP-total)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kg CO2 eqv."
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/HTP_c",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Human toxicity potential for cancer effects."
+  }, {
+    "@language" : "de",
+    "@value" : "Humantoxizitätspotenzial für Krebswirkungen."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/CTUh_C"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "HTP-c"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Potential comparative toxic unit for humans - cancer effects (HTP-c)"
+  }, {
+    "@language" : "de",
+    "@value" : "Potenzielle vergleichende Toxizitätseinheit für Menschen - Krebswirkungen (HTP-c)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "CTUh"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/HTP_nc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Human toxicity potential for non-cancer effects."
+  }, {
+    "@language" : "de",
+    "@value" : "Humantoxizitätspotenzial für Nicht-Krebswirkungen."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/CTUh_NC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "HTP-nc"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Potential comparative toxic unit for humans - non-cancer effects (HTP-nc)"
+  }, {
+    "@language" : "de",
+    "@value" : "Potenzielle vergleichende Toxizitätseinheit für Menschen - Nicht-Krebswirkungen (HTP-nc)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "CTUh"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/HWD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Entsorgter gefährlicher Abfall."
+  }, {
+    "@language" : "en",
+    "@value" : "Hazardous waste disposed."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDH"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "HWD"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Entsorgter gefährlicher Abfall (HWD)"
+  }, {
+    "@language" : "en",
+    "@value" : "Hazardous waste disposed (HWD)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kg"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A SKOS concept representing a standardized ILCD/EN 15804 indicator (code + canonical unit)."
+  }, {
+    "@language" : "de",
+    "@value" : "Ein SKOS-Konzept, das einen standardisierten ILCD/EN-15804-Indikator (Code + kanonische Einheit) repräsentiert."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ILCD indicator"
+  }, {
+    "@language" : "de",
+    "@value" : "ILCD-Indikator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/IRP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Ionizing radiation potential for human health (relative to U235)."
+  }, {
+    "@language" : "de",
+    "@value" : "Potenzial ionisierender Strahlung für die menschliche Gesundheit (relativ zu U235)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/U235"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "IRP"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Potential human exposure efficiency relative to U235 (IRP)"
+  }, {
+    "@language" : "de",
+    "@value" : "Potenzielle Expositionseffizienz relativ zu U235 (IRP)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kBq U235 eqv."
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/MER",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Materialien zur energetischen Verwertung."
+  }, {
+    "@language" : "en",
+    "@value" : "Materials for energy recovery."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/M_ER"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "MER"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Materialien zur energetischen Verwertung (MER)"
+  }, {
+    "@language" : "en",
+    "@value" : "Materials for energy recovery (MER)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kg"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/MFR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Materialien zum Recycling."
+  }, {
+    "@language" : "en",
+    "@value" : "Materials for recycling."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RC_M_KG"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "MFR"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Materialien zum Recycling (MFR)"
+  }, {
+    "@language" : "en",
+    "@value" : "Materials for recycling (MFR)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kg"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/NHWD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Entsorgter nicht gefährlicher Abfall."
+  }, {
+    "@language" : "en",
+    "@value" : "Non-hazardous waste disposed."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDNH"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "NHWD"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Entsorgter nicht gefährlicher Abfall (NHWD)"
+  }, {
+    "@language" : "en",
+    "@value" : "Non hazardous waste disposed (NHWD)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kg"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/NRSF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Einsatz nicht erneuerbarer Sekundärbrennstoffe."
+  }, {
+    "@language" : "en",
+    "@value" : "Use of non-renewable secondary fuels."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/NRSF"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "NRSF"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Einsatz nicht erneuerbarer Sekundärbrennstoffe (NRSF)"
+  }, {
+    "@language" : "en",
+    "@value" : "Use of non renewable secondary fuels (NRSF)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "MJ"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/ODP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Ozonabbaupotenzial."
+  }, {
+    "@language" : "en",
+    "@value" : "Ozone depletion potential."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ODP"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "ODP"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Depletion potential of the stratospheric ozone layer (ODP)"
+  }, {
+    "@language" : "de",
+    "@value" : "Ozonabbaupotenzial der Stratosphäre (ODP)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kg CFC 11 eqv."
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/PENRE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Einsatz nicht erneuerbarer Primärenergie."
+  }, {
+    "@language" : "en",
+    "@value" : "Use of non-renewable primary energy."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_NRE"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "PENRE"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Einsatz nicht erneuerbarer Primärenergie (PENRE)"
+  }, {
+    "@language" : "en",
+    "@value" : "Use of non renewable primary energy (PENRE)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "MJ"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/PENRM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Nicht erneuerbare Primärenergieressourcen, die als Rohstoffe eingesetzt werden."
+  }, {
+    "@language" : "en",
+    "@value" : "Non-renewable primary energy resources used as raw materials."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_NRM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "PENRM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Einsatz nicht erneuerbarer Primärenergieressourcen als Rohstoffe (PENRM)"
+  }, {
+    "@language" : "en",
+    "@value" : "Use of non renewable primary energy resources used as raw materials (PENRM)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "MJ"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/PENRT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Gesamter Einsatz nicht erneuerbarer Primärenergieressourcen."
+  }, {
+    "@language" : "en",
+    "@value" : "Total use of non-renewable primary energy resources."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/non-renewableprimaryresourceswithenergycontent-tot"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "PENRT"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Gesamter Einsatz nicht erneuerbarer Primärenergieressourcen (PENRT)"
+  }, {
+    "@language" : "en",
+    "@value" : "Total use of non renewable primary energy resource (PENRT)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "MJ"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/PERE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Einsatz erneuerbarer Primärenergie."
+  }, {
+    "@language" : "en",
+    "@value" : "Use of renewable primary energy."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_RE"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "PERE"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Einsatz erneuerbarer Primärenergie (PERE)"
+  }, {
+    "@language" : "en",
+    "@value" : "Use of renewable primary energy (PERE)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "MJ"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/PERM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Erneuerbare Primärenergieressourcen, die als Rohstoffe eingesetzt werden."
+  }, {
+    "@language" : "en",
+    "@value" : "Renewable primary energy resources used as raw materials."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_RM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "PERM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Einsatz erneuerbarer Primärenergieressourcen als Rohstoffe (PERM)"
+  }, {
+    "@language" : "en",
+    "@value" : "Use of renewable primary energy resources used as raw materials (PERM)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "MJ"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/PERT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Gesamter Einsatz erneuerbarer Primärenergieressourcen."
+  }, {
+    "@language" : "en",
+    "@value" : "Total use of renewable primary energy resources."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/renewableprimaryresourceswithenergycontent-total"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "PERT"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Gesamter Einsatz erneuerbarer Primärenergieressourcen (PERT)"
+  }, {
+    "@language" : "en",
+    "@value" : "Total use of renewable primary energy resources (PERT)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "MJ"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/PM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Impact category for particulate matter emissions."
+  }, {
+    "@language" : "de",
+    "@value" : "Wirkungskategorie für Feinstaubemissionen (Particulate Matter)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "PM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Potential incidence of disease due to PM emissions (PM)"
+  }, {
+    "@language" : "de",
+    "@value" : "Potenzielle Krankheitsinzidenz durch PM-Emissionen (PM)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "disease incidence"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/POCP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Photochemical ozone creation potential."
+  }, {
+    "@language" : "de",
+    "@value" : "Photochemisches Ozonbildungspotenzial."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/POCP"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "POCP"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Photochemical ozone creation potential (POCP)"
+  }, {
+    "@language" : "de",
+    "@value" : "Photochemisches Ozonbildungspotenzial (POCP)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kg NMVOC eqv."
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/RSF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Einsatz erneuerbarer Sekundärbrennstoffe."
+  }, {
+    "@language" : "en",
+    "@value" : "Use of renewable secondary fuels."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RSF"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "RSF"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Einsatz erneuerbarer Sekundärbrennstoffe (RSF)"
+  }, {
+    "@language" : "en",
+    "@value" : "Use of renewable secondary fuels (RSF)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "MJ"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/RWD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Entsorgter radioaktiver Abfall."
+  }, {
+    "@language" : "en",
+    "@value" : "Radioactive waste disposed."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WR"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "RWD"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Entsorgter radioaktiver Abfall (RWD)"
+  }, {
+    "@language" : "en",
+    "@value" : "Radioactive waste disposed (RWD)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kg"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/SM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Einsatz von Sekundärmaterial."
+  }, {
+    "@language" : "en",
+    "@value" : "Use of secondary material."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/SM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "SM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Einsatz von Sekundärmaterial (SM)"
+  }, {
+    "@language" : "en",
+    "@value" : "Use of secondary material (SM)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "kg"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/SQP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Indikator für bodenqualitätsbezogene Wirkungen."
+  }, {
+    "@language" : "en",
+    "@value" : "Soil quality related impacts indicator."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/SQI"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "SQP"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Potential soil quality index (SQP)"
+  }, {
+    "@language" : "de",
+    "@value" : "Potenzialer Bodenqualitätsindex (SQP)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "unitless"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/WDP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "de",
+    "@value" : "Wasserentzugspotenzial."
+  }, {
+    "@language" : "en",
+    "@value" : "Water deprivation potential."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDP"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/lcabim/ILCD_Indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "WDP"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "de",
+    "@value" : "Wasserentzugspotenzial (WDP)"
+  }, {
+    "@language" : "en",
+    "@value" : "Water (user) deprivation potential (WDP)"
+  } ],
+  "https://w3id.org/lcabim/ilcdind/unit" : [ {
+    "@value" : "m3 world eqv."
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/hasIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links an ILCD LCIAResultEntry to a standardized ILCD/EN 15804 indicator concept."
+  }, {
+    "@language" : "de",
+    "@value" : "Verknüpft einen ILCD-LCIAResultEntry mit einem standardisierten ILCD/EN-15804-Indikator-Konzept."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcd/LCIAResultEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has indicator"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Indikator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/lcabim/ilcdind/unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Canonical unit string for the indicator (e.g., MJ, kg CO2 eqv.)."
+  }, {
+    "@language" : "de",
+    "@value" : "Kanonische Einheiten-Zeichenkette für den Indikator (z. B. MJ, kg CO2 eqv.)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/lcabim/ilcdind/ILCDIndicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Einheit"
+  }, {
+    "@language" : "en",
+    "@value" : "unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+} ]
