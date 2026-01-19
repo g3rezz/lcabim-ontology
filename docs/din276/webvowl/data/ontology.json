@@ -14,6 +14,12 @@
       "en" : "SKOS concept scheme and linking property for DIN 276 cost groups used to enrich ILCDx data instances and BKI elements."
     },
     "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
@@ -41,10 +47,10 @@
     "id" : "2",
     "type" : "owl:Thing"
   }, {
-    "id" : "5",
+    "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "3",
+    "id" : "5",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -84,22 +90,6 @@
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "https://w3id.org/lcabim/din276/DIN276CostGroup",
-    "baseIri" : "https://w3id.org/lcabim/din276",
-    "instances" : 0,
-    "label" : {
-      "de" : "DIN 276 Kostengruppe",
-      "IRI-based" : "DIN276CostGroup",
-      "en" : "DIN 276 cost group"
-    },
-    "comment" : {
-      "de" : "Ein SKOS-Konzept, das eine DIN 276 Kostengruppe repräsentiert (z. B. 331).",
-      "en" : "A SKOS concept representing a DIN 276 cost group (e.g., 331)."
-    },
-    "attributes" : [ "external" ],
-    "id" : "5",
-    "superClasses" : [ "3" ]
-  }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
     "instances" : 0,
@@ -109,6 +99,1139 @@
     "subClasses" : [ "5" ],
     "attributes" : [ "external" ],
     "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/lcabim/din276/DIN276CostGroup",
+    "baseIri" : "https://w3id.org/lcabim/din276",
+    "instances" : 0,
+    "label" : {
+      "de" : "DIN 276 Kostengruppe",
+      "IRI-based" : "DIN276CostGroup",
+      "en" : "DIN 276 cost group"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_326",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Pipework, shafts, packing, sump pumps, deep water drainage, surface water drainage.",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Leitungen, Schächte, Packungen, Pumpensümpfe, Tiefenentwässerung, Oberflächenentwässerung",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "326",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Dränagen",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Drainage",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_320",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_326"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_337",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Prefabricated external wall units and vertical components which can also have doors and windows or external claddings and internal linings, in addition to their core element",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Vorgefertigte Wände und vertikale Baukonstruktionen, die neben ihrer Kernkonstruktion auch Türen und Fenster oder äußere und innere Bekleidungen enthalten können",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "337",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Prefabricated external wall units",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Elementierte Außenwandkonstruktionen",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_330",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_337"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_360",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Loadbearing and non-loadbearing components for flat and sloping roofs, and other horizontal components that enclose the top of the structure.",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Tragende und nichttragende Baukonstruktionen für flache und geneigte Dächer und andere horizontale Baukonstruktionen, die das Bauwerk nach oben abschließen",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "360",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Dächer",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Roofs",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_360"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_351",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Loadbearing components for floors and ceilings, stairs, ramps, balconies and other horizontal constructions including upstand and downstand beams, shoring and infill elements, (e. g. insulation,hollow blocks, false floors, loose fill).",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Tragende Konstruktionen für Decken, Treppen, Rampen, Balkone und andere horizontale Baukonstruktionen einschließlich Über- und Unterzügen, Abstützungen und füllender Teile (z. B. Dämmungen, Hohlkörper, Blindböden, Schüttungen)",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "351",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Deckenkonstruktionen",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Floor components",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_350",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_351"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_340",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Overall category for interior vertical structural components.",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Tragende und nichttragende vertikale Baukonstruktionen, die sich innerhalb des Bauwerks befinden. Die KG 341 und die KG 342 können ggf. als KG 341 zusammengefasst werden.",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "340",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Innenwände/Vertikale Baukonstruktionen, innen",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Internal walls/internal vertical components",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_340"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_361",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Loadbearing constructions for roofs, canopies, roof trusses, space frames and dome roofs, including upstand and downstand beams, and infill elements (e. g. insulation, hollow blocks, false floors, loose fill)",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Tragende Konstruktionen von Dächern, Vordächern, Dachstühlen, Raumtragwerken, Kuppeln und Gewölben einschließlich Über- und Unterzügen, Abstützungen und füllender Teile (z. B. Dämmungen, Hohlkörper, Blindböden, Schüttungen)",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "361",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Dachkonstruktionen",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Roof structures",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_360",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_361"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_350",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Tragende und nichttragende Baukonstruktionen für Decken, Treppen, Rampen und andere horizontale Baukonstruktionen",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Loadbearing and non-loadbearing components for floors and ceilings, stairs, ramps and other horizontal constructions",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "350",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Decken/Horizontale Baukonstruktionen",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Floors and ceilings/horizontal components",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_350"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_320",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Foundation and substructure works, including associated earthworks and blindings not covered in CG 310.",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Gründungs- und Unterbaumaßnahmen für das Bauwerk einschließlich der zugehörigen Erdarbeiten und Sauberkeitsschichten, soweit nicht in der KG 310 erfasst",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "320",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Gründung, Unterbau",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Foundations/substructures",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_320"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_342",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Non-loadbearing internal walls and large-area components, that are not necessary to ensure the stability of the structure (e. g. parapets, infill panels) including horizontal damp-proofing and chases, penetrations and infill elements (e. g. insulation)",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Nichttragende Innenwände und flächige Konstruktionen, die für die Standfestigkeit des Bauwerks nicht erforderlich sind (z. B. Brüstungen, Ausfachungen) einschließlich horizontaler Abdichtungen sowie Schlitzen, Durchführungen und füllender Teile (z. B. Dämmungen)",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "342",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Non-loadbearing internal walls",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Nichttragende Innenwände",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_340",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_342"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_331",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "External walls and other components of small thickness compared with their other dimensions, that are necessary to ensure the stability of the structure, including horizontal damp-proofing as well as chases and penetrations",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Außenwände und flächige Konstruktionen, die für die Standfestigkeit des Bauwerks erforderlich sind, einschließlich horizontaler Abdichtungen sowie Schlitzen und Durchführungen",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "331",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Tragende Außenwände",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Loadbearing external walls",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_330",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_331"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_353",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Beläge auf Deckenkonstruktionen einschließlich Estrichen, Dichtungs-, Dämm-, Schutz- und Nutzschichten sowie Schwingböden und Installationsdoppelböden. Dazu gehören auch fest mit den Decken verbundene Begrünungssysteme einschließlich Fertigstellungs- und Entwicklungspflege.",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Coverings on floors, including screeds, damp-proofing, insulating and protective layers, wearing surfaces, false floors for services, and floating floors. This includes greening systems attached to the floor/ceiling, including preparation and care.",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "353",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Floorings",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Deckenbeläge",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_350",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_353"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_341",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Loadbearing internal walls and large-area components that are necessary to ensure the stability of the structure, including horizontal waterproofing and chases and penetrations.",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Tragende Innenwände und flächige Konstruktionen, die für die Standfestigkeit des Bauwerks erforderlich sind, einschließlich horizontaler Abdichtungen sowie Schlitzen und Durchführungen",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "341",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Loadbearing internal walls",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Tragende Innenwände",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_340",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_341"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_330",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Tragende und nichttragende vertikale Baukonstruktionen, die sich an den Außenseiten des Bauwerks befinden, d. h. insbesondere dem Außenklima ausgesetzt sind bzw. an das Erdreich oder an andere Bauwerke grenzen. Die KG 331 und die KG 332 können ggf. als KG 331 zusammengefasst werden.",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Loadbearing and non-loadbearing vertical building components on the outside of the structure, i.e. particularly those that are exposed to the outside atmosphere or that adjoin the soil or other structures. CG 331 and CG 332 can be combined into CG 331 where appropriate.",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "330",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Außenwände/Vertikale Baukonstruktionen, außen",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "External walls/vertical components, external",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_330"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_333",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Supports, columns, pylons and pillars on the exterior side of a structure with a slenderness ratio < 1 : 4",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Stützen, Säulen, Pylone und Pfeiler an den Außenseiten des Bauwerks mit einem Querschnittsverhältnis < 1 : 4",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "333",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "External columns",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Außenstützen",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_330",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_333"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_322",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Pad foundations, strip foundations, foundation slabs, base plates and slabs",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Einzelfundamente, Streifenfundamente, Fundament-, Sohl- und Bodenplatten",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "322",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Flachgründungen und Bodenplatten",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Shallow foundations and base slabs",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_320",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_322"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_355",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Prefabricated floors and ceilings, stairs, ramps and other horizontal constructions that can contain openings, coverings or linings in addition to their core structure",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Vorgefertigte Decken, Treppen, Rampen und andere horizontale Baukonstruktionen, die neben ihrer Kernkonstruktion auch Öffnungen, Beläge oder Bekleidungen enthalten können",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "355",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Elementierte Deckenkonstruktionen",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Prefabricated floor and ceiling units",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_350",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_355"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_310",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Groundworks, earthworks, trenchwork, embankments, cuttings, retaining walls and seawalls, slope protection.",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Oberbodenarbeiten und Bodenarbeiten, Erdbaumaßnahmen, Baugruben, Dämme, Einschnitte, Wälle, Hangsicherungen",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "310",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Trenchwork/Earthworks",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Baugrube/Erdbau",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_310"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_332",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "External walls and components of small thickness compared with their other dimensions, that are not necessary to ensure the stability of the structure (e. g. parapets, attics, infill panels) including horizontal damp-proofing and chases, as well as penetrations and infill elements (e.g. insulation)",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Außenwände und flächige Konstruktionen, die für die Standfestigkeit des Bauwerks nicht erforderlich sind (z. B. Brüstungen, Attiken, Ausfachungen) einschließlich horizontaler Abdichtungen sowie Schlitzen, Durchführungen und füllender Teile (z. B. Dämmungen)",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "332",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Non-loadbearing external walls",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Nichttragende Außenwände",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_330",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_332"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_365",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Vorgefertigte Dächer, die neben ihrer Kernkonstruktion auch Öffnungen, Beläge oder Bekleidungen enthalten können",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Prefabricated roofs that can contain openings, coverings or linings in addition to their core structure",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "365",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Elementierte Dachkonstruktionen",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Prefabricated roof constructions",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_360",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_365"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_343",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Supports, columns, pylons and pillars on the inside of a structure with a slenderness ratio < 1:4.",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Stützen, Säulen, Pylone und Pfeiler innerhalb des Bauwerks mit einem Querschnittsverhältnis < 1 : 4",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "343",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Internal columns",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Innenstützen",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_340",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_343"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_346",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Prefabricated internal wall units and vertical components which can also have doors and windows or internal linings, in addition to their core element; folding walls, sliding walls, sanitary partitions, rough partitioning.",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Vorgefertigte Wände und vertikale Baukonstruktionen, die neben ihrer Kernkonstruktion auch Türen und Fenster oder Innenwandbekleidungen enthalten können; Falt- und Schiebewände, Sanitärtrennwände, Verschläge",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "346",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Prefabricated internal wall units",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Elementierte Innenwandkonstruktionen",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_340",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_346"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_335",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Äußere Bekleidungen an Wänden und Stützen einschließlich Putz-, Dichtungs-, Dämm- und Schutzschichten. Dazu gehören auch auf der Außenseite fest mit den Außenwänden verbundene Fassaden- und Wandbegrünungssysteme einschließlich aller Teile (z. B. Gefäße, Substrate, Pflanzen, Fertigstellungs- und Entwicklungspflege, Dünge- und Bewässerungsvorrichtungen).",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "External claddings of external walls and columns, including rendering, damp-proofing, insulating and protective layers. These also include façades and vertical greenery systems permanently attached to external walls on the outside, including all associated parts (e. g. containers, substrates, plants, preparation and care of plants, fertilizing and watering systems)",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "335",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Außenwandbekleidungen, außen",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Cladding, external",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_330",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_335"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_312",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Excavation and securing of trenches, embankments and cuttings (e.g. diaphragm walling, sheet piling, soldier piling), securing by injection or shoring.",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Verbau und Sicherung von Baugruben, Baugräben, Dämmen, Wällen und Einschnitten (z. B. Schlitz-, Pfahl-, Spund-, Trägerbohl-, Injektions- und Spritzbetonsicherung) einschließlich der Verankerungen, Absteifungen und Böschungen",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "312",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Umschließung",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Enclosure (support work)",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_310",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_312"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/din276/costgroup_323",
+      "baseIri" : "https://w3id.org/lcabim/din276",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Pfahlgründung einschließlich der Roste; Brunnengründungen; Verankerungen",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Pile foundations, including pile grating, cylinder foundations; anchoring",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/DIN276",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "323",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Tiefgründungen",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Deep foundations",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/din276/costgroup_320",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "costgroup_323"
+      }
+    } ],
+    "comment" : {
+      "de" : "Ein SKOS-Konzept, das eine DIN 276 Kostengruppe repräsentiert (z. B. 331).",
+      "en" : "A SKOS concept representing a DIN 276 cost group (e.g., 331)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "3" ]
   } ],
   "property" : [ {
     "id" : "1",
@@ -131,12 +1254,12 @@
       "de" : "Verknüpft einen ILCDx-Dateninstanz und BKI-Element mit einem oder mehreren DIN 276 Kostengruppen (SKOS-Konzepte).",
       "en" : "Links a ILCDx data instance and BKI element to one or more DIN 276 cost group SKOS concepts."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "1"
   }, {
     "range" : "3",
     "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "4"
   } ]
 }

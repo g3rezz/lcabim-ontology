@@ -9,6 +9,7 @@
 <https://w3id.org/lcabim/bki> rdf:type owl:Ontology ;
                                <http://purl.org/dc/terms/description> "Minimal vocabulary for modeling BKI elements and their material layers."@en ,
                                                                       "Minimales Vokabular zur Modellierung von BKI-Elementen und deren Materialschichten."@de ;
+                               <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                <http://purl.org/dc/terms/title> "BKI element template vocabulary"@en ,
                                                                 "Vokabular für BKI-Elementvorlagen"@de ;
                                owl:versionInfo "0.1.0" .
@@ -19,6 +20,10 @@
 
 ###  http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/title

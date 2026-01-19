@@ -11,6 +11,7 @@
     <owl:Ontology rdf:about="https://w3id.org/lcabim/din276">
         <terms:description xml:lang="en">SKOS concept scheme and linking property for DIN 276 cost groups used to enrich ILCDx data instances and BKI elements.</terms:description>
         <terms:description xml:lang="de">SKOS-Konzeptschema und Verknüpfungseigenschaft für DIN 276 Kostengruppen zur Anreicherung von ILCDx-Dateninstanzen und BKI-Elementen.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title xml:lang="de">DIN 276 Kostengruppen-Mapping-Vokabular</terms:title>
         <terms:title xml:lang="en">DIN 276 cost group mapping vocabulary</terms:title>
         <owl:versionInfo>0.1.0</owl:versionInfo>
@@ -37,10 +38,45 @@
     
 
 
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
     <!-- http://purl.org/dc/terms/title -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
     
 
 
@@ -134,6 +170,384 @@
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <skos:prefLabel xml:lang="de">DIN 276</skos:prefLabel>
         <skos:prefLabel xml:lang="en">DIN 276</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_310 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_310">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>310</skos:notation>
+        <skos:note xml:lang="en">Groundworks, earthworks, trenchwork, embankments, cuttings, retaining walls and seawalls, slope protection.</skos:note>
+        <skos:note xml:lang="de">Oberbodenarbeiten und Bodenarbeiten, Erdbaumaßnahmen, Baugruben, Dämme, Einschnitte, Wälle, Hangsicherungen</skos:note>
+        <skos:prefLabel xml:lang="de">Baugrube/Erdbau</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Trenchwork/Earthworks</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_312 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_312">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_310"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>312</skos:notation>
+        <skos:note xml:lang="en">Excavation and securing of trenches, embankments and cuttings (e.g. diaphragm walling, sheet piling, soldier piling), securing by injection or shoring.</skos:note>
+        <skos:note xml:lang="de">Verbau und Sicherung von Baugruben, Baugräben, Dämmen, Wällen und Einschnitten (z. B. Schlitz-, Pfahl-, Spund-, Trägerbohl-, Injektions- und Spritzbetonsicherung) einschließlich der Verankerungen, Absteifungen und Böschungen</skos:note>
+        <skos:prefLabel xml:lang="en">Enclosure (support work)</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Umschließung</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_320 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_320">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>320</skos:notation>
+        <skos:note xml:lang="en">Foundation and substructure works, including associated earthworks and blindings not covered in CG 310.</skos:note>
+        <skos:note xml:lang="de">Gründungs- und Unterbaumaßnahmen für das Bauwerk einschließlich der zugehörigen Erdarbeiten und Sauberkeitsschichten, soweit nicht in der KG 310 erfasst</skos:note>
+        <skos:prefLabel xml:lang="en">Foundations/substructures</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Gründung, Unterbau</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_322 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_322">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_320"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>322</skos:notation>
+        <skos:note xml:lang="de">Einzelfundamente, Streifenfundamente, Fundament-, Sohl- und Bodenplatten</skos:note>
+        <skos:note xml:lang="en">Pad foundations, strip foundations, foundation slabs, base plates and slabs</skos:note>
+        <skos:prefLabel xml:lang="de">Flachgründungen und Bodenplatten</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Shallow foundations and base slabs</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_323 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_323">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_320"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>323</skos:notation>
+        <skos:note xml:lang="de">Pfahlgründung einschließlich der Roste; Brunnengründungen; Verankerungen</skos:note>
+        <skos:note xml:lang="en">Pile foundations, including pile grating, cylinder foundations; anchoring</skos:note>
+        <skos:prefLabel xml:lang="en">Deep foundations</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Tiefgründungen</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_326 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_326">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_320"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>326</skos:notation>
+        <skos:note xml:lang="de">Leitungen, Schächte, Packungen, Pumpensümpfe, Tiefenentwässerung, Oberflächenentwässerung</skos:note>
+        <skos:note xml:lang="en">Pipework, shafts, packing, sump pumps, deep water drainage, surface water drainage.</skos:note>
+        <skos:prefLabel xml:lang="en">Drainage</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Dränagen</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_330 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_330">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>330</skos:notation>
+        <skos:note xml:lang="en">Loadbearing and non-loadbearing vertical building components on the outside of the structure, i.e. particularly those that are exposed to the outside atmosphere or that adjoin the soil or other structures. CG 331 and CG 332 can be combined into CG 331 where appropriate.</skos:note>
+        <skos:note xml:lang="de">Tragende und nichttragende vertikale Baukonstruktionen, die sich an den Außenseiten des Bauwerks befinden, d. h. insbesondere dem Außenklima ausgesetzt sind bzw. an das Erdreich oder an andere Bauwerke grenzen. Die KG 331 und die KG 332 können ggf. als KG 331 zusammengefasst werden.</skos:note>
+        <skos:prefLabel xml:lang="de">Außenwände/Vertikale Baukonstruktionen, außen</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">External walls/vertical components, external</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_331 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_331">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_330"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>331</skos:notation>
+        <skos:note xml:lang="de">Außenwände und flächige Konstruktionen, die für die Standfestigkeit des Bauwerks erforderlich sind, einschließlich horizontaler Abdichtungen sowie Schlitzen und Durchführungen</skos:note>
+        <skos:note xml:lang="en">External walls and other components of small thickness compared with their other dimensions, that are necessary to ensure the stability of the structure, including horizontal damp-proofing as well as chases and penetrations</skos:note>
+        <skos:prefLabel xml:lang="en">Loadbearing external walls</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Tragende Außenwände</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_332 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_332">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_330"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>332</skos:notation>
+        <skos:note xml:lang="de">Außenwände und flächige Konstruktionen, die für die Standfestigkeit des Bauwerks nicht erforderlich sind (z. B. Brüstungen, Attiken, Ausfachungen) einschließlich horizontaler Abdichtungen sowie Schlitzen, Durchführungen und füllender Teile (z. B. Dämmungen)</skos:note>
+        <skos:note xml:lang="en">External walls and components of small thickness compared with their other dimensions, that are not necessary to ensure the stability of the structure (e. g. parapets, attics, infill panels) including horizontal damp-proofing and chases, as well as penetrations and infill elements (e.g. insulation)</skos:note>
+        <skos:prefLabel xml:lang="de">Nichttragende Außenwände</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Non-loadbearing external walls</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_333 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_333">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_330"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>333</skos:notation>
+        <skos:note xml:lang="de">Stützen, Säulen, Pylone und Pfeiler an den Außenseiten des Bauwerks mit einem Querschnittsverhältnis &lt; 1 : 4</skos:note>
+        <skos:note xml:lang="en">Supports, columns, pylons and pillars on the exterior side of a structure with a slenderness ratio &lt; 1 : 4</skos:note>
+        <skos:prefLabel xml:lang="de">Außenstützen</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">External columns</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_335 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_335">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_330"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>335</skos:notation>
+        <skos:note xml:lang="en">External claddings of external walls and columns, including rendering, damp-proofing, insulating and protective layers. These also include façades and vertical greenery systems permanently attached to external walls on the outside, including all associated parts (e. g. containers, substrates, plants, preparation and care of plants, fertilizing and watering systems)</skos:note>
+        <skos:note xml:lang="de">Äußere Bekleidungen an Wänden und Stützen einschließlich Putz-, Dichtungs-, Dämm- und Schutzschichten. Dazu gehören auch auf der Außenseite fest mit den Außenwänden verbundene Fassaden- und Wandbegrünungssysteme einschließlich aller Teile (z. B. Gefäße, Substrate, Pflanzen, Fertigstellungs- und Entwicklungspflege, Dünge- und Bewässerungsvorrichtungen).</skos:note>
+        <skos:prefLabel xml:lang="de">Außenwandbekleidungen, außen</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Cladding, external</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_337 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_337">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_330"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>337</skos:notation>
+        <skos:note xml:lang="en">Prefabricated external wall units and vertical components which can also have doors and windows or external claddings and internal linings, in addition to their core element</skos:note>
+        <skos:note xml:lang="de">Vorgefertigte Wände und vertikale Baukonstruktionen, die neben ihrer Kernkonstruktion auch Türen und Fenster oder äußere und innere Bekleidungen enthalten können</skos:note>
+        <skos:prefLabel xml:lang="de">Elementierte Außenwandkonstruktionen</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Prefabricated external wall units</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_340 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_340">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>340</skos:notation>
+        <skos:note xml:lang="en">Overall category for interior vertical structural components.</skos:note>
+        <skos:note xml:lang="de">Tragende und nichttragende vertikale Baukonstruktionen, die sich innerhalb des Bauwerks befinden. Die KG 341 und die KG 342 können ggf. als KG 341 zusammengefasst werden.</skos:note>
+        <skos:prefLabel xml:lang="de">Innenwände/Vertikale Baukonstruktionen, innen</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Internal walls/internal vertical components</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_341 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_341">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_340"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>341</skos:notation>
+        <skos:note xml:lang="en">Loadbearing internal walls and large-area components that are necessary to ensure the stability of the structure, including horizontal waterproofing and chases and penetrations.</skos:note>
+        <skos:note xml:lang="de">Tragende Innenwände und flächige Konstruktionen, die für die Standfestigkeit des Bauwerks erforderlich sind, einschließlich horizontaler Abdichtungen sowie Schlitzen und Durchführungen</skos:note>
+        <skos:prefLabel xml:lang="en">Loadbearing internal walls</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Tragende Innenwände</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_342 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_342">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_340"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>342</skos:notation>
+        <skos:note xml:lang="de">Nichttragende Innenwände und flächige Konstruktionen, die für die Standfestigkeit des Bauwerks nicht erforderlich sind (z. B. Brüstungen, Ausfachungen) einschließlich horizontaler Abdichtungen sowie Schlitzen, Durchführungen und füllender Teile (z. B. Dämmungen)</skos:note>
+        <skos:note xml:lang="en">Non-loadbearing internal walls and large-area components, that are not necessary to ensure the stability of the structure (e. g. parapets, infill panels) including horizontal damp-proofing and chases, penetrations and infill elements (e. g. insulation)</skos:note>
+        <skos:prefLabel xml:lang="de">Nichttragende Innenwände</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Non-loadbearing internal walls</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_343 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_343">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_340"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>343</skos:notation>
+        <skos:note xml:lang="de">Stützen, Säulen, Pylone und Pfeiler innerhalb des Bauwerks mit einem Querschnittsverhältnis &lt; 1 : 4</skos:note>
+        <skos:note xml:lang="en">Supports, columns, pylons and pillars on the inside of a structure with a slenderness ratio &lt; 1:4.</skos:note>
+        <skos:prefLabel xml:lang="de">Innenstützen</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Internal columns</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_346 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_346">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_340"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>346</skos:notation>
+        <skos:note xml:lang="en">Prefabricated internal wall units and vertical components which can also have doors and windows or internal linings, in addition to their core element; folding walls, sliding walls, sanitary partitions, rough partitioning.</skos:note>
+        <skos:note xml:lang="de">Vorgefertigte Wände und vertikale Baukonstruktionen, die neben ihrer Kernkonstruktion auch Türen und Fenster oder Innenwandbekleidungen enthalten können; Falt- und Schiebewände, Sanitärtrennwände, Verschläge</skos:note>
+        <skos:prefLabel xml:lang="de">Elementierte Innenwandkonstruktionen</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Prefabricated internal wall units</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_350 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_350">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>350</skos:notation>
+        <skos:note xml:lang="en">Loadbearing and non-loadbearing components for floors and ceilings, stairs, ramps and other horizontal constructions</skos:note>
+        <skos:note xml:lang="de">Tragende und nichttragende Baukonstruktionen für Decken, Treppen, Rampen und andere horizontale Baukonstruktionen</skos:note>
+        <skos:prefLabel xml:lang="de">Decken/Horizontale Baukonstruktionen</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Floors and ceilings/horizontal components</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_351 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_351">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_350"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>351</skos:notation>
+        <skos:note xml:lang="en">Loadbearing components for floors and ceilings, stairs, ramps, balconies and other horizontal constructions including upstand and downstand beams, shoring and infill elements, (e. g. insulation,hollow blocks, false floors, loose fill).</skos:note>
+        <skos:note xml:lang="de">Tragende Konstruktionen für Decken, Treppen, Rampen, Balkone und andere horizontale Baukonstruktionen einschließlich Über- und Unterzügen, Abstützungen und füllender Teile (z. B. Dämmungen, Hohlkörper, Blindböden, Schüttungen)</skos:note>
+        <skos:prefLabel xml:lang="de">Deckenkonstruktionen</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Floor components</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_353 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_353">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_350"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>353</skos:notation>
+        <skos:note xml:lang="de">Beläge auf Deckenkonstruktionen einschließlich Estrichen, Dichtungs-, Dämm-, Schutz- und Nutzschichten sowie Schwingböden und Installationsdoppelböden. Dazu gehören auch fest mit den Decken verbundene Begrünungssysteme einschließlich Fertigstellungs- und Entwicklungspflege.</skos:note>
+        <skos:note xml:lang="en">Coverings on floors, including screeds, damp-proofing, insulating and protective layers, wearing surfaces, false floors for services, and floating floors. This includes greening systems attached to the floor/ceiling, including preparation and care.</skos:note>
+        <skos:prefLabel xml:lang="de">Deckenbeläge</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Floorings</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_355 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_355">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_350"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>355</skos:notation>
+        <skos:note xml:lang="en">Prefabricated floors and ceilings, stairs, ramps and other horizontal constructions that can contain openings, coverings or linings in addition to their core structure</skos:note>
+        <skos:note xml:lang="de">Vorgefertigte Decken, Treppen, Rampen und andere horizontale Baukonstruktionen, die neben ihrer Kernkonstruktion auch Öffnungen, Beläge oder Bekleidungen enthalten können</skos:note>
+        <skos:prefLabel xml:lang="de">Elementierte Deckenkonstruktionen</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Prefabricated floor and ceiling units</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_360 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_360">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>360</skos:notation>
+        <skos:note xml:lang="en">Loadbearing and non-loadbearing components for flat and sloping roofs, and other horizontal components that enclose the top of the structure.</skos:note>
+        <skos:note xml:lang="de">Tragende und nichttragende Baukonstruktionen für flache und geneigte Dächer und andere horizontale Baukonstruktionen, die das Bauwerk nach oben abschließen</skos:note>
+        <skos:prefLabel xml:lang="de">Dächer</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Roofs</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_361 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_361">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_360"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>361</skos:notation>
+        <skos:note xml:lang="en">Loadbearing constructions for roofs, canopies, roof trusses, space frames and dome roofs, including upstand and downstand beams, and infill elements (e. g. insulation, hollow blocks, false floors, loose fill)</skos:note>
+        <skos:note xml:lang="de">Tragende Konstruktionen von Dächern, Vordächern, Dachstühlen, Raumtragwerken, Kuppeln und Gewölben einschließlich Über- und Unterzügen, Abstützungen und füllender Teile (z. B. Dämmungen, Hohlkörper, Blindböden, Schüttungen)</skos:note>
+        <skos:prefLabel xml:lang="de">Dachkonstruktionen</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Roof structures</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/din276/costgroup_365 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/din276/costgroup_365">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/din276/DIN276CostGroup"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/din276/costgroup_360"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/din276/DIN276"/>
+        <skos:notation>365</skos:notation>
+        <skos:note xml:lang="en">Prefabricated roofs that can contain openings, coverings or linings in addition to their core structure</skos:note>
+        <skos:note xml:lang="de">Vorgefertigte Dächer, die neben ihrer Kernkonstruktion auch Öffnungen, Beläge oder Bekleidungen enthalten können</skos:note>
+        <skos:prefLabel xml:lang="de">Elementierte Dachkonstruktionen</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Prefabricated roof constructions</skos:prefLabel>
     </owl:NamedIndividual>
 </rdf:RDF>
 

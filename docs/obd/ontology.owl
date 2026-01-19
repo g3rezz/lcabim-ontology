@@ -11,6 +11,7 @@
     <owl:Ontology rdf:about="https://w3id.org/lcabim/obd">
         <terms:description xml:lang="en">SKOS concept scheme and linking property for canonical OEKOBAU.DAT categories used to normalize source classification literals.</terms:description>
         <terms:description xml:lang="de">SKOS-Konzeptschema und Verknüpfungseigenschaft für kanonische ÖKOBAUDAT-Kategorien zur Normalisierung von Quell-Klassifikationswerten.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title xml:lang="en">OEKOBAU.DAT canonical category vocabulary</terms:title>
         <terms:title xml:lang="de">ÖKOBAUDAT Vokabular kanonischer Kategorien</terms:title>
         <owl:versionInfo>0.1.0</owl:versionInfo>
@@ -37,6 +38,13 @@
     
 
 
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
     <!-- http://purl.org/dc/terms/title -->
 
 
@@ -44,10 +52,52 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
     
 
 
@@ -127,11 +177,56 @@
     
 
 
+    <!-- https://w3id.org/lcabim/obd/Category_1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/obd/Category_1">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/obd/OEKOBAUDATCategory"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/obd/OEKOBAU_DAT"/>
+        <skos:narrower rdf:resource="https://w3id.org/lcabim/obd/Category_1_4"/>
+        <skos:notation>1</skos:notation>
+        <skos:prefLabel xml:lang="en">Mineral building products</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Mineralische Baustoffe</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://w3id.org/lcabim/obd/OEKOBAU_DAT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/obd/Category_1_4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/obd/Category_1_4">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/obd/OEKOBAUDATCategory"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/obd/Category_1"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/obd/OEKOBAU_DAT"/>
+        <skos:narrower rdf:resource="https://w3id.org/lcabim/obd/Category_1_4_01"/>
+        <skos:notation>1.4</skos:notation>
+        <skos:prefLabel xml:lang="en">Mortar and Concrete</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Mörtel und Beton</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lcabim/obd/Category_1_4_01 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/obd/Category_1_4_01">
+        <rdf:type rdf:resource="https://w3id.org/lcabim/obd/OEKOBAUDATCategory"/>
+        <skos:broader rdf:resource="https://w3id.org/lcabim/obd/Category_1_4"/>
+        <skos:inScheme rdf:resource="https://w3id.org/lcabim/obd/OEKOBAU_DAT"/>
+        <skos:notation>1.4.01</skos:notation>
+        <skos:prefLabel xml:lang="de">Beton</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Ready mixed concrete</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/lcabim/obd/OEKOBAU_DAT -->
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/lcabim/obd/OEKOBAU_DAT">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <skos:hasTopConcept rdf:resource="https://w3id.org/lcabim/obd/Category_1"/>
         <skos:prefLabel xml:lang="en">OEKOBAU.DAT</skos:prefLabel>
         <skos:prefLabel xml:lang="de">ÖKOBAUDAT</skos:prefLabel>
     </owl:NamedIndividual>

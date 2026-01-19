@@ -1,6 +1,7 @@
 <https://w3id.org/lcabim/concreteclass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/lcabim/concreteclass> <http://purl.org/dc/terms/description> "Project-specific SKOS concepts and linking properties for derived concrete strength and density classes."@en .
 <https://w3id.org/lcabim/concreteclass> <http://purl.org/dc/terms/description> "Projektspezifische SKOS-Konzepte und Verknüpfungseigenschaften für abgeleitete Beton-Druckfestigkeits- und Rohdichteklassen."@de .
+<https://w3id.org/lcabim/concreteclass> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/lcabim/concreteclass> <http://purl.org/dc/terms/title> "Concrete class enrichment vocabulary"@en .
 <https://w3id.org/lcabim/concreteclass> <http://purl.org/dc/terms/title> "Vokabular zur Anreicherung von Betonklassen"@de .
 <https://w3id.org/lcabim/concreteclass> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
@@ -15,6 +16,9 @@
 # 
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

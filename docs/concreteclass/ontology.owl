@@ -11,6 +11,7 @@
     <owl:Ontology rdf:about="https://w3id.org/lcabim/concreteclass">
         <terms:description xml:lang="en">Project-specific SKOS concepts and linking properties for derived concrete strength and density classes.</terms:description>
         <terms:description xml:lang="de">Projektspezifische SKOS-Konzepte und Verknüpfungseigenschaften für abgeleitete Beton-Druckfestigkeits- und Rohdichteklassen.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title xml:lang="en">Concrete class enrichment vocabulary</terms:title>
         <terms:title xml:lang="de">Vokabular zur Anreicherung von Betonklassen</terms:title>
         <owl:versionInfo>0.1.0</owl:versionInfo>
@@ -34,6 +35,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 

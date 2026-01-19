@@ -14,6 +14,12 @@
       "en" : "Minimal vocabulary for modeling BKI elements and their material layers."
     },
     "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
@@ -22,13 +28,13 @@
       } ],
       "title" : [ {
         "identifier" : "title",
-        "language" : "de",
-        "value" : "Vokabular für BKI-Elementvorlagen",
+        "language" : "en",
+        "value" : "BKI element template vocabulary",
         "type" : "label"
       }, {
         "identifier" : "title",
-        "language" : "en",
-        "value" : "BKI element template vocabulary",
+        "language" : "de",
+        "value" : "Vokabular für BKI-Elementvorlagen",
         "type" : "label"
       } ]
     }
@@ -165,7 +171,7 @@
       "de" : "Schichtdicke, typischerweise in Metern.",
       "en" : "Layer thickness, typically in meters."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "0"
   }, {
     "iri" : "https://w3id.org/lcabim/bki/description",
@@ -181,7 +187,7 @@
       "de" : "Menschenlesbare Beschreibung einer Ressource.",
       "en" : "Human-readable description of a resource."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "3"
   }, {
     "iri" : "https://w3id.org/lcabim/bki/processConfigName",
@@ -197,7 +203,7 @@
       "de" : "Menschenlesbarer Material-/Prozess-Identifier zur Zuordnung einer Schicht zu ILCDx-Dateninstanzen.",
       "en" : "Human-readable material/process identifier used to map a layer to ILCDx data instances."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "9"
   }, {
     "iri" : "https://w3id.org/lcabim/bki/hasLayer",
@@ -229,7 +235,7 @@
       "de" : "Referenz-Nutzungsdauer einer Schicht in Jahren.",
       "en" : "Reference service life of a layer in years."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "12"
   }, {
     "iri" : "https://w3id.org/lcabim/bki/name",
@@ -245,7 +251,7 @@
       "de" : "Menschenlesbarer Name einer Ressource.",
       "en" : "Human-readable name of a resource."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "13"
   } ]
 }

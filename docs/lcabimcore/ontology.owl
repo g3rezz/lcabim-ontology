@@ -9,12 +9,15 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/lcabim/lcabimcore">
         <owl:imports rdf:resource="https://w3id.org/lcabim/bki/"/>
+        <owl:imports rdf:resource="https://w3id.org/lcabim/bsdd/"/>
         <owl:imports rdf:resource="https://w3id.org/lcabim/concreteclass/"/>
         <owl:imports rdf:resource="https://w3id.org/lcabim/din276/"/>
         <owl:imports rdf:resource="https://w3id.org/lcabim/ilcd/"/>
+        <owl:imports rdf:resource="https://w3id.org/lcabim/ilcdind/"/>
         <owl:imports rdf:resource="https://w3id.org/lcabim/obd/"/>
-        <terms:description xml:lang="en">Umbrella ontology that imports the ILCD core schema generated from LinkML and project vocabularies for DIN 276, ÖKOBAUDAT categories, concrete classes, and BKI element/layer modeling.</terms:description>
-        <terms:description xml:lang="de">Umbrella-Ontologie, die das aus LinkML generierte ILCD-Kernschema sowie Projektsvokabulare für DIN 276, ÖKOBAUDAT-Kategorien, Betonklassen und die BKI-Element-/Schichtmodellierung importiert.</terms:description>
+        <terms:description xml:lang="en">Umbrella ontology that imports the ILCD core schema and project vocabularies for DIN 276, ÖKOBAUDAT categories, concrete classes, BKI element/layer modeling, LCA indicators from the bSDD and ILCD.</terms:description>
+        <terms:description xml:lang="de">Umbrella-Ontologie, die das ILCD-Kernschema und Projektvokabulare für DIN 276, ÖKOBAUDAT-Kategorien, Betonklassen, BKI-Element-/Schichtmodellierung, LCA-Indikatoren aus bSDD und ILCD importiert.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title xml:lang="en">LCA-BIM Core Ontology (Umbrella)</terms:title>
         <terms:title xml:lang="de">LCA-BIM Kernontologie (Umbrella)</terms:title>
         <owl:versionInfo>0.1.0</owl:versionInfo>
@@ -38,6 +41,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 

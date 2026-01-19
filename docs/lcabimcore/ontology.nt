@@ -1,11 +1,14 @@
 <https://w3id.org/lcabim/lcabimcore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/lcabim/lcabimcore> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lcabim/bki/> .
+<https://w3id.org/lcabim/lcabimcore> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lcabim/bsdd/> .
 <https://w3id.org/lcabim/lcabimcore> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lcabim/concreteclass/> .
 <https://w3id.org/lcabim/lcabimcore> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lcabim/din276/> .
 <https://w3id.org/lcabim/lcabimcore> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lcabim/ilcd/> .
+<https://w3id.org/lcabim/lcabimcore> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lcabim/ilcdind/> .
 <https://w3id.org/lcabim/lcabimcore> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lcabim/obd/> .
-<https://w3id.org/lcabim/lcabimcore> <http://purl.org/dc/terms/description> "Umbrella ontology that imports the ILCD core schema generated from LinkML and project vocabularies for DIN 276, ÖKOBAUDAT categories, concrete classes, and BKI element/layer modeling."@en .
-<https://w3id.org/lcabim/lcabimcore> <http://purl.org/dc/terms/description> "Umbrella-Ontologie, die das aus LinkML generierte ILCD-Kernschema sowie Projektsvokabulare für DIN 276, ÖKOBAUDAT-Kategorien, Betonklassen und die BKI-Element-/Schichtmodellierung importiert."@de .
+<https://w3id.org/lcabim/lcabimcore> <http://purl.org/dc/terms/description> "Umbrella ontology that imports the ILCD core schema and project vocabularies for DIN 276, ÖKOBAUDAT categories, concrete classes, BKI element/layer modeling, LCA indicators from the bSDD and ILCD."@en .
+<https://w3id.org/lcabim/lcabimcore> <http://purl.org/dc/terms/description> "Umbrella-Ontologie, die das ILCD-Kernschema und Projektvokabulare für DIN 276, ÖKOBAUDAT-Kategorien, Betonklassen, BKI-Element-/Schichtmodellierung, LCA-Indikatoren aus bSDD und ILCD importiert."@de .
+<https://w3id.org/lcabim/lcabimcore> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/lcabim/lcabimcore> <http://purl.org/dc/terms/title> "LCA-BIM Core Ontology (Umbrella)"@en .
 <https://w3id.org/lcabim/lcabimcore> <http://purl.org/dc/terms/title> "LCA-BIM Kernontologie (Umbrella)"@de .
 <https://w3id.org/lcabim/lcabimcore> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
@@ -20,6 +23,9 @@
 # 
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

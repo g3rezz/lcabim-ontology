@@ -14,6 +14,12 @@
       "en" : "Project-specific SKOS concepts and linking properties for derived concrete strength and density classes."
     },
     "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
@@ -22,13 +28,13 @@
       } ],
       "title" : [ {
         "identifier" : "title",
-        "language" : "en",
-        "value" : "Concrete class enrichment vocabulary",
+        "language" : "de",
+        "value" : "Vokabular zur Anreicherung von Betonklassen",
         "type" : "label"
       }, {
         "identifier" : "title",
-        "language" : "de",
-        "value" : "Vokabular zur Anreicherung von Betonklassen",
+        "language" : "en",
+        "value" : "Concrete class enrichment vocabulary",
         "type" : "label"
       } ]
     }
@@ -156,13 +162,13 @@
       "annotations" : {
         "note" : [ {
           "identifier" : "note",
-          "language" : "de",
-          "value" : "Druckfestigkeit 25-40 MPa (e.g., C20/25-C30/37)",
+          "language" : "en",
+          "value" : "Compressive strength 25-40 MPa (e.g., C20/25-C30/37)",
           "type" : "label"
         }, {
           "identifier" : "note",
-          "language" : "en",
-          "value" : "Compressive strength 25-40 MPa (e.g., C20/25-C30/37)",
+          "language" : "de",
+          "value" : "Druckfestigkeit 25-40 MPa (e.g., C20/25-C30/37)",
           "type" : "label"
         } ],
         "inScheme" : [ {
@@ -173,13 +179,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Mittelfester Beton",
+          "language" : "en",
+          "value" : "Medium-strength concrete",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Medium-strength concrete",
+          "language" : "de",
+          "value" : "Mittelfester Beton",
           "type" : "label"
         } ]
       },
@@ -192,13 +198,13 @@
       "annotations" : {
         "note" : [ {
           "identifier" : "note",
-          "language" : "en",
-          "value" : "Compressive strength ≥40 MPa (e.g., ≥C35/45)",
+          "language" : "de",
+          "value" : "Druckfestigkeit ≥40 MPa (e.g., ≥C35/45)",
           "type" : "label"
         }, {
           "identifier" : "note",
-          "language" : "de",
-          "value" : "Druckfestigkeit ≥40 MPa (e.g., ≥C35/45)",
+          "language" : "en",
+          "value" : "Compressive strength ≥40 MPa (e.g., ≥C35/45)",
           "type" : "label"
         } ],
         "inScheme" : [ {
@@ -209,13 +215,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Hochfester Beton",
+          "language" : "en",
+          "value" : "High-strength concrete",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "High-strength concrete",
+          "language" : "de",
+          "value" : "Hochfester Beton",
           "type" : "label"
         } ]
       },
@@ -243,13 +249,13 @@
       "annotations" : {
         "note" : [ {
           "identifier" : "note",
-          "language" : "de",
-          "value" : "Rohdichte 2000-2600 kg/m³",
+          "language" : "en",
+          "value" : "Density 2000-2600 kg/m³",
           "type" : "label"
         }, {
           "identifier" : "note",
-          "language" : "en",
-          "value" : "Density 2000-2600 kg/m³",
+          "language" : "de",
+          "value" : "Rohdichte 2000-2600 kg/m³",
           "type" : "label"
         } ],
         "inScheme" : [ {
@@ -260,54 +266,18 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Normalbeton",
+          "language" : "en",
+          "value" : "Normalweight concrete",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Normalweight concrete",
+          "language" : "de",
+          "value" : "Normalbeton",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "NormalWeightConcrete"
-      }
-    }, {
-      "iri" : "https://w3id.org/lcabim/concreteclass/MediumStrengthConcrete",
-      "baseIri" : "https://w3id.org/lcabim/concreteclass",
-      "annotations" : {
-        "note" : [ {
-          "identifier" : "note",
-          "language" : "de",
-          "value" : "Druckfestigkeit 25-40 MPa (e.g., C20/25-C30/37)",
-          "type" : "label"
-        }, {
-          "identifier" : "note",
-          "language" : "en",
-          "value" : "Compressive strength 25-40 MPa (e.g., C20/25-C30/37)",
-          "type" : "label"
-        } ],
-        "inScheme" : [ {
-          "identifier" : "inScheme",
-          "language" : "undefined",
-          "value" : "https://w3id.org/lcabim/concreteclass/StrengthClassScheme",
-          "type" : "iri"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Mittelfester Beton",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Medium-strength concrete",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "MediumStrengthConcrete"
       }
     }, {
       "iri" : "https://w3id.org/lcabim/concreteclass/LowStrengthConcrete",
@@ -346,18 +316,54 @@
         "IRI-based" : "LowStrengthConcrete"
       }
     }, {
+      "iri" : "https://w3id.org/lcabim/concreteclass/MediumStrengthConcrete",
+      "baseIri" : "https://w3id.org/lcabim/concreteclass",
+      "annotations" : {
+        "note" : [ {
+          "identifier" : "note",
+          "language" : "en",
+          "value" : "Compressive strength 25-40 MPa (e.g., C20/25-C30/37)",
+          "type" : "label"
+        }, {
+          "identifier" : "note",
+          "language" : "de",
+          "value" : "Druckfestigkeit 25-40 MPa (e.g., C20/25-C30/37)",
+          "type" : "label"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/concreteclass/StrengthClassScheme",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Medium-strength concrete",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Mittelfester Beton",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MediumStrengthConcrete"
+      }
+    }, {
       "iri" : "https://w3id.org/lcabim/concreteclass/LightWeightConcrete",
       "baseIri" : "https://w3id.org/lcabim/concreteclass",
       "annotations" : {
         "note" : [ {
           "identifier" : "note",
-          "language" : "de",
-          "value" : "Rohdichte 800-2000 kg/m³",
+          "language" : "en",
+          "value" : "Density 800-2000 kg/m³",
           "type" : "label"
         }, {
           "identifier" : "note",
-          "language" : "en",
-          "value" : "Density 800-2000 kg/m³",
+          "language" : "de",
+          "value" : "Rohdichte 800-2000 kg/m³",
           "type" : "label"
         } ],
         "inScheme" : [ {
@@ -387,13 +393,13 @@
       "annotations" : {
         "note" : [ {
           "identifier" : "note",
-          "language" : "en",
-          "value" : "Compressive strength ≥40 MPa (e.g., ≥C35/45)",
+          "language" : "de",
+          "value" : "Druckfestigkeit ≥40 MPa (e.g., ≥C35/45)",
           "type" : "label"
         }, {
           "identifier" : "note",
-          "language" : "de",
-          "value" : "Druckfestigkeit ≥40 MPa (e.g., ≥C35/45)",
+          "language" : "en",
+          "value" : "Compressive strength ≥40 MPa (e.g., ≥C35/45)",
           "type" : "label"
         } ],
         "inScheme" : [ {
@@ -404,13 +410,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Hochfester Beton",
+          "language" : "en",
+          "value" : "High-strength concrete",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "High-strength concrete",
+          "language" : "de",
+          "value" : "Hochfester Beton",
           "type" : "label"
         } ]
       },
@@ -440,13 +446,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Heavyweight concrete",
+          "language" : "de",
+          "value" : "Schwerbeton",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Schwerbeton",
+          "language" : "en",
+          "value" : "Heavyweight concrete",
           "type" : "label"
         } ]
       },
@@ -472,13 +478,13 @@
       "annotations" : {
         "note" : [ {
           "identifier" : "note",
-          "language" : "de",
-          "value" : "Rohdichte 2000-2600 kg/m³",
+          "language" : "en",
+          "value" : "Density 2000-2600 kg/m³",
           "type" : "label"
         }, {
           "identifier" : "note",
-          "language" : "en",
-          "value" : "Density 2000-2600 kg/m³",
+          "language" : "de",
+          "value" : "Rohdichte 2000-2600 kg/m³",
           "type" : "label"
         } ],
         "inScheme" : [ {
@@ -489,13 +495,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Normalbeton",
+          "language" : "en",
+          "value" : "Normalweight concrete",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Normalweight concrete",
+          "language" : "de",
+          "value" : "Normalbeton",
           "type" : "label"
         } ]
       },
@@ -508,13 +514,13 @@
       "annotations" : {
         "note" : [ {
           "identifier" : "note",
-          "language" : "de",
-          "value" : "Rohdichte 800-2000 kg/m³",
+          "language" : "en",
+          "value" : "Density 800-2000 kg/m³",
           "type" : "label"
         }, {
           "identifier" : "note",
-          "language" : "en",
-          "value" : "Density 800-2000 kg/m³",
+          "language" : "de",
+          "value" : "Rohdichte 800-2000 kg/m³",
           "type" : "label"
         } ],
         "inScheme" : [ {
@@ -561,13 +567,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Heavyweight concrete",
+          "language" : "de",
+          "value" : "Schwerbeton",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Schwerbeton",
+          "language" : "en",
+          "value" : "Heavyweight concrete",
           "type" : "label"
         } ]
       },
@@ -620,7 +626,7 @@
       "de" : "Verknüpft einen Datensatz mit einer abgeleiteten Rohdichteklasse (z. B. ergänzt mittels SHACL-Regeln).",
       "en" : "Links a dataset to a derived density class (e.g., added via SHACL rules)."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "7"
   }, {
     "iri" : "https://w3id.org/lcabim/concreteclass/hasStrengthClassification",
@@ -636,7 +642,7 @@
       "de" : "Verknüpft einen Datensatz mit einer abgeleiteten Druckfestigkeitsklasse (z. B. ergänzt mittels SHACL-Regeln).",
       "en" : "Links a dataset to a derived compressive-strength class (e.g., added via SHACL rules)."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "8"
   } ]
 }

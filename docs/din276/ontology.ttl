@@ -9,6 +9,7 @@
 <https://w3id.org/lcabim/din276> rdf:type owl:Ontology ;
                                   <http://purl.org/dc/terms/description> "SKOS concept scheme and linking property for DIN 276 cost groups used to enrich ILCDx data instances and BKI elements."@en ,
                                                                          "SKOS-Konzeptschema und Verknüpfungseigenschaft für DIN 276 Kostengruppen zur Anreicherung von ILCDx-Dateninstanzen und BKI-Elementen."@de ;
+                                  <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                   <http://purl.org/dc/terms/title> "DIN 276 Kostengruppen-Mapping-Vokabular"@de ,
                                                                    "DIN 276 cost group mapping vocabulary"@en ;
                                   owl:versionInfo "0.1.0" .
@@ -21,8 +22,28 @@
 <http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
@@ -72,6 +93,288 @@
                                                  <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "DIN 276"@de ,
                                                                                         "DIN 276"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_310
+<https://w3id.org/lcabim/din276/costgroup_310> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "310" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Groundworks, earthworks, trenchwork, embankments, cuttings, retaining walls and seawalls, slope protection."@en ,
+                                                                                          "Oberbodenarbeiten und Bodenarbeiten, Erdbaumaßnahmen, Baugruben, Dämme, Einschnitte, Wälle, Hangsicherungen"@de ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Baugrube/Erdbau"@de ,
+                                                                                               "Trenchwork/Earthworks"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_312
+<https://w3id.org/lcabim/din276/costgroup_312> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_310> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "312" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Excavation and securing of trenches, embankments and cuttings (e.g. diaphragm walling, sheet piling, soldier piling), securing by injection or shoring."@en ,
+                                                                                          "Verbau und Sicherung von Baugruben, Baugräben, Dämmen, Wällen und Einschnitten (z. B. Schlitz-, Pfahl-, Spund-, Trägerbohl-, Injektions- und Spritzbetonsicherung) einschließlich der Verankerungen, Absteifungen und Böschungen"@de ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Enclosure (support work)"@en ,
+                                                                                               "Umschließung"@de .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_320
+<https://w3id.org/lcabim/din276/costgroup_320> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "320" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Foundation and substructure works, including associated earthworks and blindings not covered in CG 310."@en ,
+                                                                                          "Gründungs- und Unterbaumaßnahmen für das Bauwerk einschließlich der zugehörigen Erdarbeiten und Sauberkeitsschichten, soweit nicht in der KG 310 erfasst"@de ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Foundations/substructures"@en ,
+                                                                                               "Gründung, Unterbau"@de .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_322
+<https://w3id.org/lcabim/din276/costgroup_322> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_320> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "322" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Einzelfundamente, Streifenfundamente, Fundament-, Sohl- und Bodenplatten"@de ,
+                                                                                          "Pad foundations, strip foundations, foundation slabs, base plates and slabs"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Flachgründungen und Bodenplatten"@de ,
+                                                                                               "Shallow foundations and base slabs"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_323
+<https://w3id.org/lcabim/din276/costgroup_323> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_320> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "323" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Pfahlgründung einschließlich der Roste; Brunnengründungen; Verankerungen"@de ,
+                                                                                          "Pile foundations, including pile grating, cylinder foundations; anchoring"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Deep foundations"@en ,
+                                                                                               "Tiefgründungen"@de .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_326
+<https://w3id.org/lcabim/din276/costgroup_326> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_320> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "326" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Leitungen, Schächte, Packungen, Pumpensümpfe, Tiefenentwässerung, Oberflächenentwässerung"@de ,
+                                                                                          "Pipework, shafts, packing, sump pumps, deep water drainage, surface water drainage."@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Drainage"@en ,
+                                                                                               "Dränagen"@de .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_330
+<https://w3id.org/lcabim/din276/costgroup_330> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "330" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Loadbearing and non-loadbearing vertical building components on the outside of the structure, i.e. particularly those that are exposed to the outside atmosphere or that adjoin the soil or other structures. CG 331 and CG 332 can be combined into CG 331 where appropriate."@en ,
+                                                                                          "Tragende und nichttragende vertikale Baukonstruktionen, die sich an den Außenseiten des Bauwerks befinden, d. h. insbesondere dem Außenklima ausgesetzt sind bzw. an das Erdreich oder an andere Bauwerke grenzen. Die KG 331 und die KG 332 können ggf. als KG 331 zusammengefasst werden."@de ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Außenwände/Vertikale Baukonstruktionen, außen"@de ,
+                                                                                               "External walls/vertical components, external"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_331
+<https://w3id.org/lcabim/din276/costgroup_331> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_330> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "331" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Außenwände und flächige Konstruktionen, die für die Standfestigkeit des Bauwerks erforderlich sind, einschließlich horizontaler Abdichtungen sowie Schlitzen und Durchführungen"@de ,
+                                                                                          "External walls and other components of small thickness compared with their other dimensions, that are necessary to ensure the stability of the structure, including horizontal damp-proofing as well as chases and penetrations"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Loadbearing external walls"@en ,
+                                                                                               "Tragende Außenwände"@de .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_332
+<https://w3id.org/lcabim/din276/costgroup_332> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_330> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "332" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Außenwände und flächige Konstruktionen, die für die Standfestigkeit des Bauwerks nicht erforderlich sind (z. B. Brüstungen, Attiken, Ausfachungen) einschließlich horizontaler Abdichtungen sowie Schlitzen, Durchführungen und füllender Teile (z. B. Dämmungen)"@de ,
+                                                                                          "External walls and components of small thickness compared with their other dimensions, that are not necessary to ensure the stability of the structure (e. g. parapets, attics, infill panels) including horizontal damp-proofing and chases, as well as penetrations and infill elements (e.g. insulation)"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Nichttragende Außenwände"@de ,
+                                                                                               "Non-loadbearing external walls"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_333
+<https://w3id.org/lcabim/din276/costgroup_333> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_330> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "333" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Stützen, Säulen, Pylone und Pfeiler an den Außenseiten des Bauwerks mit einem Querschnittsverhältnis < 1 : 4"@de ,
+                                                                                          "Supports, columns, pylons and pillars on the exterior side of a structure with a slenderness ratio < 1 : 4"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Außenstützen"@de ,
+                                                                                               "External columns"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_335
+<https://w3id.org/lcabim/din276/costgroup_335> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_330> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "335" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "External claddings of external walls and columns, including rendering, damp-proofing, insulating and protective layers. These also include façades and vertical greenery systems permanently attached to external walls on the outside, including all associated parts (e. g. containers, substrates, plants, preparation and care of plants, fertilizing and watering systems)"@en ,
+                                                                                          "Äußere Bekleidungen an Wänden und Stützen einschließlich Putz-, Dichtungs-, Dämm- und Schutzschichten. Dazu gehören auch auf der Außenseite fest mit den Außenwänden verbundene Fassaden- und Wandbegrünungssysteme einschließlich aller Teile (z. B. Gefäße, Substrate, Pflanzen, Fertigstellungs- und Entwicklungspflege, Dünge- und Bewässerungsvorrichtungen)."@de ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Außenwandbekleidungen, außen"@de ,
+                                                                                               "Cladding, external"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_337
+<https://w3id.org/lcabim/din276/costgroup_337> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_330> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "337" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Prefabricated external wall units and vertical components which can also have doors and windows or external claddings and internal linings, in addition to their core element"@en ,
+                                                                                          "Vorgefertigte Wände und vertikale Baukonstruktionen, die neben ihrer Kernkonstruktion auch Türen und Fenster oder äußere und innere Bekleidungen enthalten können"@de ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Elementierte Außenwandkonstruktionen"@de ,
+                                                                                               "Prefabricated external wall units"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_340
+<https://w3id.org/lcabim/din276/costgroup_340> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "340" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Overall category for interior vertical structural components."@en ,
+                                                                                          "Tragende und nichttragende vertikale Baukonstruktionen, die sich innerhalb des Bauwerks befinden. Die KG 341 und die KG 342 können ggf. als KG 341 zusammengefasst werden."@de ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Innenwände/Vertikale Baukonstruktionen, innen"@de ,
+                                                                                               "Internal walls/internal vertical components"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_341
+<https://w3id.org/lcabim/din276/costgroup_341> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_340> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "341" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Loadbearing internal walls and large-area components that are necessary to ensure the stability of the structure, including horizontal waterproofing and chases and penetrations."@en ,
+                                                                                          "Tragende Innenwände und flächige Konstruktionen, die für die Standfestigkeit des Bauwerks erforderlich sind, einschließlich horizontaler Abdichtungen sowie Schlitzen und Durchführungen"@de ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Loadbearing internal walls"@en ,
+                                                                                               "Tragende Innenwände"@de .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_342
+<https://w3id.org/lcabim/din276/costgroup_342> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_340> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "342" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Nichttragende Innenwände und flächige Konstruktionen, die für die Standfestigkeit des Bauwerks nicht erforderlich sind (z. B. Brüstungen, Ausfachungen) einschließlich horizontaler Abdichtungen sowie Schlitzen, Durchführungen und füllender Teile (z. B. Dämmungen)"@de ,
+                                                                                          "Non-loadbearing internal walls and large-area components, that are not necessary to ensure the stability of the structure (e. g. parapets, infill panels) including horizontal damp-proofing and chases, penetrations and infill elements (e. g. insulation)"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Nichttragende Innenwände"@de ,
+                                                                                               "Non-loadbearing internal walls"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_343
+<https://w3id.org/lcabim/din276/costgroup_343> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_340> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "343" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Stützen, Säulen, Pylone und Pfeiler innerhalb des Bauwerks mit einem Querschnittsverhältnis < 1 : 4"@de ,
+                                                                                          "Supports, columns, pylons and pillars on the inside of a structure with a slenderness ratio < 1:4."@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Innenstützen"@de ,
+                                                                                               "Internal columns"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_346
+<https://w3id.org/lcabim/din276/costgroup_346> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_340> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "346" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Prefabricated internal wall units and vertical components which can also have doors and windows or internal linings, in addition to their core element; folding walls, sliding walls, sanitary partitions, rough partitioning."@en ,
+                                                                                          "Vorgefertigte Wände und vertikale Baukonstruktionen, die neben ihrer Kernkonstruktion auch Türen und Fenster oder Innenwandbekleidungen enthalten können; Falt- und Schiebewände, Sanitärtrennwände, Verschläge"@de ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Elementierte Innenwandkonstruktionen"@de ,
+                                                                                               "Prefabricated internal wall units"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_350
+<https://w3id.org/lcabim/din276/costgroup_350> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "350" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Loadbearing and non-loadbearing components for floors and ceilings, stairs, ramps and other horizontal constructions"@en ,
+                                                                                          "Tragende und nichttragende Baukonstruktionen für Decken, Treppen, Rampen und andere horizontale Baukonstruktionen"@de ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Decken/Horizontale Baukonstruktionen"@de ,
+                                                                                               "Floors and ceilings/horizontal components"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_351
+<https://w3id.org/lcabim/din276/costgroup_351> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_350> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "351" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Loadbearing components for floors and ceilings, stairs, ramps, balconies and other horizontal constructions including upstand and downstand beams, shoring and infill elements, (e. g. insulation,hollow blocks, false floors, loose fill)."@en ,
+                                                                                          "Tragende Konstruktionen für Decken, Treppen, Rampen, Balkone und andere horizontale Baukonstruktionen einschließlich Über- und Unterzügen, Abstützungen und füllender Teile (z. B. Dämmungen, Hohlkörper, Blindböden, Schüttungen)"@de ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Deckenkonstruktionen"@de ,
+                                                                                               "Floor components"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_353
+<https://w3id.org/lcabim/din276/costgroup_353> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_350> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "353" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Beläge auf Deckenkonstruktionen einschließlich Estrichen, Dichtungs-, Dämm-, Schutz- und Nutzschichten sowie Schwingböden und Installationsdoppelböden. Dazu gehören auch fest mit den Decken verbundene Begrünungssysteme einschließlich Fertigstellungs- und Entwicklungspflege."@de ,
+                                                                                          "Coverings on floors, including screeds, damp-proofing, insulating and protective layers, wearing surfaces, false floors for services, and floating floors. This includes greening systems attached to the floor/ceiling, including preparation and care."@en ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Deckenbeläge"@de ,
+                                                                                               "Floorings"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_355
+<https://w3id.org/lcabim/din276/costgroup_355> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_350> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "355" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Prefabricated floors and ceilings, stairs, ramps and other horizontal constructions that can contain openings, coverings or linings in addition to their core structure"@en ,
+                                                                                          "Vorgefertigte Decken, Treppen, Rampen und andere horizontale Baukonstruktionen, die neben ihrer Kernkonstruktion auch Öffnungen, Beläge oder Bekleidungen enthalten können"@de ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Elementierte Deckenkonstruktionen"@de ,
+                                                                                               "Prefabricated floor and ceiling units"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_360
+<https://w3id.org/lcabim/din276/costgroup_360> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "360" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Loadbearing and non-loadbearing components for flat and sloping roofs, and other horizontal components that enclose the top of the structure."@en ,
+                                                                                          "Tragende und nichttragende Baukonstruktionen für flache und geneigte Dächer und andere horizontale Baukonstruktionen, die das Bauwerk nach oben abschließen"@de ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Dächer"@de ,
+                                                                                               "Roofs"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_361
+<https://w3id.org/lcabim/din276/costgroup_361> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_360> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "361" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Loadbearing constructions for roofs, canopies, roof trusses, space frames and dome roofs, including upstand and downstand beams, and infill elements (e. g. insulation, hollow blocks, false floors, loose fill)"@en ,
+                                                                                          "Tragende Konstruktionen von Dächern, Vordächern, Dachstühlen, Raumtragwerken, Kuppeln und Gewölben einschließlich Über- und Unterzügen, Abstützungen und füllender Teile (z. B. Dämmungen, Hohlkörper, Blindböden, Schüttungen)"@de ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Dachkonstruktionen"@de ,
+                                                                                               "Roof structures"@en .
+
+
+###  https://w3id.org/lcabim/din276/costgroup_365
+<https://w3id.org/lcabim/din276/costgroup_365> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/lcabim/din276/DIN276CostGroup> ;
+                                               <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/din276/costgroup_360> ;
+                                               <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/din276/DIN276> ;
+                                               <http://www.w3.org/2004/02/skos/core#notation> "365" ;
+                                               <http://www.w3.org/2004/02/skos/core#note> "Prefabricated roofs that can contain openings, coverings or linings in addition to their core structure"@en ,
+                                                                                          "Vorgefertigte Dächer, die neben ihrer Kernkonstruktion auch Öffnungen, Beläge oder Bekleidungen enthalten können"@de ;
+                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Elementierte Dachkonstruktionen"@de ,
+                                                                                               "Prefabricated roof constructions"@en .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

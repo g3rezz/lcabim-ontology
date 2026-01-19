@@ -14,6 +14,12 @@
       "en" : "SKOS concept scheme and linking property for canonical OEKOBAU.DAT categories used to normalize source classification literals."
     },
     "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
@@ -22,13 +28,13 @@
       } ],
       "title" : [ {
         "identifier" : "title",
-        "language" : "en",
-        "value" : "OEKOBAU.DAT canonical category vocabulary",
+        "language" : "de",
+        "value" : "ÖKOBAUDAT Vokabular kanonischer Kategorien",
         "type" : "label"
       }, {
         "identifier" : "title",
-        "language" : "de",
-        "value" : "ÖKOBAUDAT Vokabular kanonischer Kategorien",
+        "language" : "en",
+        "value" : "OEKOBAU.DAT canonical category vocabulary",
         "type" : "label"
       } ]
     }
@@ -56,6 +62,130 @@
       "IRI-based" : "OEKOBAUDATCategory",
       "en" : "OEKOBAU.DAT category"
     },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/lcabim/obd/Category_1",
+      "baseIri" : "https://w3id.org/lcabim/obd",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/obd/OEKOBAU_DAT",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "1",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Mineralische Baustoffe",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Mineral building products",
+          "type" : "label"
+        } ],
+        "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/obd/Category_1_4",
+          "type" : "iri"
+        } ],
+        "topConceptOf" : [ {
+          "identifier" : "topConceptOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/obd/OEKOBAU_DAT",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Category_1"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/obd/Category_1_4",
+      "baseIri" : "https://w3id.org/lcabim/obd",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/obd/OEKOBAU_DAT",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "1.4",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Mortar and Concrete",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Mörtel und Beton",
+          "type" : "label"
+        } ],
+        "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/obd/Category_1_4_01",
+          "type" : "iri"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/obd/Category_1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Category_1_4"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/obd/Category_1_4_01",
+      "baseIri" : "https://w3id.org/lcabim/obd",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/obd/OEKOBAU_DAT",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "1.4.01",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Ready mixed concrete",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Beton",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/obd/Category_1_4",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Category_1_4_01"
+      }
+    } ],
     "comment" : {
       "de" : "Ein SKOS-Konzept, das eine kanonische ÖKOBAUDAT-Kategorie repräsentiert.",
       "en" : "A SKOS concept representing a canonical OEKOBAU.DAT category."
@@ -76,14 +206,20 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "OEKOBAU.DAT",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "de",
           "value" : "ÖKOBAUDAT",
           "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "OEKOBAU.DAT",
+          "type" : "label"
+        } ],
+        "hasTopConcept" : [ {
+          "identifier" : "hasTopConcept",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/obd/Category_1",
+          "type" : "iri"
         } ]
       },
       "labels" : {
@@ -120,7 +256,7 @@
   "propertyAttribute" : [ {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "4"
   }, {
     "iri" : "https://w3id.org/lcabim/obd/hasCanonicalCategory",
@@ -136,7 +272,7 @@
       "de" : "Verknüpft einen Quell-Klassifikationseintrag (oft ein Literal) mit einer kanonischen SKOS-Kategorie (z. B. ÖKOBAUDAT-Konzept in Englisch).",
       "en" : "Links a source classification entry (often a literal) to a canonical SKOS category (e.g., OEKOBAU.DAT English concept)."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "5"
   } ]
 }

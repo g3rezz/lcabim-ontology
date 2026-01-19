@@ -1,6 +1,7 @@
 <https://w3id.org/lcabim/bki> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/lcabim/bki> <http://purl.org/dc/terms/description> "Minimal vocabulary for modeling BKI elements and their material layers."@en .
 <https://w3id.org/lcabim/bki> <http://purl.org/dc/terms/description> "Minimales Vokabular zur Modellierung von BKI-Elementen und deren Materialschichten."@de .
+<https://w3id.org/lcabim/bki> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/lcabim/bki> <http://purl.org/dc/terms/title> "BKI element template vocabulary"@en .
 <https://w3id.org/lcabim/bki> <http://purl.org/dc/terms/title> "Vokabular für BKI-Elementvorlagen"@de .
 <https://w3id.org/lcabim/bki> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
@@ -15,6 +16,9 @@
 # 
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

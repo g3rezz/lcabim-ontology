@@ -1,6 +1,7 @@
 <https://w3id.org/lcabim/obd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/lcabim/obd> <http://purl.org/dc/terms/description> "SKOS concept scheme and linking property for canonical OEKOBAU.DAT categories used to normalize source classification literals."@en .
 <https://w3id.org/lcabim/obd> <http://purl.org/dc/terms/description> "SKOS-Konzeptschema und Verknüpfungseigenschaft für kanonische ÖKOBAUDAT-Kategorien zur Normalisierung von Quell-Klassifikationswerten."@de .
+<https://w3id.org/lcabim/obd> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/lcabim/obd> <http://purl.org/dc/terms/title> "OEKOBAU.DAT canonical category vocabulary"@en .
 <https://w3id.org/lcabim/obd> <http://purl.org/dc/terms/title> "ÖKOBAUDAT Vokabular kanonischer Kategorien"@de .
 <https://w3id.org/lcabim/obd> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
@@ -16,11 +17,32 @@
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#notation
+<http://www.w3.org/2004/02/skos/core#notation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2004/02/skos/core#prefLabel
 <http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#topConceptOf
+<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -71,9 +93,39 @@
 # #################################################################
 # 
 # 
+# https://w3id.org/lcabim/obd/Category_1
+<https://w3id.org/lcabim/obd/Category_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lcabim/obd/Category_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lcabim/obd/OEKOBAUDATCategory> .
+<https://w3id.org/lcabim/obd/Category_1> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/obd/OEKOBAU_DAT> .
+<https://w3id.org/lcabim/obd/Category_1> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/lcabim/obd/Category_1_4> .
+<https://w3id.org/lcabim/obd/Category_1> <http://www.w3.org/2004/02/skos/core#notation> "1" .
+<https://w3id.org/lcabim/obd/Category_1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mineral building products"@en .
+<https://w3id.org/lcabim/obd/Category_1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mineralische Baustoffe"@de .
+<https://w3id.org/lcabim/obd/Category_1> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lcabim/obd/OEKOBAU_DAT> .
+# 
+# https://w3id.org/lcabim/obd/Category_1_4
+<https://w3id.org/lcabim/obd/Category_1_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lcabim/obd/Category_1_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lcabim/obd/OEKOBAUDATCategory> .
+<https://w3id.org/lcabim/obd/Category_1_4> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/obd/Category_1> .
+<https://w3id.org/lcabim/obd/Category_1_4> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/obd/OEKOBAU_DAT> .
+<https://w3id.org/lcabim/obd/Category_1_4> <http://www.w3.org/2004/02/skos/core#narrower> <https://w3id.org/lcabim/obd/Category_1_4_01> .
+<https://w3id.org/lcabim/obd/Category_1_4> <http://www.w3.org/2004/02/skos/core#notation> "1.4" .
+<https://w3id.org/lcabim/obd/Category_1_4> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mortar and Concrete"@en .
+<https://w3id.org/lcabim/obd/Category_1_4> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mörtel und Beton"@de .
+# 
+# https://w3id.org/lcabim/obd/Category_1_4_01
+<https://w3id.org/lcabim/obd/Category_1_4_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lcabim/obd/Category_1_4_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lcabim/obd/OEKOBAUDATCategory> .
+<https://w3id.org/lcabim/obd/Category_1_4_01> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lcabim/obd/Category_1_4> .
+<https://w3id.org/lcabim/obd/Category_1_4_01> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lcabim/obd/OEKOBAU_DAT> .
+<https://w3id.org/lcabim/obd/Category_1_4_01> <http://www.w3.org/2004/02/skos/core#notation> "1.4.01" .
+<https://w3id.org/lcabim/obd/Category_1_4_01> <http://www.w3.org/2004/02/skos/core#prefLabel> "Beton"@de .
+<https://w3id.org/lcabim/obd/Category_1_4_01> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ready mixed concrete"@en .
+# 
 # https://w3id.org/lcabim/obd/OEKOBAU_DAT
 <https://w3id.org/lcabim/obd/OEKOBAU_DAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/lcabim/obd/OEKOBAU_DAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://w3id.org/lcabim/obd/OEKOBAU_DAT> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lcabim/obd/Category_1> .
 <https://w3id.org/lcabim/obd/OEKOBAU_DAT> <http://www.w3.org/2004/02/skos/core#prefLabel> "OEKOBAU.DAT"@en .
 <https://w3id.org/lcabim/obd/OEKOBAU_DAT> <http://www.w3.org/2004/02/skos/core#prefLabel> "ÖKOBAUDAT"@de .
 # 
