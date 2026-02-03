@@ -1,6 +1,6 @@
 <https://w3id.org/lcabim/bsdd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/lcabim/bsdd> <http://purl.org/dc/terms/description> "Diese Ontologie dokumentiert bSDD-(buildingSMART Data Dictionary)-LCA-Property-IRIs. Sie ersetzt bSDD nicht und veröffentlicht es nicht neu, sondern ergänzt nur leichtgewichtige Annotationen (Labels/Kommentare) für die verwendeten IRIs."@de .
-<https://w3id.org/lcabim/bsdd> <http://purl.org/dc/terms/description> "This ontology documents bSDD (buildingSMART Data Dictionary) LCA property IRIs. It does not re-publish or replace bSDD; it only provides lightweight annotations (labels/comments) for the referenced IRIs."@en .
+<https://w3id.org/lcabim/bsdd> <http://purl.org/dc/terms/description> "This ontology documents bSDD (buildingSMART Data Dictionary) LCA property IRIs. It does not re-publish or replace bSDD, it only provides lightweight annotations (labels/comments) for the referenced IRIs."@en .
 <https://w3id.org/lcabim/bsdd> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/lcabim/bsdd> <http://purl.org/dc/terms/title> "LCABIM bSDD LCA indicators"@en .
 <https://w3id.org/lcabim/bsdd> <http://purl.org/dc/terms/title> "LCABIM bSDD-LCA-Indikatoren"@de .

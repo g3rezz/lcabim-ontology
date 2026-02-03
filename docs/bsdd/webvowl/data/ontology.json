@@ -11,7 +11,7 @@
     "version" : "0.1.0",
     "description" : {
       "de" : "Diese Ontologie dokumentiert bSDD-(buildingSMART Data Dictionary)-LCA-Property-IRIs. Sie ersetzt bSDD nicht und veröffentlicht es nicht neu, sondern ergänzt nur leichtgewichtige Annotationen (Labels/Kommentare) für die verwendeten IRIs.",
-      "en" : "This ontology documents bSDD (buildingSMART Data Dictionary) LCA property IRIs. It does not re-publish or replace bSDD; it only provides lightweight annotations (labels/comments) for the referenced IRIs."
+      "en" : "This ontology documents bSDD (buildingSMART Data Dictionary) LCA property IRIs. It does not re-publish or replace bSDD, it only provides lightweight annotations (labels/comments) for the referenced IRIs."
     },
     "other" : {
       "license" : [ {
@@ -71,13 +71,13 @@
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "de",
-          "value" : "Gruppierungsschema für die bSDD LCA-Property-IRIs.",
+          "language" : "en",
+          "value" : "Grouping scheme for the bSDD LCA property IRIs.",
           "type" : "label"
         }, {
           "identifier" : "definition",
-          "language" : "en",
-          "value" : "Grouping scheme for the bSDD LCA property IRIs.",
+          "language" : "de",
+          "value" : "Gruppierungsschema für die bSDD LCA-Property-IRIs.",
           "type" : "label"
         } ]
       },
@@ -112,71 +112,29 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Abiotic depletion potential for non-fossil resources – minerals and metals",
+          "language" : "de",
+          "value" : "Abiotisches Ressourcenverknappungspotenzial für nicht-fossile Ressourcen – Mineralien und Metalle",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Abiotisches Ressourcenverknappungspotenzial für nicht-fossile Ressourcen – Mineralien und Metalle",
+          "language" : "en",
+          "value" : "Abiotic depletion potential for non-fossil resources – minerals and metals",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "de",
-          "value" : "Beschreibt die abnehmende Verfügbarkeit nicht erneuerbarer Ressourcen infolge ihrer Förderung.",
+          "language" : "en",
+          "value" : "Defines the decreasing availability of non-renewable resources as a result of their extraction.",
           "type" : "label"
         }, {
           "identifier" : "definition",
-          "language" : "en",
-          "value" : "Defines the decreasing availability of non-renewable resources as a result of their extraction.",
+          "language" : "de",
+          "value" : "Beschreibt die abnehmende Verfügbarkeit nicht erneuerbarer Ressourcen infolge ihrer Förderung.",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "ADP_MM"
-      }
-    }, {
-      "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_NRM",
-      "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
-      "annotations" : {
-        "inScheme" : [ {
-          "identifier" : "inScheme",
-          "language" : "undefined",
-          "value" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset",
-          "type" : "iri"
-        } ],
-        "notation" : [ {
-          "identifier" : "notation",
-          "language" : "undefined",
-          "value" : "PE_NRM",
-          "type" : "label"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Nicht erneuerbare Primärressourcen mit Energieinhalt, genutzt als Material",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Non-renewable primary resources with energy content used as material",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "de",
-          "value" : "Primärressourcen wie Öl, Gas und Kohle, die (erstmalig) für Produkte genutzt werden (z. B. Kunststoffe).",
-          "type" : "label"
-        }, {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Primary resources such as oil, gas and coal used (first use) for products (e.g., plastics).",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "PE_NRM"
       }
     }, {
       "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_total",
@@ -196,13 +154,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Global warming potential – total",
+          "language" : "de",
+          "value" : "Globales Erwärmungspotenzial – gesamt",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Globales Erwärmungspotenzial – gesamt",
+          "language" : "en",
+          "value" : "Global warming potential – total",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -219,6 +177,132 @@
       },
       "labels" : {
         "IRI-based" : "GWP_total"
+      }
+    }, {
+      "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_NRM",
+      "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "PE_NRM",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Non-renewable primary resources with energy content used as material",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Nicht erneuerbare Primärressourcen mit Energieinhalt, genutzt als Material",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Primary resources such as oil, gas and coal used (first use) for products (e.g., plastics).",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Primärressourcen wie Öl, Gas und Kohle, die (erstmalig) für Produkte genutzt werden (z. B. Kunststoffe).",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PE_NRM"
+      }
+    }, {
+      "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_RM",
+      "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "PE_RM",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Erneuerbare Primärressourcen mit Energieinhalt, genutzt als Material",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Renewable primary resources with energy content used as material",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Bio-based materials used (first use) as materials (e.g., wood, hemp).",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Biobasierte Materialien (Erstnutzung) als Werkstoffe (z. B. Holz, Hanf).",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PE_RM"
+      }
+    }, {
+      "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/eco-toxicityfreshwater",
+      "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "eco-toxicityfreshwater",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Ökotoxizität (Süßwasser)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Eco-toxicity (freshwater)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Wirkungskategorie zu toxischen Auswirkungen auf Ökosysteme (Individuen, Arten und Ökosystemfunktionen).",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Impact category that addresses toxic impacts on ecosystems affecting individuals, species and ecosystem functions.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "eco-toxicityfreshwater"
       }
     }, {
       "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PM",
@@ -238,24 +322,24 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Potential incidence of disease due to PM emissions",
+          "language" : "de",
+          "value" : "Potenzielle Krankheitsinzidenz durch PM-Emissionen",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Potenzielle Krankheitsinzidenz durch PM-Emissionen",
+          "language" : "en",
+          "value" : "Potential incidence of disease due to PM emissions",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "de",
-          "value" : "Einheit der Wirkungskategorie Feinstaub (Particulate Matter).",
+          "language" : "en",
+          "value" : "Unit of impact for the impact category particulate matter.",
           "type" : "label"
         }, {
           "identifier" : "definition",
-          "language" : "en",
-          "value" : "Unit of impact for the impact category particulate matter.",
+          "language" : "de",
+          "value" : "Einheit der Wirkungskategorie Feinstaub (Particulate Matter).",
           "type" : "label"
         } ]
       },
@@ -291,102 +375,18 @@
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "en",
-          "value" : "Measure of the amount of ozone in the troposphere where it causes summer smog.",
+          "language" : "de",
+          "value" : "Maß für die Ozonmenge in der Troposphäre, die Sommersmog verursacht.",
           "type" : "label"
         }, {
           "identifier" : "definition",
-          "language" : "de",
-          "value" : "Maß für die Ozonmenge in der Troposphäre, die Sommersmog verursacht.",
+          "language" : "en",
+          "value" : "Measure of the amount of ozone in the troposphere where it causes summer smog.",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "POCP"
-      }
-    }, {
-      "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_RM",
-      "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
-      "annotations" : {
-        "inScheme" : [ {
-          "identifier" : "inScheme",
-          "language" : "undefined",
-          "value" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset",
-          "type" : "iri"
-        } ],
-        "notation" : [ {
-          "identifier" : "notation",
-          "language" : "undefined",
-          "value" : "PE_RM",
-          "type" : "label"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Erneuerbare Primärressourcen mit Energieinhalt, genutzt als Material",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Renewable primary resources with energy content used as material",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "de",
-          "value" : "Biobasierte Materialien (Erstnutzung) als Werkstoffe (z. B. Holz, Hanf).",
-          "type" : "label"
-        }, {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Bio-based materials used (first use) as materials (e.g., wood, hemp).",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "PE_RM"
-      }
-    }, {
-      "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/eco-toxicityfreshwater",
-      "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
-      "annotations" : {
-        "inScheme" : [ {
-          "identifier" : "inScheme",
-          "language" : "undefined",
-          "value" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset",
-          "type" : "iri"
-        } ],
-        "notation" : [ {
-          "identifier" : "notation",
-          "language" : "undefined",
-          "value" : "eco-toxicityfreshwater",
-          "type" : "label"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Eco-toxicity (freshwater)",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Ökotoxizität (Süßwasser)",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "de",
-          "value" : "Wirkungskategorie zu toxischen Auswirkungen auf Ökosysteme (Individuen, Arten und Ökosystemfunktionen).",
-          "type" : "label"
-        }, {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Impact category that addresses toxic impacts on ecosystems affecting individuals, species and ecosystem functions.",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "eco-toxicityfreshwater"
       }
     }, {
       "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ADP_fossil",
@@ -406,71 +406,29 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Abiotisches Ressourcenverknappungspotenzial für fossile Ressourcen",
+          "language" : "en",
+          "value" : "Abiotic depletion potential for fossil resources",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Abiotic depletion potential for fossil resources",
+          "language" : "de",
+          "value" : "Abiotisches Ressourcenverknappungspotenzial für fossile Ressourcen",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "de",
-          "value" : "Beschreibt die abnehmende Verfügbarkeit nicht erneuerbarer Ressourcen infolge ihrer Förderung.",
+          "language" : "en",
+          "value" : "Defines the decreasing availability of non-renewable resources as a result of their extraction.",
           "type" : "label"
         }, {
           "identifier" : "definition",
-          "language" : "en",
-          "value" : "Defines the decreasing availability of non-renewable resources as a result of their extraction.",
+          "language" : "de",
+          "value" : "Beschreibt die abnehmende Verfügbarkeit nicht erneuerbarer Ressourcen infolge ihrer Förderung.",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "ADP_fossil"
-      }
-    }, {
-      "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_NRE",
-      "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
-      "annotations" : {
-        "inScheme" : [ {
-          "identifier" : "inScheme",
-          "language" : "undefined",
-          "value" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset",
-          "type" : "iri"
-        } ],
-        "notation" : [ {
-          "identifier" : "notation",
-          "language" : "undefined",
-          "value" : "PE_NRE",
-          "type" : "label"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Nicht erneuerbare Primärressourcen als Energieträger (Brennstoff)",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Non-renewable primary resources used as an energy carrier (fuel)",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Materials such as peat, oil, gas, coal, uranium used (first use) as an energy source.",
-          "type" : "label"
-        }, {
-          "identifier" : "definition",
-          "language" : "de",
-          "value" : "Stoffe wie Torf, Öl, Gas, Kohle, Uran, die (erstmalig) als Energiequelle genutzt werden.",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "PE_NRE"
       }
     }, {
       "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/renewableprimaryresourceswithenergycontent-total",
@@ -515,6 +473,48 @@
         "IRI-based" : "renewableprimaryresourceswithenergycontent-total"
       }
     }, {
+      "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/PE_NRE",
+      "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "PE_NRE",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Nicht erneuerbare Primärressourcen als Energieträger (Brennstoff)",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Non-renewable primary resources used as an energy carrier (fuel)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Stoffe wie Torf, Öl, Gas, Kohle, Uran, die (erstmalig) als Energiequelle genutzt werden.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Materials such as peat, oil, gas, coal, uranium used (first use) as an energy source.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PE_NRE"
+      }
+    }, {
       "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_fossil",
       "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
       "annotations" : {
@@ -532,13 +532,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Global warming potential – fossil fuels",
+          "language" : "de",
+          "value" : "Globales Erwärmungspotenzial – fossile Brennstoffe",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Globales Erwärmungspotenzial – fossile Brennstoffe",
+          "language" : "en",
+          "value" : "Global warming potential – fossil fuels",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -574,13 +574,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Net use of freshwater",
+          "language" : "de",
+          "value" : "Netto-Nutzung von Süßwasser",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Netto-Nutzung von Süßwasser",
+          "language" : "en",
+          "value" : "Net use of freshwater",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -627,13 +627,13 @@
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "de",
-          "value" : "Nicht erneuerbare Materialien mit Energieinhalt, die die Systemgrenze zwischen Produktsystemen überschritten haben.",
+          "language" : "en",
+          "value" : "Non-renewable materials with energy content that have crossed the system boundary between product systems.",
           "type" : "label"
         }, {
           "identifier" : "definition",
-          "language" : "en",
-          "value" : "Non-renewable materials with energy content that have crossed the system boundary between product systems.",
+          "language" : "de",
+          "value" : "Nicht erneuerbare Materialien mit Energieinhalt, die die Systemgrenze zwischen Produktsystemen überschritten haben.",
           "type" : "label"
         } ]
       },
@@ -658,24 +658,24 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Materialien zum Recycling",
+          "language" : "en",
+          "value" : "Materials for recycling",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Materials for recycling",
+          "language" : "de",
+          "value" : "Materialien zum Recycling",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "en",
-          "value" : "Secondary material for use in the next product system.",
+          "language" : "de",
+          "value" : "Sekundärmaterial zur Nutzung im nächsten Produktsystem.",
           "type" : "label"
         }, {
           "identifier" : "definition",
-          "language" : "de",
-          "value" : "Sekundärmaterial zur Nutzung im nächsten Produktsystem.",
+          "language" : "en",
+          "value" : "Secondary material for use in the next product system.",
           "type" : "label"
         } ]
       },
@@ -700,24 +700,24 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Potenzielle vergleichende toxische Einheit für Menschen – Krebseffekte",
+          "language" : "en",
+          "value" : "Potential comparative toxic unit for humans – cancer effects",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Potential comparative toxic unit for humans – cancer effects",
+          "language" : "de",
+          "value" : "Potenzielle vergleichende toxische Einheit für Menschen – Krebseffekte",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "en",
-          "value" : "Unit of impact for the impact category human toxicity – cancer effects.",
+          "language" : "de",
+          "value" : "Einheit der Wirkungskategorie Humantoxizität – Krebseffekte.",
           "type" : "label"
         }, {
           "identifier" : "definition",
-          "language" : "de",
-          "value" : "Einheit der Wirkungskategorie Humantoxizität – Krebseffekte.",
+          "language" : "en",
+          "value" : "Unit of impact for the impact category human toxicity – cancer effects.",
           "type" : "label"
         } ]
       },
@@ -742,13 +742,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Materials for energy recovery",
+          "language" : "de",
+          "value" : "Materialien zur energetischen Verwertung",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Materialien zur energetischen Verwertung",
+          "language" : "en",
+          "value" : "Materials for energy recovery",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -868,24 +868,24 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Wasserentzugspotenzial (Nutzung), entzug-gewichteter Wasserverbrauch",
+          "language" : "en",
+          "value" : "Water (user) deprivation potential, deprivation-weighted water consumption",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Water (user) deprivation potential, deprivation-weighted water consumption",
+          "language" : "de",
+          "value" : "Wasserentzugspotenzial (Nutzung), entzug-gewichteter Wasserverbrauch",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "en",
-          "value" : "Unit for the impact category water use.",
+          "language" : "de",
+          "value" : "Einheit der Wirkungskategorie Wassernutzung.",
           "type" : "label"
         }, {
           "identifier" : "definition",
-          "language" : "de",
-          "value" : "Einheit der Wirkungskategorie Wassernutzung.",
+          "language" : "en",
+          "value" : "Unit for the impact category water use.",
           "type" : "label"
         } ]
       },
@@ -910,13 +910,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Non-renewable primary resources with energy content – total",
+          "language" : "de",
+          "value" : "Nicht erneuerbare Primärressourcen mit Energieinhalt – gesamt",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Nicht erneuerbare Primärressourcen mit Energieinhalt – gesamt",
+          "language" : "en",
+          "value" : "Non-renewable primary resources with energy content – total",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -1036,13 +1036,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Non-hazardous waste disposed",
+          "language" : "de",
+          "value" : "Entsorgter nicht gefährlicher Abfall",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Entsorgter nicht gefährlicher Abfall",
+          "language" : "en",
+          "value" : "Non-hazardous waste disposed",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -1103,6 +1103,48 @@
         "IRI-based" : "SM"
       }
     }, {
+      "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ODP",
+      "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "ODP",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Depletion potential of the stratospheric ozone layer",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Ozonabbaupotenzial der Stratosphäre",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Relative amount of degradation to the ozone layer a product can cause.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Relativer Beitrag zum Abbau der Ozonschicht, den ein Produkt verursachen kann.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ODP"
+      }
+    }, {
       "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WDH",
       "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
       "annotations" : {
@@ -1131,60 +1173,18 @@
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "en",
-          "value" : "Hazardous waste to final repository.",
+          "language" : "de",
+          "value" : "Gefährlicher Abfall zur Endablagerung.",
           "type" : "label"
         }, {
           "identifier" : "definition",
-          "language" : "de",
-          "value" : "Gefährlicher Abfall zur Endablagerung.",
+          "language" : "en",
+          "value" : "Hazardous waste to final repository.",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "WDH"
-      }
-    }, {
-      "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/ODP",
-      "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
-      "annotations" : {
-        "inScheme" : [ {
-          "identifier" : "inScheme",
-          "language" : "undefined",
-          "value" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset",
-          "type" : "iri"
-        } ],
-        "notation" : [ {
-          "identifier" : "notation",
-          "language" : "undefined",
-          "value" : "ODP",
-          "type" : "label"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Ozonabbaupotenzial der Stratosphäre",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Depletion potential of the stratospheric ozone layer",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "de",
-          "value" : "Relativer Beitrag zum Abbau der Ozonschicht, den ein Produkt verursachen kann.",
-          "type" : "label"
-        }, {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Relative amount of degradation to the ozone layer a product can cause.",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ODP"
       }
     }, {
       "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/WR",
@@ -1204,24 +1204,24 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "High-level radioactive waste disposed according to ISO 21930:2017 (mass)",
+          "language" : "de",
+          "value" : "Entsorgter hochradioaktiver Abfall gemäß ISO 21930:2017 (Masse)",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Entsorgter hochradioaktiver Abfall gemäß ISO 21930:2017 (Masse)",
+          "language" : "en",
+          "value" : "High-level radioactive waste disposed according to ISO 21930:2017 (mass)",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "de",
-          "value" : "Konditionierter hochradioaktiver Abfall zur Endablagerung, angegeben als Masse.",
+          "language" : "en",
+          "value" : "High-level radioactive waste, conditioned, to final repository given in mass.",
           "type" : "label"
         }, {
           "identifier" : "definition",
-          "language" : "en",
-          "value" : "High-level radioactive waste, conditioned, to final repository given in mass.",
+          "language" : "de",
+          "value" : "Konditionierter hochradioaktiver Abfall zur Endablagerung, angegeben als Masse.",
           "type" : "label"
         } ]
       },
@@ -1288,13 +1288,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Exportierte thermische Energie",
+          "language" : "en",
+          "value" : "Exported thermal energy",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Exported thermal energy",
+          "language" : "de",
+          "value" : "Exportierte thermische Energie",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -1311,6 +1311,48 @@
       },
       "labels" : {
         "IRI-based" : "EET"
+      }
+    }, {
+      "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_luluc",
+      "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "GWP_luluc",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Globales Erwärmungspotenzial – Landnutzung und Landnutzungsänderung",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Global warming potential – land use and land use change",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Beschreibt die potenzielle Strahlungsantriebswirkung von Kohlenstoffaufnahme und -emissionen durch Landnutzung und Landnutzungsänderung.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Describes the potential radiative forcing impact of carbon uptake and emissions due to land use and land use change.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "GWP_luluc"
       }
     }, {
       "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EP_marine",
@@ -1355,48 +1397,6 @@
         "IRI-based" : "EP_marine"
       }
     }, {
-      "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/GWP_luluc",
-      "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
-      "annotations" : {
-        "inScheme" : [ {
-          "identifier" : "inScheme",
-          "language" : "undefined",
-          "value" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset",
-          "type" : "iri"
-        } ],
-        "notation" : [ {
-          "identifier" : "notation",
-          "language" : "undefined",
-          "value" : "GWP_luluc",
-          "type" : "label"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Global warming potential – land use and land use change",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Globales Erwärmungspotenzial – Landnutzung und Landnutzungsänderung",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Describes the potential radiative forcing impact of carbon uptake and emissions due to land use and land use change.",
-          "type" : "label"
-        }, {
-          "identifier" : "definition",
-          "language" : "de",
-          "value" : "Beschreibt die potenzielle Strahlungsantriebswirkung von Kohlenstoffaufnahme und -emissionen durch Landnutzung und Landnutzungsänderung.",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "GWP_luluc"
-      }
-    }, {
       "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/SQI",
       "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
       "annotations" : {
@@ -1414,24 +1414,24 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Potentieller Bodenqualitätsindex",
+          "language" : "en",
+          "value" : "Potential soil quality index",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Potential soil quality index",
+          "language" : "de",
+          "value" : "Potentieller Bodenqualitätsindex",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "de",
-          "value" : "Einheit der Wirkungskategorie landnutzungsbezogene Auswirkungen/Bodenqualität.",
+          "language" : "en",
+          "value" : "Unit of impact for the impact category land use related impacts/soil quality.",
           "type" : "label"
         }, {
           "identifier" : "definition",
-          "language" : "en",
-          "value" : "Unit of impact for the impact category land use related impacts/soil quality.",
+          "language" : "de",
+          "value" : "Einheit der Wirkungskategorie landnutzungsbezogene Auswirkungen/Bodenqualität.",
           "type" : "label"
         } ]
       },
@@ -1467,13 +1467,13 @@
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "de",
-          "value" : "Maß für die Eutrophierung durch Emissionen.",
+          "language" : "en",
+          "value" : "A measure of the eutrophication caused by emissions.",
           "type" : "label"
         }, {
           "identifier" : "definition",
-          "language" : "en",
-          "value" : "A measure of the eutrophication caused by emissions.",
+          "language" : "de",
+          "value" : "Maß für die Eutrophierung durch Emissionen.",
           "type" : "label"
         } ]
       },
@@ -1498,71 +1498,29 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Eutrophication potential, fraction of nutrients reaching freshwater end compartment",
+          "language" : "de",
+          "value" : "Eutrophierungspotenzial, Anteil der Nährstoffe im Süßwasser-Endkompartiment",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Eutrophierungspotenzial, Anteil der Nährstoffe im Süßwasser-Endkompartiment",
+          "language" : "en",
+          "value" : "Eutrophication potential, fraction of nutrients reaching freshwater end compartment",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "de",
-          "value" : "Maß für die Eutrophierung durch Emissionen, die Süßwasser erreichen.",
+          "language" : "en",
+          "value" : "A measure of the eutrophication caused by emissions reaching freshwater.",
           "type" : "label"
         }, {
           "identifier" : "definition",
-          "language" : "en",
-          "value" : "A measure of the eutrophication caused by emissions reaching freshwater.",
+          "language" : "de",
+          "value" : "Maß für die Eutrophierung durch Emissionen, die Süßwasser erreichen.",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "EP_freshwater"
-      }
-    }, {
-      "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RSF",
-      "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
-      "annotations" : {
-        "inScheme" : [ {
-          "identifier" : "inScheme",
-          "language" : "undefined",
-          "value" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset",
-          "type" : "iri"
-        } ],
-        "notation" : [ {
-          "identifier" : "notation",
-          "language" : "undefined",
-          "value" : "RSF",
-          "type" : "label"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Erneuerbare Sekundärbrennstoffe",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Renewable secondary fuels",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Renewable materials with energy content that have crossed the system boundary between product systems.",
-          "type" : "label"
-        }, {
-          "identifier" : "definition",
-          "language" : "de",
-          "value" : "Erneuerbare Materialien mit Energieinhalt, die die Systemgrenze zwischen Produktsystemen überschritten haben.",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "RSF"
       }
     }, {
       "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/EEE",
@@ -1593,18 +1551,60 @@
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "en",
-          "value" : "Amount of electrical energy available on the market after incineration, in MJ.",
+          "language" : "de",
+          "value" : "Menge an elektrischer Energie, die nach der Verbrennung am Markt verfügbar ist, in MJ.",
           "type" : "label"
         }, {
           "identifier" : "definition",
-          "language" : "de",
-          "value" : "Menge an elektrischer Energie, die nach der Verbrennung am Markt verfügbar ist, in MJ.",
+          "language" : "en",
+          "value" : "Amount of electrical energy available on the market after incineration, in MJ.",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "EEE"
+      }
+    }, {
+      "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/RSF",
+      "baseIri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/bSDD_LCA_LCA_3_0_prop_subset",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "RSF",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Erneuerbare Sekundärbrennstoffe",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Renewable secondary fuels",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "de",
+          "value" : "Erneuerbare Materialien mit Energieinhalt, die die Systemgrenze zwischen Produktsystemen überschritten haben.",
+          "type" : "label"
+        }, {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Renewable materials with energy content that have crossed the system boundary between product systems.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RSF"
       }
     }, {
       "iri" : "https://identifier.buildingsmart.org/uri/LCA/LCA/3.0/prop/CTUh_NC",
@@ -1624,24 +1624,24 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Potential comparative toxic unit for humans – non-cancer effects",
+          "language" : "de",
+          "value" : "Potenzielle vergleichende toxische Einheit für Menschen – Nicht-Krebseffekte",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Potenzielle vergleichende toxische Einheit für Menschen – Nicht-Krebseffekte",
+          "language" : "en",
+          "value" : "Potential comparative toxic unit for humans – non-cancer effects",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "de",
-          "value" : "Einheit der Wirkungskategorie Humantoxizität – Nicht-Krebseffekte.",
+          "language" : "en",
+          "value" : "Unit of impact for the impact category human toxicity – non-cancer effects.",
           "type" : "label"
         }, {
           "identifier" : "definition",
-          "language" : "en",
-          "value" : "Unit of impact for the impact category human toxicity – non-cancer effects.",
+          "language" : "de",
+          "value" : "Einheit der Wirkungskategorie Humantoxizität – Nicht-Krebseffekte.",
           "type" : "label"
         } ]
       },

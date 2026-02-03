@@ -5469,7 +5469,13 @@
     "@id" : "https://w3id.org/lcabim/ilcd/qualityCompliance"
   } ]
 }, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#anyURI",
@@ -5519,11 +5525,25 @@
 }, {
   "@id" : "https://w3id.org/lcabim/ilcd",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@value" : "CC-BY-4.0"
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "OWL/RDF ILCD schema used in the LCABIM project. It provides the structural vocabulary (classes and properties) for representing ILCD-based datasets and instances."
+  }, {
+    "@language" : "de",
+    "@value" : "OWL/RDF-ILCD-Schema verwendet im LCABIM-Projekt. Es stellt das strukturelle Vokabular (Klassen und Properties) zur Repräsentation von ILCD-basierten Datensätzen und Instanzen bereit."
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ilcd"
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "LCABIM ILCD core schema"
+  }, {
+    "@language" : "de",
+    "@value" : "LCABIM ILCD-Kernschema"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1.0"
   } ]
 }, {
   "@id" : "https://w3id.org/lcabim/ilcd/AdministrativeInformation",

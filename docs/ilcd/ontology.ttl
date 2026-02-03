@@ -7,15 +7,27 @@
 @base <https://w3id.org/lcabim/ilcd#> .
 
 <https://w3id.org/lcabim/ilcd> rdf:type owl:Ontology ;
-                                <http://purl.org/dc/terms/license> "CC-BY-4.0" ;
-                                rdfs:label "ilcd" .
+                                <http://purl.org/dc/terms/description> "OWL/RDF ILCD schema used in the LCABIM project. It provides the structural vocabulary (classes and properties) for representing ILCD-based datasets and instances."@en ,
+                                                                       "OWL/RDF-ILCD-Schema verwendet im LCABIM-Projekt. Es stellt das strukturelle Vokabular (Klassen und Properties) zur Repräsentation von ILCD-basierten Datensätzen und Instanzen bereit."@de ;
+                                <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                <http://purl.org/dc/terms/title> "LCABIM ILCD core schema"@en ,
+                                                                 "LCABIM ILCD-Kernschema"@de ;
+                                owl:versionInfo "0.1.0" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#definition

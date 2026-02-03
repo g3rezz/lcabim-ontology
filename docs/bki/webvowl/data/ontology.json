@@ -28,13 +28,13 @@
       } ],
       "title" : [ {
         "identifier" : "title",
-        "language" : "en",
-        "value" : "BKI element template vocabulary",
+        "language" : "de",
+        "value" : "Vokabular für BKI-Elementvorlagen",
         "type" : "label"
       }, {
         "identifier" : "title",
-        "language" : "de",
-        "value" : "Vokabular für BKI-Elementvorlagen",
+        "language" : "en",
+        "value" : "BKI element template vocabulary",
         "type" : "label"
       } ]
     }

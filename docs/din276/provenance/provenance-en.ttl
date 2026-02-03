@@ -4,5 +4,10 @@
 @prefix : <> .
 <..\index-en.html> a prov:Entity;
 	 dc:title "DIN 276 cost group mapping vocabulary";
+	 prov:wasAttributedTo <https://dc.rwth-aachen.de/georgi-tsakov/>;
+	 dc:creator <https://dc.rwth-aachen.de/georgi-tsakov/>;
+	 prov:wasAttributedTo <https://dc.rwth-aachen.de/jakob-beetz/>;
+	 dc:creator <https://dc.rwth-aachen.de/jakob-beetz/>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2026-01-10";
 .

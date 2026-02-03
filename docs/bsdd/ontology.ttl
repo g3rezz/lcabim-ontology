@@ -8,7 +8,7 @@
 
 <https://w3id.org/lcabim/bsdd> rdf:type owl:Ontology ;
                                 <http://purl.org/dc/terms/description> "Diese Ontologie dokumentiert bSDD-(buildingSMART Data Dictionary)-LCA-Property-IRIs. Sie ersetzt bSDD nicht und veröffentlicht es nicht neu, sondern ergänzt nur leichtgewichtige Annotationen (Labels/Kommentare) für die verwendeten IRIs."@de ,
-                                                                       "This ontology documents bSDD (buildingSMART Data Dictionary) LCA property IRIs. It does not re-publish or replace bSDD; it only provides lightweight annotations (labels/comments) for the referenced IRIs."@en ;
+                                                                       "This ontology documents bSDD (buildingSMART Data Dictionary) LCA property IRIs. It does not re-publish or replace bSDD, it only provides lightweight annotations (labels/comments) for the referenced IRIs."@en ;
                                 <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                 <http://purl.org/dc/terms/title> "LCABIM bSDD LCA indicators"@en ,
                                                                  "LCABIM bSDD-LCA-Indikatoren"@de ;

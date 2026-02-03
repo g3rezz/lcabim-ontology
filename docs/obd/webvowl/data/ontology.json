@@ -28,13 +28,13 @@
       } ],
       "title" : [ {
         "identifier" : "title",
-        "language" : "de",
-        "value" : "ÖKOBAUDAT Vokabular kanonischer Kategorien",
+        "language" : "en",
+        "value" : "OEKOBAU.DAT canonical category vocabulary",
         "type" : "label"
       }, {
         "identifier" : "title",
-        "language" : "en",
-        "value" : "OEKOBAU.DAT canonical category vocabulary",
+        "language" : "de",
+        "value" : "ÖKOBAUDAT Vokabular kanonischer Kategorien",
         "type" : "label"
       } ]
     }
@@ -63,49 +63,6 @@
       "en" : "OEKOBAU.DAT category"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/lcabim/obd/Category_1",
-      "baseIri" : "https://w3id.org/lcabim/obd",
-      "annotations" : {
-        "inScheme" : [ {
-          "identifier" : "inScheme",
-          "language" : "undefined",
-          "value" : "https://w3id.org/lcabim/obd/OEKOBAU_DAT",
-          "type" : "iri"
-        } ],
-        "notation" : [ {
-          "identifier" : "notation",
-          "language" : "undefined",
-          "value" : "1",
-          "type" : "label"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "Mineralische Baustoffe",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Mineral building products",
-          "type" : "label"
-        } ],
-        "narrower" : [ {
-          "identifier" : "narrower",
-          "language" : "undefined",
-          "value" : "https://w3id.org/lcabim/obd/Category_1_4",
-          "type" : "iri"
-        } ],
-        "topConceptOf" : [ {
-          "identifier" : "topConceptOf",
-          "language" : "undefined",
-          "value" : "https://w3id.org/lcabim/obd/OEKOBAU_DAT",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Category_1"
-      }
-    }, {
       "iri" : "https://w3id.org/lcabim/obd/Category_1_4",
       "baseIri" : "https://w3id.org/lcabim/obd",
       "annotations" : {
@@ -147,6 +104,49 @@
       },
       "labels" : {
         "IRI-based" : "Category_1_4"
+      }
+    }, {
+      "iri" : "https://w3id.org/lcabim/obd/Category_1",
+      "baseIri" : "https://w3id.org/lcabim/obd",
+      "annotations" : {
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/obd/OEKOBAU_DAT",
+          "type" : "iri"
+        } ],
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "1",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Mineral building products",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "de",
+          "value" : "Mineralische Baustoffe",
+          "type" : "label"
+        } ],
+        "narrower" : [ {
+          "identifier" : "narrower",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/obd/Category_1_4",
+          "type" : "iri"
+        } ],
+        "topConceptOf" : [ {
+          "identifier" : "topConceptOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/lcabim/obd/OEKOBAU_DAT",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Category_1"
       }
     }, {
       "iri" : "https://w3id.org/lcabim/obd/Category_1_4_01",
@@ -206,13 +206,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "de",
-          "value" : "ÖKOBAUDAT",
+          "language" : "en",
+          "value" : "OEKOBAU.DAT",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "OEKOBAU.DAT",
+          "language" : "de",
+          "value" : "ÖKOBAUDAT",
           "type" : "label"
         } ],
         "hasTopConcept" : [ {

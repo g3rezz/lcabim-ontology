@@ -9,8 +9,12 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/lcabim/ilcd">
-        <terms:license>CC-BY-4.0</terms:license>
-        <rdfs:label>ilcd</rdfs:label>
+        <terms:description xml:lang="en">OWL/RDF ILCD schema used in the LCABIM project. It provides the structural vocabulary (classes and properties) for representing ILCD-based datasets and instances.</terms:description>
+        <terms:description xml:lang="de">OWL/RDF-ILCD-Schema verwendet im LCABIM-Projekt. Es stellt das strukturelle Vokabular (Klassen und Properties) zur Repräsentation von ILCD-basierten Datensätzen und Instanzen bereit.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="en">LCABIM ILCD core schema</terms:title>
+        <terms:title xml:lang="de">LCABIM ILCD-Kernschema</terms:title>
+        <owl:versionInfo>0.1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -27,10 +31,24 @@
     
 
 
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 

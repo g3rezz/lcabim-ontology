@@ -3,6 +3,11 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
 <..\index-de.html> a prov:Entity;
-	 dc:title "ÖKOBAUDAT Vokabular kanonischer Kategorien";
+	 dc:title "OEKOBAU.DAT canonical category vocabulary";
+	 prov:wasAttributedTo <https://dc.rwth-aachen.de/georgi-tsakov/>;
+	 dc:creator <https://dc.rwth-aachen.de/georgi-tsakov/>;
+	 prov:wasAttributedTo <https://dc.rwth-aachen.de/jakob-beetz/>;
+	 dc:creator <https://dc.rwth-aachen.de/jakob-beetz/>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2026-01-10";
 .

@@ -1,6 +1,10 @@
 <https://w3id.org/lcabim/ilcd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/lcabim/ilcd> <http://purl.org/dc/terms/license> "CC-BY-4.0" .
-<https://w3id.org/lcabim/ilcd> <http://www.w3.org/2000/01/rdf-schema#label> "ilcd" .
+<https://w3id.org/lcabim/ilcd> <http://purl.org/dc/terms/description> "OWL/RDF ILCD schema used in the LCABIM project. It provides the structural vocabulary (classes and properties) for representing ILCD-based datasets and instances."@en .
+<https://w3id.org/lcabim/ilcd> <http://purl.org/dc/terms/description> "OWL/RDF-ILCD-Schema verwendet im LCABIM-Projekt. Es stellt das strukturelle Vokabular (Klassen und Properties) zur Repräsentation von ILCD-basierten Datensätzen und Instanzen bereit."@de .
+<https://w3id.org/lcabim/ilcd> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/lcabim/ilcd> <http://purl.org/dc/terms/title> "LCABIM ILCD core schema"@en .
+<https://w3id.org/lcabim/ilcd> <http://purl.org/dc/terms/title> "LCABIM ILCD-Kernschema"@de .
+<https://w3id.org/lcabim/ilcd> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
 # 
 # 
 # #################################################################
@@ -10,8 +14,14 @@
 # #################################################################
 # 
 # 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
